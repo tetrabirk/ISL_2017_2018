@@ -1,0 +1,37 @@
+Analyse Fonctionnelle
+---------------------
+
+Une analyse doit répondre à toutes les questions qu'on peux se poser dans l'ensemble ci dessous:
+
+1	Acteurs/Utilisateurs [qui va l'utiliser]
+
+2	Fonctionnalités
+
+2	Droits (Acteurs / Fonctionalités)
+
+3	Pages + contenu & Presentation
+
+3	Navigation
+
+4	Règles
+
+5	"Base de Données" - tables ...
+
+
+----------------------------
+
+1 Act
+2 Fonct
+---------
+
+  3 pages
+  4 Règles
+  -------
+  5 DB
+
+
+
+
+
+
+
