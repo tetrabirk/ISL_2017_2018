@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8a7455aa-dc8f-47b2-9dba-6bcf46ff97d2" name="minimir" url="http://minimir.isl.be">
+        <fileTransfer host="minimir.isl.be" port="22" rootFolder="/home/ISL/leyensl/cms/projet-1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
