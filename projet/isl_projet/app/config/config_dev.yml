@@ -41,4 +41,4 @@ monolog:
 #    delivery_addresses: ['me@example.com']
 
 hautelook_alice:
-  fixtures_path: 'Resources/fixtures/orm'
+  fixtures_path: 'app\Resources\fixtures\orm'
