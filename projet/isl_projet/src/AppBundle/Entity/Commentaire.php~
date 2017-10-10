@@ -49,55 +49,6 @@ class Commentaire
      */
     private $encodage;
 
-    /**
-     * Un commentaire à un auteur
-     * @ORM\OneToOne(targetEntity="Internaute")
-     * @ORM\JoinColumn(name="auteur_commentaire", referencedColumnName="id")
-     */
-    private $auteurCommentaire;
-
-    /**
-     * Un commentaire à une cible
-     * @ORM\OneToOne(targetEntity="Prestataire")
-     * @ORM\JoinColumn(name="cible_commentaire", referencedColumnName="id")
-     */
-    private $cibleCommentaire;
-
-    /**
-     * @return mixed
-     */
-    public function getCibleCommentaire()
-    {
-        return $this->cibleCommentaire;
-    }
-
-    /**
-     * @param mixed $cibleCommentaire
-     */
-    public function setCibleCommentaire($cibleCommentaire)
-    {
-        $this->cibleCommentaire = $cibleCommentaire;
-    }
-
-
-
-    /**
-     * @return mixed
-     */
-    public function getAuteurCommentaire()
-    {
-        return $this->auteurCommentaire;
-    }
-
-    /**
-     * @param mixed $auteurCommentaire
-     */
-    public function setAuteurCommentaire($auteurCommentaire)
-    {
-        $this->auteurCommentaire = $auteurCommentaire;
-    }
-
-
 
     /**
      * Get id
@@ -205,3 +156,4 @@ class Commentaire
         return $this->encodage;
     }
 }
+

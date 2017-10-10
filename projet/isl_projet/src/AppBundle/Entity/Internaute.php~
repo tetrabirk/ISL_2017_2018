@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Bloc
+ * Internaute
  *
- * @ORM\Table(name="bloc")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\BlocRepository")
+ * @ORM\Table(name="internaute")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\InternauteRepository")
  */
-class Bloc
+class Internaute extends Utilisateur
 {
     /**
      * @var int
@@ -24,23 +24,23 @@ class Bloc
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text", nullable=true)
+     * @ORM\Column(name="prenom", type="string", length=255, nullable=true)
      */
-    private $description;
+    private $prenom;
 
     /**
-     * @var int
+     * @var bool
      *
-     * @ORM\Column(name="ordre", type="integer")
+     * @ORM\Column(name="newsletter", type="boolean")
      */
-    private $ordre;
+    private $newsletter;
 
 
     /**
@@ -58,7 +58,7 @@ class Bloc
      *
      * @param string $nom
      *
-     * @return Bloc
+     * @return Internaute
      */
     public function setNom($nom)
     {
@@ -78,50 +78,51 @@ class Bloc
     }
 
     /**
-     * Set description
+     * Set prenom
      *
-     * @param string $description
+     * @param string $prenom
      *
-     * @return Bloc
+     * @return Internaute
      */
-    public function setDescription($description)
+    public function setPrenom($prenom)
     {
-        $this->description = $description;
+        $this->prenom = $prenom;
 
         return $this;
     }
 
     /**
-     * Get description
+     * Get prenom
      *
      * @return string
      */
-    public function getDescription()
+    public function getPrenom()
     {
-        return $this->description;
+        return $this->prenom;
     }
 
     /**
-     * Set ordre
+     * Set newsletter
      *
-     * @param integer $ordre
+     * @param boolean $newsletter
      *
-     * @return Bloc
+     * @return Internaute
      */
-    public function setOrdre($ordre)
+    public function setNewsletter($newsletter)
     {
-        $this->ordre = $ordre;
+        $this->newsletter = $newsletter;
 
         return $this;
     }
 
     /**
-     * Get ordre
+     * Get newsletter
      *
-     * @return int
+     * @return bool
      */
-    public function getOrdre()
+    public function getNewsletter()
     {
-        return $this->ordre;
+        return $this->newsletter;
     }
 }
+

@@ -58,25 +58,12 @@ class Prestataire extends Utilisateur
     private $numTVA;
 
     /**
-     * bcp de prestataires ont bcp de categories
-     * @ORM\ManyToMany(targetEntity="CategorieDeServices", inversedBy="prestataires")
-     * @ORM\JoinTable(name="categories_des_prestataires")
-     */
-    private $categories;
-
-    public function addCategorie(CategorieDeServices $categ)
-    {
-        $categ->addPrestataires($this);
-        $this->categories[]= $categ;
-    }
-
-    /**
-     * Get id
+         * Get id
      *
-     * @return int
-     */
-    public function getId()
-    {
+         * @return int
+         */
+        public function getId()
+        {
         return $this->id;
     }
 
@@ -206,46 +193,5 @@ class Prestataire extends Utilisateur
     {
         return $this->numTVA;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->stages = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->categories = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add stage
-     *
-     * @param \AppBundle\Entity\Stage $stage
-     *
-     * @return Prestataire
-     */
-    public function addStage(\AppBundle\Entity\Stage $stage)
-    {
-        $this->stages[] = $stage;
-
-        return $this;
-    }
-
-    /**
-     * Remove stage
-     *
-     * @param \AppBundle\Entity\Stage $stage
-     */
-    public function removeStage(\AppBundle\Entity\Stage $stage)
-    {
-        $this->stages->removeElement($stage);
-    }
-
-    /**
-     * Get stages
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getStages()
-    {
-        return $this->stages;
-    }
 }
+

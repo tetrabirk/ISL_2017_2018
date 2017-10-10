@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Localite
+ * CodePostal
  *
- * @ORM\Table(name="localite")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\LocaliteRepository")
+ * @ORM\Table(name="code_postal")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CodePostalRepository")
  */
-class Localite
+class CodePostal
 {
     /**
      * @var int
@@ -24,9 +24,9 @@ class Localite
     /**
      * @var string
      *
-     * @ORM\Column(name="localite", type="string", length=255, unique=true)
+     * @ORM\Column(name="code_postal", type="string", length=10, unique=true)
      */
-    private $localite;
+    private $codePostal;
 
 
     /**
@@ -40,26 +40,27 @@ class Localite
     }
 
     /**
-     * Set localite
+     * Set codePostal
      *
-     * @param string $localite
+     * @param string $codePostal
      *
-     * @return Localite
+     * @return CodePostal
      */
-    public function setLocalite($localite)
+    public function setCodePostal($codePostal)
     {
-        $this->localite = $localite;
+        $this->codePostal = $codePostal;
 
         return $this;
     }
 
     /**
-     * Get localite
+     * Get codePostal
      *
      * @return string
      */
-    public function getLocalite()
+    public function getCodePostal()
     {
-        return $this->localite;
+        return $this->codePostal;
     }
 }
+

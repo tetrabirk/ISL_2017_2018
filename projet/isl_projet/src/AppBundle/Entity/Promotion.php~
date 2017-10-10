@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Stage
+ * Promotion
  *
- * @ORM\Table(name="stage")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\StageRepository")
+ * @ORM\Table(name="promotion")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\PromotionRepository")
  */
-class Stage
+class Promotion
 {
     /**
      * @var int
@@ -31,16 +31,9 @@ class Stage
     /**
      * @var string
      *
-     * @ORM\Column(name="tarif", type="string", length=255, nullable=true)
+     * @ORM\Column(name="document_pdf", type="string", length=255, nullable=true)
      */
-    private $tarif;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="info_complementaire", type="text", nullable=true)
-     */
-    private $infoComplementaire;
+    private $documentPDF;
 
     /**
      * @var \DateTime
@@ -70,12 +63,6 @@ class Stage
      */
     private $affichageJusque;
 
-    /**
-     * Bcp de Stage on un Prestataire
-     * @ORM\ManyToOne(targetEntity="Prestataire", inversedBy="stages")
-     * @ORM\JoinColumn(name="prestataire_id",referencedColumnName="id")
-     */
-    private $prestataire;
 
     /**
      * Get id
@@ -92,7 +79,7 @@ class Stage
      *
      * @param string $description
      *
-     * @return Stage
+     * @return Promotion
      */
     public function setDescription($description)
     {
@@ -112,51 +99,27 @@ class Stage
     }
 
     /**
-     * Set tarif
+     * Set documentPDF
      *
-     * @param string $tarif
+     * @param string $documentPDF
      *
-     * @return Stage
+     * @return Promotion
      */
-    public function setTarif($tarif)
+    public function setDocumentPDF($documentPDF)
     {
-        $this->tarif = $tarif;
+        $this->documentPDF = $documentPDF;
 
         return $this;
     }
 
     /**
-     * Get tarif
+     * Get documentPDF
      *
      * @return string
      */
-    public function getTarif()
+    public function getDocumentPDF()
     {
-        return $this->tarif;
-    }
-
-    /**
-     * Set infoComplementaire
-     *
-     * @param string $infoComplementaire
-     *
-     * @return Stage
-     */
-    public function setInfoComplementaire($infoComplementaire)
-    {
-        $this->infoComplementaire = $infoComplementaire;
-
-        return $this;
-    }
-
-    /**
-     * Get infoComplementaire
-     *
-     * @return string
-     */
-    public function getInfoComplementaire()
-    {
-        return $this->infoComplementaire;
+        return $this->documentPDF;
     }
 
     /**
@@ -164,7 +127,7 @@ class Stage
      *
      * @param \DateTime $debut
      *
-     * @return Stage
+     * @return Promotion
      */
     public function setDebut($debut)
     {
@@ -188,7 +151,7 @@ class Stage
      *
      * @param \DateTime $fin
      *
-     * @return Stage
+     * @return Promotion
      */
     public function setFin($fin)
     {
@@ -212,7 +175,7 @@ class Stage
      *
      * @param \DateTime $affichageDe
      *
-     * @return Stage
+     * @return Promotion
      */
     public function setAffichageDe($affichageDe)
     {
@@ -236,7 +199,7 @@ class Stage
      *
      * @param \DateTime $affichageJusque
      *
-     * @return Stage
+     * @return Promotion
      */
     public function setAffichageJusque($affichageJusque)
     {
@@ -254,28 +217,5 @@ class Stage
     {
         return $this->affichageJusque;
     }
-
-    /**
-     * Set prestataire
-     *
-     * @param \AppBundle\Entity\Prestataire $prestataire
-     *
-     * @return Stage
-     */
-    public function setPrestataire(\AppBundle\Entity\Prestataire $prestataire = null)
-    {
-        $this->prestataire = $prestataire;
-
-        return $this;
-    }
-
-    /**
-     * Get prestataire
-     *
-     * @return \AppBundle\Entity\Prestataire
-     */
-    public function getPrestataire()
-    {
-        return $this->prestataire;
-    }
 }
+

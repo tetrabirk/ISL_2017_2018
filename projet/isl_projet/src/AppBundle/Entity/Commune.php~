@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Localite
+ * Commune
  *
- * @ORM\Table(name="localite")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\LocaliteRepository")
+ * @ORM\Table(name="commune")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CommuneRepository")
  */
-class Localite
+class Commune
 {
     /**
      * @var int
@@ -24,9 +24,9 @@ class Localite
     /**
      * @var string
      *
-     * @ORM\Column(name="localite", type="string", length=255, unique=true)
+     * @ORM\Column(name="commune", type="string", length=255, unique=true)
      */
-    private $localite;
+    private $commune;
 
 
     /**
@@ -40,26 +40,27 @@ class Localite
     }
 
     /**
-     * Set localite
+     * Set commune
      *
-     * @param string $localite
+     * @param string $commune
      *
-     * @return Localite
+     * @return Commune
      */
-    public function setLocalite($localite)
+    public function setCommune($commune)
     {
-        $this->localite = $localite;
+        $this->commune = $commune;
 
         return $this;
     }
 
     /**
-     * Get localite
+     * Get commune
      *
      * @return string
      */
-    public function getLocalite()
+    public function getCommune()
     {
-        return $this->localite;
+        return $this->commune;
     }
 }
+

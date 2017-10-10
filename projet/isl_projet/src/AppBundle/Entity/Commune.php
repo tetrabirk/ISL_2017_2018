@@ -24,7 +24,7 @@ class Commune
     /**
      * @var string
      *
-     * @ORM\Column(name="Commune", type="string", length=255, unique=true)
+     * @ORM\Column(name="commune", type="string", length=255, unique=true)
      */
     private $commune;
 
@@ -63,4 +63,3 @@ class Commune
         return $this->commune;
     }
 }
-

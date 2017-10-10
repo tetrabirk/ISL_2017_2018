@@ -24,42 +24,42 @@ class Promotion
     /**
      * @var string
      *
-     * @ORM\Column(name="Description", type="text", nullable=true)
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="DocumentPDF", type="string", length=255, nullable=true)
+     * @ORM\Column(name="document_pdf", type="string", length=255, nullable=true)
      */
     private $documentPDF;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Debut", type="date")
+     * @ORM\Column(name="debut", type="date")
      */
     private $debut;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Fin", type="date")
+     * @ORM\Column(name="fin", type="date")
      */
     private $fin;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="AffichageDe", type="date")
+     * @ORM\Column(name="affichage_de", type="date")
      */
     private $affichageDe;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="AffichageJusque", type="date")
+     * @ORM\Column(name="affichage_jusque", type="date")
      */
     private $affichageJusque;
 
@@ -218,4 +218,3 @@ class Promotion
         return $this->affichageJusque;
     }
 }
-

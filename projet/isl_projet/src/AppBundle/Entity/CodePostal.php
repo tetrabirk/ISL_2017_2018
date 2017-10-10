@@ -24,7 +24,7 @@ class CodePostal
     /**
      * @var string
      *
-     * @ORM\Column(name="CodePostal", type="string", length=10, unique=true)
+     * @ORM\Column(name="code_postal", type="string", length=10, unique=true)
      */
     private $codePostal;
 
@@ -63,4 +63,3 @@ class CodePostal
         return $this->codePostal;
     }
 }
-

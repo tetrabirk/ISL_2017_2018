@@ -53,56 +53,11 @@ class Utilisateur
     private $adresseRue;
 
     /**
+     * @var string
      *
-     * @ORM\OneToOne(targetEntity="CodePostal")
-     * @ORM\JoinColumn(name="code_postal_id", referencedColumnName="id")
+     * @ORM\Column(name="code_postal", type="string", length=255)
      */
     private $codePostal;
-
-    /**
-     * @ORM\OneToOne(targetEntity="Localite")
-     * @ORM\JoinColumn(name="localite_id", referencedColumnName="id")
-     */
-    private $localite;
-
-    /**
-     * @return mixed
-     */
-    public function getLocalite()
-    {
-        return $this->localite;
-    }
-
-    /**
-     * @param mixed $localite
-     */
-    public function setLocalite($localite)
-    {
-        $this->localite = $localite;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCommune()
-    {
-        return $this->commune;
-    }
-
-    /**
-     * @param mixed $commune
-     */
-    public function setCommune($commune)
-    {
-        $this->commune = $commune;
-    }
-
-    /**
-     *
-     * @ORM\OneToOne(targetEntity="Commune")
-     * @ORM\JoinColumn(name="commune_id", referencedColumnName="id")
-     */
-    private $commune;
 
     /**
      * @var \DateTime
@@ -359,3 +314,4 @@ class Utilisateur
         return $this->confInscription;
     }
 }
+

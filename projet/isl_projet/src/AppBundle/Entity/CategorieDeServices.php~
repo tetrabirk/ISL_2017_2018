@@ -49,26 +49,6 @@ class CategorieDeServices
      */
     private $valide;
 
-    /**
-     * Bcp de Categories ont bcp de Prestataires
-     * @ORM\ManyToMany(targetEntity="Prestataire", mappedBy="categories")
-     */
-    private $prestataires;
-
-    /**
-     * Constructor
-     */
-
-    public function __construct()
-    {
-        $this->prestataires = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    public function addPrestataires(Prestataire $prestataire)
-    {
-        $this->prestataires[] = $prestataire;
-    }
-
 
     /**
      * Get id
@@ -167,6 +147,5 @@ class CategorieDeServices
     {
         return $this->valide;
     }
-
-
 }
+

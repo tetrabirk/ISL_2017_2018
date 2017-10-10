@@ -35,28 +35,6 @@ class Abus
      */
     private $encodage;
 
-    /**
-     * un abus concerne un commentaire
-     * @ORM\OneToOne(targetEntity="Commentaire")
-     * @ORM\JoinColumn(name="commentaire_id", referencedColumnName="id")
-     */
-    private $commentaire;
-
-    /**
-     * @return mixed
-     */
-    public function getCommentaire()
-    {
-        return $this->commentaire;
-    }
-
-    /**
-     * @param mixed $commentaire
-     */
-    public function setCommentaire($commentaire)
-    {
-        $this->commentaire = $commentaire;
-    }
 
     /**
      * Get id
@@ -116,3 +94,4 @@ class Abus
         return $this->encodage;
     }
 }
+
