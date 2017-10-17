@@ -1,0 +1,17 @@
+AppBundle\Entity\Prestataires:
+    prestataire{1..50}:
+        email (unique): <fakerExt('email_prest')>
+        motDePasse: 'password'
+        adresseNum: <buildingNumber()>
+        adresseRue: <streetName()>
+        codePostal: <postcode()>
+        localite: <city()>
+
+        nom: <fakerExt('nom_prest')>
+        siteInternet: <domainName()>
+        emailContact: <email()>
+        telephone: <phoneNumber()>
+        numTVA: <fakerExt('tva')>
+        categories : '@categorieDeServices(1,10)'
+
+
