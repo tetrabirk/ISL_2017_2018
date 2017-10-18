@@ -198,6 +198,14 @@ class Prestataire extends Utilisateur
     }
 
     /**
+     * @param mixed $categories
+     */
+    public function setCategories($categories)
+    {
+        $this->categories = $categories;
+    }
+
+    /**
      * Get numTVA
      *
      * @return string

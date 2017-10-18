@@ -8,8 +8,18 @@
 
 namespace AppBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class Prestataires
 {
+    /**
+     * @Route("/Prestataires")
+     */
 
+    Public function test()
+    {
+        return new Response('ICI, BIENTÔT, UNE SUPERBE LISTE DE PRESTATAIRE');
+    }
 }
