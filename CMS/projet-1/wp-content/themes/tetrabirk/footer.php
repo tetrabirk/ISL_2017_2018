@@ -1,3 +1,4 @@
+<?php wp_footer(); ?>
 
 <!-- Footer -->
 <footer id="footer" class="footer bg-black-222">
@@ -5,7 +6,7 @@
         <div class="row border-bottom-black">
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
-                    <img class="mt-10 mb-20" alt="" src="images/logo-wide-white.png">
+                    <img class="mt-10 mb-20" alt="" src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-wide-white.png">
                     <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
@@ -48,7 +49,7 @@
                     <ul class="list angle-double-right list-border">
                         <li><a href="#">Body Building</a></li>
                         <li><a href="#">Fitness Classes</a></li>
-                        <li><a href="#">Your Service Title</a></li>
+                        <li><a href="#">Weight lifting</a></li>
                         <li><a href="#">Yoga Courses</a></li>
                         <li><a href="#">Training</a></li>
                     </ul>
@@ -139,7 +140,7 @@
 
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
-<script src="js/custom.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/js/custom.js"></script>
 
 </body>
 </html>
