@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -41,6 +42,42 @@ class Internaute extends Utilisateur
      * @ORM\Column(name="newsletter", type="boolean")
      */
     private $newsletter;
+
+    /**
+     * bcp internaute ont bcp de favoris
+     * @ORM\ManyToMany(targetEntity="Prestataire", inversedBy="internautesFavoris")
+     * @ORM\JoinTable(name="favoris")
+     */
+    private $favoris;
+
+    public function __construct()
+    {
+       $this->favoris = new ArrayCollection();
+    }
+
+    public function addFavoris(Prestataire $favoris)
+    {
+        $favoris->addInternauteFavoris($this);
+        $this->favoris[]=$favoris;
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFavoris()
+    {
+        return $this->favoris;
+    }
+
+    /**
+     * @param mixed $favoris
+     */
+    public function setFavoris($favoris)
+    {
+        $this->favoris = $favoris;
+    }
+
 
 
     /**

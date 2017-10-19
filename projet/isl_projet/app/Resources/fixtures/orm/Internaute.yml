@@ -16,6 +16,7 @@ AppBundle\Entity\Internaute:
         nom: '75%? <lastName()>'
         prenom: '75%? <firstName()>'
         newsletter: <boolean()>
+        favoris : ['@prestataire_*']
 
 
 

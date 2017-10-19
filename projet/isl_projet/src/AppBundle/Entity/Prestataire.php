@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Prestataire
@@ -86,6 +87,17 @@ class Prestataire extends Utilisateur
 
     private $stages;
 
+    /**
+     * Bcp de Prestataire ont bcp d'utilisateur qui les ont ajouté dans leurs favoris
+     * @ORM\ManyToMAny(targetEntity="Internaute", mappedBy="favoris")
+     */
+
+    private $internautesFavoris;
+
+    public function addInternauteFavoris(Internaute $IntFav)
+    {
+        $this->internautesFavoris[]=$IntFav;
+    }
 
     /**
      * Set nom
@@ -219,8 +231,9 @@ class Prestataire extends Utilisateur
      */
     public function __construct()
     {
-        $this->stages = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->categories = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->stages = new ArrayCollection();
+        $this->categories = new ArrayCollection();
+        $this->internautesFavoris = new ArrayCollection();
     }
 
     /**
