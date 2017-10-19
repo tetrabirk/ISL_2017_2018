@@ -1,5 +1,5 @@
 AppBundle\Entity\Prestataire:
-    prestataire{1..50}:
+    prestataire_{1..50}:
         email (unique): <fakerExt('email_prest')>
         motDePasse: 'password'
         adresseNum: <buildingNumber()>
@@ -18,6 +18,6 @@ AppBundle\Entity\Prestataire:
         emailContact: <email()>
         telephone: <phoneNumber()>
         numTVA: <fakerExt('tva')>
-        categories (unique) : '2x @categorie_*'
+        categories: ['@categorie_*']
 
 

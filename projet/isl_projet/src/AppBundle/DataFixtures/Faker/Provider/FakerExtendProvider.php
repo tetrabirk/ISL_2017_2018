@@ -22,10 +22,14 @@ class FakerExtendProvider
                 break;
 
             case 'email_prest':
-                $str = 'prest' . ($faker->email);
+                $str = 'p.' . ($faker->email);
+                break;
+            case 'email_inter':
+                $str = 'i.' . ($faker->email);
                 break;
             case 'tva':
-                $str = 'TVA BE '.$faker->randomNumber(3,true);
+//                je génère le chiffre en 2 fois car il le traite comme un integer et le nombre devient trop grand
+                $str = 'TVA BE 0'.$faker->randomNumber(5,true).$faker->randomNumber(5,true);
                 break;
 
         }

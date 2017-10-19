@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed800810-5f42-4b0d-89ea-9a98b46dfda5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bb744545-8ef3-4905-92c2-4c1d9eec40bb.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bb744545-8ef3-4905-92c2-4c1d9eec40bb.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/isl_projet.iml" afterPath="$PROJECT_DIR$/.idea/isl_projet.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,6 +45,18 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="bien_etre@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="bien_etre" type="e3449647:DbNodeDescriptor" />
+        <item name="categorie_de_services" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="bien_etre@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="bien_etre" type="e3449647:DbNodeDescriptor" />
+        <item name="categories_des_prestataires" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="bien_etre@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="bien_etre" type="e3449647:DbNodeDescriptor" />
         <item name="utilisateur" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
@@ -49,42 +67,47 @@
       <file leaf-file-name="categorieDeServices.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1508398766305" expanded="true" signature="74:130" ph="&lt;name()&gt;" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="Prestataire.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <marker date="1508398766321" expanded="true" signature="0:2590" ph="{&quot;name&quot;: &quot;vi/isl_projet&quot;...}" />
-                <marker date="1508398766321" expanded="true" signature="511:1017" ph="{&quot;php&quot;: &quot;&gt;=5.5.9&quot;...}" />
-                <marker date="1508398766321" expanded="true" signature="1038:1362" ph="{&quot;doctrine/data-fixtures&quot;: &quot;^1.2&quot;...}" />
-                <marker date="1508398766321" expanded="true" signature="1379:2110" ph="{...}" />
-                <marker date="1508398766321" expanded="true" signature="1408:1961" ph="[...]" />
-                <marker date="1508398766321" expanded="true" signature="1991:2033" ph="[...]" />
-                <marker date="1508398766321" expanded="true" signature="2062:2104" ph="[...]" />
-                <marker date="1508398766321" expanded="true" signature="2126:2224" ph="{&quot;sort-packages&quot;: true...}" />
-                <marker date="1508398766321" expanded="true" signature="2179:2217" ph="{&quot;php&quot;: &quot;7.1.9&quot;...}" />
-                <marker date="1508398766321" expanded="true" signature="2239:2588" ph="{&quot;symfony-app-dir&quot;: &quot;app&quot;...}" />
-                <marker date="1508398766321" expanded="true" signature="2493:2552" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <file leaf-file-name="Internaute.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilisateur" pinned="false" current-in-tab="true">
+        <entry file="das://table:/42922eda/bb744545-8ef3-4905-92c2-4c1d9eec40bb/bien_etre.utilisateur">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FakerExtendProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -103,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Bloc.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/CodePostal.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Commune.php" />
@@ -131,12 +153,14 @@
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/Fixtures.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerProxyProvider.php" />
-        <option value="$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml" />
         <option value="$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataires.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Prestataire.php" />
         <option value="$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" />
+        <option value="$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml" />
       </list>
     </option>
   </component>
@@ -149,7 +173,55 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/theofidry/alice-data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/hautelook/alice-bundle" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="7" />
     <option name="y" value="96" />
@@ -210,6 +282,76 @@
               <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="orm" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faker" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Provider" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -274,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51513000" />
+    <option name="totallyTimeSpent" value="55973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -283,7 +425,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21303074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -341,10 +483,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Commentaire.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Internaute.php" />
-    <entry file="das://table:/5285a386/835152f7-178a-4298-906d-e8d1d957426b/bien_etre.abus" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Abus.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Promotion.php" />
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -361,7 +499,6 @@
       </provider>
     </entry>
     <entry file="das://table:/5285a386/835152f7-178a-4298-906d-e8d1d957426b/bien_etre.utilisateur" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategorieDeServices.php" />
     <entry file="file://$PROJECT_DIR$/../../CMS/projet-1/.idea/workspace.xml" />
     <entry file="das://table:/5285a386/835152f7-178a-4298-906d-e8d1d957426b/bien_etre.categorie_de_services" />
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
@@ -373,7 +510,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/autoload.php" />
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb744545-8ef3-4905-92c2-4c1d9eec40bb/console.sql" />
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/AnnotationRegistry.php" />
     <entry file="file://$PROJECT_DIR$/vendor/nelmio/alice/src/deep_clone.php" />
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/DependencyInjection/DoctrineExtension.php" />
@@ -391,6 +527,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#119#178#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -444,16 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Abus.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Stage.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Promotions.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Localite.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commune.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commentaire.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/CodePostal.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Bloc.yml" />
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -463,35 +592,162 @@
       </provider>
     </entry>
     <entry file="das://table:/5285a386/bb744545-8ef3-4905-92c2-4c1d9eec40bb/bien_etre.categorie_de_services" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Utilisateur.php" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb744545-8ef3-4905-92c2-4c1d9eec40bb/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1508398766305" expanded="true" signature="74:130" ph="&lt;name()&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Prestataire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="61" column="84" lean-forward="false" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Utilisateur.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml">
+    <entry file="das://table:/42922eda/bb744545-8ef3-4905-92c2-4c1d9eec40bb/bien_etre.categorie_de_services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CategorieDeServices.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Abus.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Bloc.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/CodePostal.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commentaire.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commune.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Localite.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Promotions.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Stage.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Internaute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="59" column="6" lean-forward="true" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Internaute.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/categorieDeServices.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42922eda/bb744545-8ef3-4905-92c2-4c1d9eec40bb/bien_etre.utilisateur">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
