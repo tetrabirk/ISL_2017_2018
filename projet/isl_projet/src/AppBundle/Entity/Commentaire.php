@@ -51,15 +51,15 @@ class Commentaire
 
 
     /**
-     * un commentaire ont un auteur
-     * @ORM\OneToOne(targetEntity="Internaute")
+     * bcp de commentaires ont un auteur
+     * @ORM\ManyToOne(targetEntity="Internaute")
      * @ORM\JoinColumn(name="auteur_commentaire", referencedColumnName="id")
      */
     private $auteurCommentaire;
 
     /**
-     * Bcp commentaire ont bcp de cible
-     * @ORM\OneToOne(targetEntity="Prestataire")
+     * Bcp commentaire ont une cible
+     * @ORM\ManyToOne(targetEntity="Prestataire")
      * @ORM\JoinColumn(name="cible_commentaire", referencedColumnName="id")
      */
     private $cibleCommentaire;

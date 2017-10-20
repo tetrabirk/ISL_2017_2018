@@ -38,7 +38,7 @@ class Newsletter
     /**
      * @var string
      *
-     * @ORM\Column(name="document_pdf", type="blob", nullable=true)
+     * @ORM\Column(name="document_pdf", type="string", length=255, nullable=true)
      */
     private $documentPDF;
 
