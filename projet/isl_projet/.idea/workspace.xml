@@ -2,19 +2,317 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed800810-5f42-4b0d-89ea-9a98b46dfda5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/Promotion.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/footer.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/header.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/pageTitle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/Promotions.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bb744545-8ef3-4905-92c2-4c1d9eec40bb.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bb744545-8ef3-4905-92c2-4c1d9eec40bb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/logo-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/agent-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/agent-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/agent-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/agent-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/agent-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/bg-transparent.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/blog-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/detail-banner-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/gallery-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/partner-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/pragmaticmates-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/product-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-large-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-large-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tmp/slider-large-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/transparent-marker-image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/colorbox.ai" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/daisy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/daisy@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/homer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/marylou.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/ohoopee1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/ohoopee2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/ohoopee3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/images/border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/images/loading_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/images/overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example2/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example2/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example3/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example3/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example4/images/border1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example4/images/border2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example4/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/images/border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/images/loading_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/jquery-google-map/img/marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/superlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/superlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-fileinput/fileinput.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-fileinput/fileinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap-sprockets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/javascripts/bootstrap/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/_bootstrap-compass.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/_bootstrap-mincer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/_bootstrap-sprockets.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/_bootstrap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_alerts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_badges.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_breadcrumbs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_button-groups.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_carousel.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_close.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_code.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_component-animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_dropdowns.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_glyphicons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_input-groups.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_jumbotron.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_list-group.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_media.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_modals.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_navbar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_navs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_normalize.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_pager.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_panels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_popovers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_print.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_progress-bars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_responsive-embed.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_responsive-utilities.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_scaffolding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_tables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_theme.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_thumbnails.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_tooltip.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_type.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_utilities.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/_wells.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_alerts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_background-variant.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_border-radius.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_center-block.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_clearfix.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_gradients.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_grid-framework.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_hide-text.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_list-group.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_nav-divider.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_opacity.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_panels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_progress-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_reset-filter.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_reset-text.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_resize.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_responsive-visibility.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_size.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_tab-focus.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_table-row.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_text-emphasis.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_text-overflow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-sass/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-select/bootstrap-select.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/bootstrap-select/bootstrap-select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/content/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example2/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example3/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example3/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example4/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example4/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/example5/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-gr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-kr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/i18n/jquery.colorbox-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/jquery.colorbox-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/jquery.colorbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/colorbox/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.colorhelpers.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.canvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.categories.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.crosshair.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.errorbars.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.fillbetween.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.image.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.navigate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.pie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.selection.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.spline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.stack.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.symbol.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.threshold.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/flot/jquery.flot.time.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/jquery-google-map/infobox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/jquery-google-map/jquery-google-map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/jquery-google-map/markerclusterer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/owl.carousel/assets/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/owl.carousel/owl.carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/libraries/owl.carousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_admin.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_card.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_categories.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_colorbox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_comments.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_commons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_detail.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_detail_gallery.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_events.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_faq.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_filter.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_footer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_fullscreen.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_header.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_header_nav_user.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_header_statusbar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_hero_image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_hero_slider.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_hero_video.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_invoice.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_map.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_partners.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_posts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_posts_detail.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_pricing.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_promotion.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_reviews.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_social.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_testimonials.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_users.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/helpers/_widgets.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/scss/superlist.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/footer.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/header.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/pageTitle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../testFaker/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../testFaker/.idea/php.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../testFaker/.idea/testFaker.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../testFaker/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../testFaker/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/isl_projet.iml" afterPath="$PROJECT_DIR$/.idea/isl_projet.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/Stage.yml" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/Stage.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Abus.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Abus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Promotion.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Promotion.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,97 +364,38 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/default/header.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/default/footer.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="862">
-                  <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="presataires.html.twig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pageTitle.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/default/pageTitle.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="presataires.html.twig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Prestataire.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageTitle.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/pageTitle.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="presataires.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/presataires.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2550">
+              <caret line="150" column="63" lean-forward="false" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -416,12 +655,17 @@
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,12 +677,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DATA\GitHub\ISL_2017_2018\projet\isl_projet\web" />
+      <recent name="C:\Users\Vi\Git\ISL_2017_2018\projet\isl_projet\src\AppBundle\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\DATA\GitHub\ISL_2017_2018\projet\isl_projet\app\Resources\views" />
       <recent name="C:\Users\Vi\Git\ISL_2017_2018\projet\isl_projet\src\AppBundle\DataFixtures\Faker\Provider" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vi\Git\ISL_2017_2018\projet\isl_projet\src\AppBundle\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -482,16 +727,18 @@
       <workItem from="1508507445506" duration="1059000" />
       <workItem from="1508508535290" duration="771000" />
       <workItem from="1508669860925" duration="5804000" />
+      <workItem from="1508677330980" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70046000" />
+    <option name="totallyTimeSpent" value="70295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1453125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,9 +791,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Person.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Base.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ListePrestataires.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/test.php" />
     <entry file="file://$PROJECT_DIR$/web/app_dev.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
@@ -597,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,38 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Bloc.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Abus.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commentaire.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Bloc.yml" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Abus.yml" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Commentaire.yml" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Abus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -748,38 +963,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10047">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/listing-row-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="702" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/header.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/footer.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/listing-row-sidebar.html" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Prestataire.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="698">
@@ -788,14 +977,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Prestataire.yml" />
     <entry file="file://$PROJECT_DIR$/app/Resources/fixtures/orm/Stage.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -812,18 +994,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/pageTitle.html">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/pageTitle.html" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/presataires.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="2550">
+          <caret line="150" column="63" lean-forward="false" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/presataires.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/scss/helpers/_faq.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/pageTitle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
