@@ -1,8 +1,7 @@
-AppBundle\Entity\Stage:
-   stage_{1..100}:
+AppBundle\Entity\Promotion:
+    promotion_{1..100}:
         description: <sentences(5,true)>
-        tarif: <numberBetween(30,450)>
-        info_complementaire: <sentences(2,true)>
+        document_pdf: <url()>
         debut: <dateTimeBetween('1 weeks', '2 weeks')>
         fin: <dateTimeBetween('3 weeks', '4 weeks')>
         affichage_de: <dateTimeBetween('-2 weeks', 'now')>
