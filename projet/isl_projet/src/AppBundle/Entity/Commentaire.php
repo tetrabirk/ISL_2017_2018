@@ -49,16 +49,17 @@ class Commentaire
      */
     private $encodage;
 
+
     /**
-     * Un commentaire à un auteur
-     * @ORM\OneToOne(targetEntity="Internaute")
+     * bcp de commentaires ont un auteur
+     * @ORM\ManyToOne(targetEntity="Internaute")
      * @ORM\JoinColumn(name="auteur_commentaire", referencedColumnName="id")
      */
     private $auteurCommentaire;
 
     /**
-     * Un commentaire à une cible
-     * @ORM\OneToOne(targetEntity="Prestataire")
+     * Bcp commentaire ont une cible
+     * @ORM\ManyToOne(targetEntity="Prestataire")
      * @ORM\JoinColumn(name="cible_commentaire", referencedColumnName="id")
      */
     private $cibleCommentaire;

@@ -1,0 +1,8 @@
+AppBundle\Entity\Commentaire:
+    commentaire_{1..100}:
+        auteur_commentaire: '@internaute_*'
+        cible_commentaire: '@prestataire_*'
+        cote: <numberBetween(1,5)>
+        titre: <sentence()>
+        contenu: <sentences(5,true)>
+        encodage: <dateTimeThisDecade()>

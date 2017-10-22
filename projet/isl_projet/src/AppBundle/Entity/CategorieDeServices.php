@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * CategorieDeServices
@@ -61,7 +62,7 @@ class CategorieDeServices
 
     public function __construct()
     {
-        $this->prestataires = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->prestataires = new ArrayCollection();
     }
 
     public function addPrestataires(Prestataire $prestataire)

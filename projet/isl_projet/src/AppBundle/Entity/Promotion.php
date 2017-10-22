@@ -63,6 +63,28 @@ class Promotion
      */
     private $affichageJusque;
 
+    /**
+     * Bcp de Promotion concerne un prestataire
+     * @ORM\ManyToOne(targetEntity="Prestataire")
+     * @ORM\JoinColumn(name="prestataire", referencedColumnName="id")
+     */
+    private $prestataire;
+
+    /**
+     * @return mixed
+     */
+    public function getPrestataire()
+    {
+        return $this->prestataire;
+    }
+
+    /**
+     * @param mixed $prestataire
+     */
+    public function setPrestataire($prestataire)
+    {
+        $this->prestataire = $prestataire;
+    }
 
     /**
      * Get id
