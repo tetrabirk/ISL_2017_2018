@@ -36,9 +36,9 @@ class Abus
     private $encodage;
 
     /**
-     * un abus concerne un commentaire
-     * @ORM\OneToOne(targetEntity="Commentaire")
-     * @ORM\JoinColumn(name="commentaire_id", referencedColumnName="id")
+     * bcp d'abus concerne un commentaire
+     * @ORM\ManyToOne(targetEntity="Commentaire")
+     * @ORM\JoinColumn(name="commentaire", referencedColumnName="id")
      */
     private $commentaire;
 
