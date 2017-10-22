@@ -1,3 +1,7 @@
+<?php
+get_header();
+?>
+
 
 <!-- Start main-content -->
 <div class="main-content">
@@ -23,7 +27,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['-80'']"
+                                 data-voffset="['-80']"
                                  data-fontsize="['64','64','54','24']"
                                  data-lineheight="['95']"
 
@@ -39,7 +43,7 @@
                                  data-splitin="none"
                                  data-splitout="none"
                                  data-responsive_offset="on"
-                                 style="z-index: 5; white-space: nowrap; font-weight:700;">Health Care <span class="text-theme-colored">Solution</span>
+                                 style="z-index: 5; white-space: nowrap; font-weight:700;">Proper Health <span class="text-theme-colored">Care</span>
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -49,7 +53,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['0'']"
+                                 data-voffset="['0']"
                                  data-fontsize="['18']"
                                  data-lineheight="['34']"
 
@@ -106,7 +110,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['-80'']"
+                                 data-voffset="['-80']"
                                  data-fontsize="['64','64','54','24']"
                                  data-lineheight="['95']"
 
@@ -122,7 +126,7 @@
                                  data-splitin="none"
                                  data-splitout="none"
                                  data-responsive_offset="on"
-                                 style="z-index: 5; white-space: nowrap; font-weight:700;">Emergency <span class="text-theme-colored">Services</span>
+                                 style="z-index: 5; white-space: nowrap; font-weight:700;">We Love <span class="text-theme-colored">Caring</span>
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -132,7 +136,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['0'']"
+                                 data-voffset="['0']"
                                  data-fontsize="['18']"
                                  data-lineheight="['34']"
 
@@ -189,7 +193,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['-80'']"
+                                 data-voffset="['-80']"
                                  data-fontsize="['64','64','54','24']"
                                  data-lineheight="['95']"
 
@@ -205,7 +209,7 @@
                                  data-splitin="none"
                                  data-splitout="none"
                                  data-responsive_offset="on"
-                                 style="z-index: 5; white-space: nowrap; font-weight:700;">Better <span class="text-theme-colored">Technology</span>
+                                 style="z-index: 5; white-space: nowrap; font-weight:700;">We Look After <span class="text-theme-colored">You</span>
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -215,7 +219,7 @@
                                  data-x="['center']"
                                  data-hoffset="['0']"
                                  data-y="['middle']"
-                                 data-voffset="['0'']"
+                                 data-voffset="['0']"
                                  data-fontsize="['18']"
                                  data-lineheight="['34']"
 
@@ -355,189 +359,71 @@
         </div>
     </section>
 
-    <!-- Section: about -->
+    <!-- Section: About -->
     <section id="about">
-        <div class="container pb-0">
-            <div class="col-md-4">
-                <div class="feature-icon-box p-20">
-                    <h4 class="text-uppercase mb-5"><i class="fa fa-clock-o font-20 text-theme-colored"></i>  Opening Hours</h4>
-                    <h6 class="text-uppercase">Medinova 24/7 Emergency service</h6>
-                    <div class="widget mb-0">
-                        <div class="opening-hours">
-                            <ul class="list-unstyled">
-                                <li class="clearfix"> <span> Monday - Friday </span>
-                                    <div class="value"> 9.00 - 20.00 </div>
-                                </li>
-                                <li class="clearfix"> <span> Saturday </span>
-                                    <div class="value"> 10.00 - 16.00 </div>
-                                </li>
-                                <li class="clearfix"> <span> Sunday </span>
-                                    <div class="value"> 9.30 - 18.00 </div>
-                                </li>
-                            </ul>
+        <div class="container pb-30">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-7 border-right">
+                        <h4 class="text-theme-colored text-uppercase letter-space-3 font-weight-400 mt-0">About Us</h4>
+                        <h3 class="text-uppercase mt-10 font-40 line-bottom">Welcome to our, <br>Nursing Home <span class="text-theme-colored">voluptatibus rem</span> sapiente</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt id accusamus voluptates. Vel debitis blanditiis voluptatem assumenda id ex ipsa omnis sunt nisi? Praesentium corporis deleniti reiciendis, facere nesciunt harum repellat quam eligendi a pariatur animi ipsa laborum delectus eius quia, voluptatibus officiis vitae numquam itaque architecto! Facilis et, voluptate!</p>
+                        <ul class="styled-icons icon-dark icon-circled icon-theme-colored clearfix mt-30">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumb mt-40">
+                            <img src="http://placehold.it/600x459" alt="">
                         </div>
                     </div>
-                    <p class="mt-0 pt-10">Just make an appointment to get help from our experts</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <img class="img-fullwidth" src="http://placehold.it/548x650" alt="">
-            </div>
-            <div class="col-md-5">
-                <div class="meet-doctors pt-sm-20">
-                    <h6 class="text-uppercase letter-space-5 mt-0">Welcome to HealthZone</h6>
-                    <h3 class="text-uppercase mt-20">Dr. <span class="text-theme-colored">Jhonathan Doe</span></h3>
-                    <p>Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis id explicabo quam quo nisi nihil ducimus, possimus, in aperiam, optio repellat.</p>
-                    <a href="#" class="btn btn-theme-colored btn-flat btn-sm mt-20">Read More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section: Services -->
-    <section id="services">
-        <div class="container pb-40">
-            <div class="section-title text-center">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="title text-uppercase">HealthZone <span class="text-black font-weight-300">Services</span></h2>
-                        <p class="text-uppercase letter-space-4">Join our Health Zone and be healthy.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Section: divider -->
+    <section>
+        <div class="container pt-0">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-ambulance9 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>Emergency Ambulance Service</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
+                        <div class="box-hover-effect effect1 maxwidth500 mb-sm-30">
+                            <div class="thumb">
+                                <img src="http://placehold.it/370x350" alt="" class="img-fullwidth">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-hospital35 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>Blood Analysis Service</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-baby137 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>Baby Care</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
+                            <div class="p-20 bg-theme-colored">
+                                <h4 class="icon-box-title text-white">Blood Test</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</p>
+                                <a class="btn-read-more btn-sm text-gray-lighter" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-bone11 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>Orthopedic Specialist</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
+                        <div class="box-hover-effect effect1 maxwidth500 mb-sm-30">
+                            <div class="thumb">
+                                <img src="http://placehold.it/370x350" alt="" class="img-fullwidth">
+                            </div>
+                            <div class="p-20 bg-theme-colored">
+                                <h4 class="icon-box-title text-white">Outdoor Checkup</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</p>
+                                <a class="btn-read-more btn-sm text-gray-lighter" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-lung1 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>Liver Specialist</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
+                        <div class="box-hover-effect effect1 maxwidth500">
+                            <div class="thumb">
+                                <img src="http://placehold.it/370x350" alt="" class="img-fullwidth">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="icon-box text-center p-0 mb-40">
-                            <a class="icon mb-10 mr-30 ml-30 mt-10" href="#">
-                                <i class="flaticon-medical-first32 font-54 text-theme-colored"></i>
-                            </a>
-                            <div>
-                                <h5 class="icon-box-title mt-15 mb-10 text-uppercase letter-space-2"><strong>24 Hours Support</strong></h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: departments -->
-    <section id="departments" class="bg-lighter">
-        <div class="container">
-            <div class="section-title text-center">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="title text-uppercase">Health Zone <span class="text-black font-weight-300">Departments</span></h2>
-                        <p class="text-uppercase letter-space-4">Join our Health Zone and be healthy.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mtli-row-clearfix">
-                <div class="col-md-12">
-                    <div class="training-classes-carousel" data-dots="true">
-                        <div class="item">
-                            <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
-                                </div>
-                                <div class="content text-left flip p-25 pt-0">
-                                    <h4 class="text-uppercase font-weight-800 line-bottom">Surgery Department</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                    <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
-                                </div>
-                                <div class="content text-left flip p-25 pt-0">
-                                    <h4 class="text-uppercase font-weight-800 line-bottom">Dental Department</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                    <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
-                                </div>
-                                <div class="content text-left flip p-25 pt-0">
-                                    <h4 class="text-uppercase font-weight-800 line-bottom">Medicine Department</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                    <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth"> </div>
-                                <div class="content text-left flip p-25 pt-0">
-                                    <h4 class="text-uppercase font-weight-800 line-bottom">Nursing Department</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                    <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                </div>
+                            <div class="p-20 bg-theme-colored">
+                                <h4 class="icon-box-title text-white">Emergency Care</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</p>
+                                <a class="btn-read-more btn-sm text-gray-lighter" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -569,7 +455,7 @@
         <div class="container pb-0">
             <div class="bg-lighter bg-img-right-top sm-no-bg mt-sm-0" data-margin-top="-350px" data-bg-img="http://placehold.it/504x1004">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-1 p-sm-40 pt-sm-0 pt-50 pb-20">
+                    <div class="col-md-6 col-md-offset-1 p-sm-40 pt-sm-0 pt-50 pb-40">
                         <h2 class="title text-uppercase text-theme-colored">HealthZone <span class="text-black font-weight-300">Features</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum diam tortor, egestas varius erat aliquam a. Sed nec dui laoreet risus euismod ullamcorper sit amet eu metus. Nunc eu mollis enim, ultrices vehicula ipsum. Ut vel tincidunt elit. Curabitur congue pharetra eros, a dapibus arcu ornare quis. </p>
 
@@ -619,13 +505,13 @@
         </div>
     </section>
 
-    <!-- Section: Doctors -->
-    <section id="doctors">
+    <!-- Section: trainer -->
+    <section id="trainer">
         <div class="container">
             <div class="section-title text-center">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2 class="text-uppercase title">Our <span class="text-black font-weight-300">Doctors</span></h2>
+                        <h2 class="text-uppercase title">Team <span class="text-black font-weight-300">Members</span></h2>
                         <p class="text-uppercase letter-space-4">Join our Health Zone and be healthy.</p>
                     </div>
                 </div>
@@ -663,7 +549,7 @@
                                 </div>
                                 <div class="trainer-biography">
                                     <h3 class="text-white">Steve Smith</h3>
-                                    <h5 class="text-white">Orthopedic Specialist</h5>
+                                    <h5 class="text-white">Nutrition Specialist</h5>
                                 </div>
                             </div>
                         </div>
@@ -681,7 +567,7 @@
                                 </div>
                                 <div class="trainer-biography">
                                     <h3 class="text-white">Steve Smith</h3>
-                                    <h5 class="text-white">Gynaecologist</h5>
+                                    <h5 class="text-white">Neurologist</h5>
                                 </div>
                             </div>
                         </div>
@@ -699,7 +585,7 @@
                                 </div>
                                 <div class="trainer-biography">
                                     <h3 class="text-white">Steve Smith</h3>
-                                    <h5 class="text-white">Dentist</h5>
+                                    <h5 class="text-white">Surgeon</h5>
                                 </div>
                             </div>
                         </div>
@@ -717,7 +603,7 @@
                                 </div>
                                 <div class="trainer-biography">
                                     <h3 class="text-white">Steve Smith</h3>
-                                    <h5 class="text-white">Dentist</h5>
+                                    <h5 class="text-white">Expert Nurse</h5>
                                 </div>
                             </div>
                         </div>
@@ -735,7 +621,7 @@
                                 </div>
                                 <div class="trainer-biography">
                                     <h3 class="text-white">Steve Smith</h3>
-                                    <h5 class="text-white">Gynecologist</h5>
+                                    <h5 class="text-white">Nutrition Specialist</h5>
                                 </div>
                             </div>
                         </div>
@@ -746,7 +632,7 @@
     </section>
 
     <!-- Section: Divider  -->
-    <section id="pricing" class="divider parallax layer-overlay overlay-black" data-bg-img="http://placehold.it/1920x1280" data-parallax-ratio="0.7">
+    <section  id="pricing" class="divider layer-overlay overlay-black" data-bg-img="http://placehold.it/1920x1280" >
         <div class="container pb-150 pb-sm-0">
             <div class="section-title text-center pb-140 pb-sm-0 pt-0">
                 <div class="row">
@@ -769,54 +655,54 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 hvr-float-shadow mb-sm-30">
                         <div class="pricing-table text-center pt-30 pb-0 mt-sm-0 maxwidth400 bg-lighter" data-margin-top="-380px">
-                            <h3 class="package-type mb-30 text-uppercase">Blood Test</h3>
+                            <h3 class="package-type mb-30 text-uppercase">Blood Test <span class="font-weight-300 clearfix">Program</span></h3>
                             <div class="price pt-5 pb-5 bg-black-222"> <div class="price-period">
-                                    <h4 class="text-white">per/ <sup><em>month</em></sup></h4>
+                                    <h4 class="text-white">Per/<sup>month</sup><em></em></h4>
                                 </div> </div>
                             <div class="price-amount bg-theme-colored rotate">
                                 <div class="no-rotate text-white">35<sup>%</sup></div>
                             </div>
-                            <ul class="list table-list text-left flip check-circle pt-10 pb-40 pr-20 bg-lighter">
+                            <ul class="list table-list text-left flip check-circle pt-40 pb-40 pr-20 bg-lighter">
                                 <li>Free Consultation</li>
                                 <li>Medical Treatment</li>
                                 <li>24 Hour Support</li>
-                                <li>Nutrional Plan: Yes</li>
+                                <li>Nutrition Plan: yes</li>
                             </ul>
                             <a class="btn btn-lg btn-theme-colored text-uppercase btn-block pt-20 pb-20 btn-flat" href="#">Signup</a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 hvr-float-shadow mb-sm-30">
                         <div class="pricing-table text-center pt-30 pb-0 mt-sm-0 maxwidth400 bg-lighter" data-margin-top="-380px">
-                            <h3 class="package-type mb-30 text-uppercase">Medical Checkup</h3>
+                            <h3 class="package-type mb-30 text-uppercase">Medical Checkup <span class="font-weight-300 clearfix">Program</span></h3>
                             <div class="price pt-5 pb-5 bg-theme-colored"> <div class="price-period">
-                                    <h4 class="text-white">per/ <sup><em>month</em></sup></h4>
+                                    <h4 class="text-white">Per/<sup>month</sup><em></em></h4>
                                 </div> </div>
                             <div class="price-amount bg-theme-colored rotate">
-                                <div class="no-rotate text-white">35<sup>%</sup></div>
+                                <div class="no-rotate text-white">35<sup>$</sup></div>
                             </div>
-                            <ul class="list table-list text-left flip check-circle pt-10 pb-40 pr-20 bg-lighter">
+                            <ul class="list table-list text-left flip check-circle pt-40 pb-40 pr-20 bg-lighter">
                                 <li>Free Consultation</li>
                                 <li>Medical Treatment</li>
                                 <li>24 Hour Support</li>
-                                <li>Nutrional Plan: Yes</li>
+                                <li>Nutrition Plan: yes</li>
                             </ul>
                             <a class="btn btn-lg btn-theme-colored text-uppercase btn-block pt-20 pb-20 btn-flat" href="#">Signup</a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 hvr-float-shadow mb-sm-30">
                         <div class="pricing-table text-center pt-30 pb-0 mt-sm-0 maxwidth400 bg-lighter" data-margin-top="-380px">
-                            <h3 class="package-type mb-30 text-uppercase">Dental Care</h3>
+                            <h3 class="package-type mb-30 text-uppercase">Personal Care <span class="font-weight-300 clearfix">Program</span></h3>
                             <div class="price pt-5 pb-5 bg-black-222"> <div class="price-period">
-                                    <h4 class="text-white">per/ <sup><em>month</em></sup></h4>
+                                    <h4 class="text-white">Per/<sup>month</sup><em></em></h4>
                                 </div> </div>
                             <div class="price-amount bg-theme-colored rotate">
-                                <div class="no-rotate text-white">35<sup>%</sup></div>
+                                <div class="no-rotate text-white">35<sup>$</sup></div>
                             </div>
-                            <ul class="list table-list text-left flip check-circle pt-10 pb-40 pr-20 bg-lighter">
+                            <ul class="list table-list text-left flip check-circle pt-40 pb-40 pr-20 bg-lighter">
                                 <li>Free Consultation</li>
                                 <li>Medical Treatment</li>
                                 <li>24 Hour Support</li>
-                                <li>Nutrional Plan: Yes</li>
+                                <li>Nutrition Plan: yes</li>
                             </ul>
                             <a class="btn btn-lg btn-theme-colored text-uppercase btn-block pt-20 pb-20 btn-flat" href="#">Signup</a>
                         </div>
@@ -827,7 +713,7 @@
     </section>
 
     <!-- Section: Gallery -->
-    <section id="gallery" class="bg-lighter">
+    <section id="gallery" data-bg-img="images/pattern/p8.png">
         <div class="container-fluid pb-0">
             <div class="section-title text-center">
                 <div class="row">
@@ -1035,13 +921,13 @@
     </section>
 
     <!-- Section: funfact  -->
-    <section class="divider parallax" data-bg-img="http://placehold.it/1920x1280" data-parallax-ratio="0.7" >
+    <section class="divider" data-bg-img="http://placehold.it/1920x1280" >
         <div class="container-fluid pt-0 pb-0">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-5 pt-100 pb-100"></div>
                     <div class="col-md-7 bg-lighter">
-                        <div class="pt-40 pr-50 pb-70 pl-60 p-md-30">
+                        <div class="pt-40 pr-50 pb-70 pl-60 p-md-30 mt-10">
                             <h3 class="title letter-space-4">HealthZone <span class="text-uppercase text-black-333 font-weight-300">funfact </span></h3>
                             <p class="mb-40">Nam liber tempor cum soluta nobis<br> eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
                             <div class="row">
@@ -1320,3 +1206,5 @@
     </section>
 </div>
 <!-- end main-content -->
+
+<?php get_footer(); ?>

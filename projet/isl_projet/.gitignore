@@ -17,4 +17,4 @@
 /web/bundles/
 !composer.json
 
-.idea
+/.idea
