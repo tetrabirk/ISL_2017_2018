@@ -14,14 +14,6 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Prestataire extends Utilisateur
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
 
     /**
      * @var string
@@ -69,16 +61,6 @@ class Prestataire extends Utilisateur
     {
         $categ->addPrestataires($this);
         $this->categories[]= $categ;
-    }
-
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 
     /**
