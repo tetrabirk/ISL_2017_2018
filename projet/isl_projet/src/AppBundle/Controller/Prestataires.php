@@ -18,31 +18,27 @@ use AppBundle\Entity\Prestataire;
 
 class Prestataires extends Controller
 {
-
-    public function transform($dataIn){
-        $dataOut = array();
-        foreach ($dataIn as $prest){
-            $dataOut ['arrayPrestataires'] = [$prest->getId()];
-            $dataOut[$prest->getId()]['name'] = ($prest->getNom());
-            $dataOut[$prest->getId()]['description'] = '';
-            $dataOut[$prest->getId()]['image'] = 'http://lorempixel.com/output/abstract-q-c-640-480-3.jpg';
-            $dataOut[$prest->getId()]['href'] = '#';
-            $dataOut[$prest->getId()]['categorie'] = ['href'=>'#','name'=>'categ bidon'];
-            $dataOut[$prest->getId()]['promotionEnAvant'] = '';
-            $dataOut[$prest->getId()]['categoriesDeServices'] = ['categ','bidon'];
-            $dataOut[$prest->getId()]['commune'] = 'comun';
-            $dataOut[$prest->getId()]['localite'] = 'local';
-            $dataOut[$prest->getId()]['avis'] = ['star'=>1];
-        }
-        return $dataOut;
-
-
-    }
-
-    /**
-     * @Route("/test/{id}", name="test1")
-     */
-    public function test($id)
+//
+//    public function transform($dataIn){
+//        $dataOut = array();
+//        foreach ($dataIn as $prest){
+//
+//            $dataOut['arrayPrestataires'][$prest->getId()]['name'] = ($prest->getNom());
+//            $dataOut['arrayPrestataires'][$prest->getId()]['description'] = '';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['image'] = 'product-1.jpg';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['href'] = '#';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['categorie'] = ['href'=>'#','name'=>'categ bidon'];
+//            $dataOut['arrayPrestataires'][$prest->getId()]['promotionEnAvant'] = '';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['categoriesDeServices'] = ['categ','bidon'];
+//            $dataOut['arrayPrestataires'][$prest->getId()]['commune'] = 'comun';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['localite'] = 'local';
+//            $dataOut['arrayPrestataires'][$prest->getId()]['avis'] = ['star'=>1];
+//        }
+//        return $dataOut;
+//
+//
+//    }
+    public function getPrestataires($id)
     {
         $repository = $this->getDoctrine()->getRepository(Prestataire::class);
 
@@ -55,10 +51,20 @@ class Prestataires extends Controller
         }else {
             $data = $repository->findAll();
         }
+        return $data;
+    }
 
-        $data1 = $this->transform($data);
-        dump($data1);
-        return $this->render('prestataires.html.twig',array($data1));
+    /**
+     * @Route("/test/{id}", name="test1")
+     */
+    public function test($id)
+    {
+        $prestataires = $this->getPrestataires($id);
+        dump($prestataires);
+        return $this->render('prestataires.html.twig',array(
+            'page_title' => 'Titre de la page test',
+            'prestataires' => $prestataires
+        ));
     }
 
 }
