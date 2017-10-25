@@ -1,352 +1,146 @@
 {% extends "base.html.twig" %}
 
-{#
-    variables attendue
-
-    breadcrumb {crumbs[href,caption]}
-
-    arrayLieux {lieu}
-
-    categoriesDeServices [categorie]
-
-    arrayPrestataires
-    {
-        prestataire
-        {
-            image
-            categorie[href,name]
-            promotionEnAvant
-
-            href
-            name
-            description
-
-            categoriesDeServices[categorie]
-            commune
-            localite
-            avis [star]
-
-        }
-
-    }
-
-
-#}
-
 {% block content %}
-<div class="main">
-    <div class="main-inner">
-        <div class="container">
-            <div class="row">
-                {#
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="content">
 
-                TITLE
+                    <div class="document-title">
+                        <h1>{{ pageTitle }}</h1>
 
-                #}
-                <div class="document-title">
-                    <h1>{{ page_title }}</h1>
-
-                    <ul class="breadcrumb">
-                        {#{% for crumb in breadcrumb %}#}
-                            {#<li><a href="crumb.href">{{ crumb.caption }}</a></li>#}
-                        {#{% endfor %}#}
-                    </ul>
-                </div><!-- /.document-title -->
-
-
-
-                <div class="col-sm-8 col-lg-9">
-                    <div class="content">
-                        {#
-
-                        FILTER
-
-                        #}
-                        {#<form class="filter" method="post" action="?">#}
-                            {#<div class="row">#}
-                                {#<div class="col-sm-12 col-md-4">#}
-                                    {#<div class="form-group">#}
-                                        {#<input type="text" placeholder="Mot-clé" class="form-control">#}
-                                    {#</div><!-- /.form-group -->#}
-                                {#</div><!-- /.col-* -->#}
-
-                                {#<div class="col-sm-12 col-md-4">#}
-                                    {#<div class="form-group">#}
-                                        {#<select class="form-control" title="Lieu">#}
-                                            {#{% for lieu in arraylieux %}#}
-                                            {#<option>{{ lieu }}</option>#}
-                                            {#{% endfor %}#}
-                                        {#</select>#}
-                                    {#</div><!-- /.form-group -->#}
-                                {#</div><!-- /.col-* -->#}
-
-                                {#<div class="col-sm-12 col-md-4">#}
-                                    {#<div class="form-group">#}
-                                        {#<select class="form-control" title="Categories de services">#}
-                                            {#{% for categorie in categoriesDeServices %}#}
-                                            {#<option value="">{{ categorie }}</option>#}
-                                            {#{% endfor %}#}
-                                        {#</select>#}
-                                    {#</div><!-- /.form-group -->#}
-                                {#</div><!-- /.col-* -->#}
-                            {#</div><!-- /.row -->#}
-
-                            {#<hr>#}
-
-                            {#<div class="row">#}
-                                {#<div class="col-sm-8">#}
-                                    {#<div class="filter-actions">#}
-                                        {#<a href="#"><i class="fa fa-close"></i> Reset Filter</a>#}
-                                        {#<a href="#"><i class="fa fa-save"></i> Save Search</a>#}
-                                    {#</div><!-- /.filter-actions -->#}
-                                {#</div><!-- /.col-* -->#}
-
-                                {#<div class="col-sm-4">#}
-                                    {#<button type="submit" class="btn btn-primary">Redefine Search Result</button>#}
-                                {#</div><!-- /.col-* -->#}
-                            {#</div><!-- /.row -->#}
-                        {#</form>#}
-
-                        {#
-
-                        CARDS
-
-                        #}
-                        <div class="cards-row">
-                            {% for p in data.prestataires %}
-                            <div class="card-row">
-                                <div class="card-row-inner">
-                                    <div class="card-row-image" data-background-image="{{asset('img/tmp') }}/product-1.jpg">
-                                        <div class="card-row-label"><a href="{{ p.categorie.href }}">{{ p.categorie.name }}</a></div><!-- /.card-row-label -->
-
-                                        <div class="card-row-price">{{ p.promotionEnAvant }}</div><!-- -->
-
-                                    </div><!-- /.card-row-image -->
-
-                                    <div class="card-row-body">
-                                        <h2 class="card-row-title"><a href="{{ p.href }}">{{ p.name }}</a></h2>
-                                        <div class="card-row-content"><p>{{ p.description }}</p></div><!-- /.card-row-content -->
-                                    </div><!-- /.card-row-body -->
-
-                                    <div class="card-row-properties">
-                                        <dl>
-                                            <dd>Categories</dd>
-                                            <dt>
-                                                {% for categorie in p.categoriesDeServices %}
-                                                    {{ categorie }} ,
-                                                {% endfor %}
-                                            </dt>
-
-                                            <dd>Lieu</dd><dt>{{ p.commune }} , {{ p.localite }}</dt>
-
-
-                                            <dd>Avis</dd>
-                                            <dt>
-                                                <div class="card-row-rating">
-                                                    {% for star in p.avis %}
-                                                        <i class="fa fa-star"></i>
-                                                    {% endfor %}
-                                                </div><!-- /.card-row-rating -->
-                                            </dt>
-                                        </dl>
-                                    </div><!-- /.card-row-properties -->
-                                </div><!-- /.card-row-inner -->
-                            </div><!-- /.card-row -->
+                        <ul class="breadcrumb">
+                            {% for crumb in breadcrumb %}
+                                <li><a href="#">{{ crumb }}</a></li>
                             {% endfor %}
-                        </div><!-- /.cards-row -->
-
-                        {#
-
-                        PAGER
-
-                        #}
-                        <div class="pager">
-                            <ul>
-                                <li><a href="#">Prev</a></li>
-                                <li><a href="#">5</a></li>
-                                <li class="active"><a>6</a></li>
-                                <li><a href="#">7</a></li>
-                                <li><a href="#">Next</a></li>
-                            </ul>
-                        </div><!-- /.pagination -->
-
-
-                    </div><!-- /.content -->
-                </div><!-- /.col-* -->
-
-                <div class="col-sm-4 col-lg-3">
-                    <div class="sidebar">
-                        <div class="widget">
-                            <h2 class="widgettitle">Recent Listings</h2>
+                        </ul>
+                    </div><!-- /.document-title -->
 
 
 
+                    <form class="filter" method="post" action="?">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Mot-clé" class="form-control">
+                                </div><!-- /.form-group -->
+                            </div><!-- /.col-* -->
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Localité ou Code Postal" class="form-control">
+                                </div><!-- /.form-group -->
+                            </div><!-- /.col-* -->
+
+                            <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                    <select class="form-control" title="Categorie">
+                                        {% for categorie in categories %}
+{#TODO#}                                            <option value="{# {{ categorie.slug }} #}">{{ categorie.nom }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div><!-- /.form-group -->
+                            </div><!-- /.col-* -->
+                        </div><!-- /.row -->
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="filter-actions">
+                                    <a href="#"><i class="fa fa-close"></i> Réinitialiser</a>
+                                </div><!-- /.filter-actions -->
+                            </div><!-- /.col-* -->
+
+                            <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Affiner la recherche</button>
+                            </div><!-- /.col-* -->
+                        </div><!-- /.row -->
+                    </form>
+
+
+                    <h2 class="page-title">
+                        {{ stats.nbreDElement }} résultat(s) correspondant(s) à votre recherche
+
+                        <form method="get" action="?" class="filter-sort">
+                            <div class="form-group">
+{#TODO#}                                 <select title="Trier par">
+{#TODO#}                                    <option name="price">Price</option>
+{#TODO#}                                    <option name="rating">Rating</option>
+{#TODO#}                                    <option name="title">Title</option>
+                                </select>
+                            </div><!-- /.form-group -->
+
+                            <div class="form-group">
+                                <select title="Ordre">
+                                    <option name="ASC">Asc</option>
+                                    <option name="DESC">Desc</option>
+                                </select>
+                            </div><!-- /.form-group -->
+                        </form>
+                    </h2><!-- /.page-title -->
+
+                    <div class="cards-row">
+                        {% for prestataire in prestataires %}
+                        <div class="card-row">
+                            <div class="card-row-inner">
+{#TODO#}                                <div class="card-row-image" data-background-image="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-1.jpg">
+
+                                </div><!-- /.card-row-image -->
+
+                                <div class="card-row-body">
+                                    <h2 class="card-row-title"><a href="listing-detail.html">{{ prestataire.nom|capitalize }}</a></h2>
+                                    <div class="card-row-content">
+                                        <p>
+                                            {#
+TODO
+                                            {% for categorie in prestataire.categories %}
+                                                {{ categorie }} ,
+                                            {% endfor %}
+                                            #}
+                                            categories, categories
+                                        </p>
+                                        <div class="card-row-rating">
+                                            {#
+TODO
+                                            {% for star in prestataire.note %}
+                                                <i class="fa fa-star">
+                                            {% endfor %}
+                                            #}
+                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                        </div><!-- /.card-row-rating -->
+                                    </div><!-- /.card-row-content -->
+                                </div><!-- /.card-row-body -->
+
+                                <div class="card-row-properties">
+                                    <dl>
+{#TODO#}                                        <dd>Promotion(s) en cours</dd><dt>{# promotion en cours#}</dt>
+{#TODO#}                                        <dd>Stage(s) proposé(s)</dd><dt>{# stages#}</dt>
+                                    </dl>
+                                </div><!-- /.card-row-properties -->
+                            </div><!-- /.card-row-inner -->
+                        </div><!-- /.card-row -->
+                        {% endfor %}
+                    </div><!-- /.cards-row -->
 
 
 
-                            <div class="cards-small">
-                                <div class="card-small">
-                                    <div class="card-small-image">
-                                        <a href="../../../../superlist-1.0.1/superlist/listing-detail.html">
-                                            <img src="../../../../superlist-1.0.1/superlist/assets/img/tmp/product-2.jpg" alt="Tasty Brazil Coffee">
-                                        </a>
-                                    </div><!-- /.card-small-image -->
-
-                                    <div class="card-small-content">
-                                        <h3><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">Tasty Brazil Coffee</a></h3>
-                                        <h4><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">New York / Village</a></h4>
-
-                                        <div class="card-small-price">$180 / person</div>
-                                    </div><!-- /.card-small-content -->
-                                </div><!-- /.card-small -->
-                            </div><!-- /.cards-small -->
 
 
-
-                            <div class="cards-small">
-                                <div class="card-small">
-                                    <div class="card-small-image">
-                                        <a href="../../../../superlist-1.0.1/superlist/listing-detail.html">
-                                            <img src="../../../../superlist-1.0.1/superlist/assets/img/tmp/product-3.jpg" alt="Healthy Breakfast">
-                                        </a>
-                                    </div><!-- /.card-small-image -->
-
-                                    <div class="card-small-content">
-                                        <h3><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">Healthy Breakfast</a></h3>
-                                        <h4><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">New York / Village</a></h4>
-
-                                        <div class="card-small-price">$180 / person</div>
-                                    </div><!-- /.card-small-content -->
-                                </div><!-- /.card-small -->
-                            </div><!-- /.cards-small -->
+                    <div class="pager">
+                        <ul>
+                            <li><a href="#">Prev</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="active"><a>6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div><!-- /.pagination -->
 
 
-
-                            <div class="cards-small">
-                                <div class="card-small">
-                                    <div class="card-small-image">
-                                        <a href="../../../../superlist-1.0.1/superlist/listing-detail.html">
-                                            <img src="../../../../superlist-1.0.1/superlist/assets/img/tmp/product-4.jpg" alt="Coffee &amp; Newspaper">
-                                        </a>
-                                    </div><!-- /.card-small-image -->
-
-                                    <div class="card-small-content">
-                                        <h3><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">Coffee &amp; Newspaper</a></h3>
-                                        <h4><a href="../../../../superlist-1.0.1/superlist/listing-detail.html">New York / Village</a></h4>
-
-                                        <div class="card-small-price">$180 / person</div>
-                                    </div><!-- /.card-small-content -->
-                                </div><!-- /.card-small -->
-                            </div><!-- /.cards-small -->
-
-                        </div><!-- /.widget -->
-
-
-                        <div class="widget">
-                            <h2 class="widgettitle">Filter</h2>
-
-                            <div class="background-white p20">
-                                <form method="post" action="?">
-                                    <div class="form-group">
-                                        <label for="">Keyword</label>
-                                        <input type="text" class="form-control" name="" id="">
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <label for="">Category</label>
-
-                                        <select class="form-control" title="Select Category">
-                                            <option>Automotive</option>
-                                            <option>Real Estate</option>
-                                        </select>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <label for="">Location</label>
-                                        <select class="form-control" title="Select Location">
-                                            <option>New York</option>
-                                            <option>San Francisco</option>
-                                        </select>
-                                    </div><!-- /.form-group -->
-
-                                    <div class="form-group">
-                                        <label for="">Starting Price</label>
-                                        <input type="text" class="form-control" name="" id="">
-                                    </div><!-- /.form-group -->
-
-                                    <button class="btn btn-primary btn-block" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div><!-- /.widget -->
-
-
-                        <div class="widget">
-                            <h2 class="widgettitle">Working Hours</h2>
-
-                            <div class="p20 background-white">
-                                <div class="working-hours">
-                                    <div class="day clearfix">
-                                        <span class="name">Mon</span><span class="hours">07:00 AM - 07:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Tue</span><span class="hours">07:00 AM - 07:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Wed</span><span class="hours">07:00 AM - 07:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Thu</span><span class="hours">07:00 AM - 07:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Fri</span><span class="hours">07:00 AM - 07:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Sat</span><span class="hours">07:00 AM - 02:00 PM</span>
-                                    </div><!-- /.day -->
-
-                                    <div class="day clearfix">
-                                        <span class="name">Sun</span><span class="hours">Closed</span>
-                                    </div><!-- /.day -->
-                                </div>
-                            </div>
-                        </div><!-- /.widget -->
-
-
-                        <div class="widget">
-                            <h2 class="widgettitle">Categories</h2>
-
-                            <ul class="menu">
-                                <li><a href="#">Automotive</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Nightlife</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Transportation</a></li>
-                                <li><a href="#">Real Estate</a></li>
-                                <li><a href="#">Restaurants</a></li>
-                            </ul><!-- /.menu -->
-                        </div><!-- /.wifget -->
-
-
-                        <div class="widget">
-                            <h2 class="widgettitle">Archives</h2>
-
-                            <ul class="menu">
-                                <li><a href="#">August <strong class="pull-right">12</strong></a></li>
-                                <li><a href="#">July <strong class="pull-right">23</strong></a></li>
-                                <li><a href="#">June <strong class="pull-right">53</strong></a></li>
-                            </ul><!-- /.menu -->
-                        </div><!-- /.wifget -->
-
-                    </div><!-- /.sidebar -->
-                </div><!-- /.col-* -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.main-inner -->
-</div><!-- /.main -->
+                </div><!-- /.content -->
+            </div><!-- /.container -->
+        </div><!-- /.main-inner -->
+    </div><!-- /.main -->
 
 {% endblock %}
