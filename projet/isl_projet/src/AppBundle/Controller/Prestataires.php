@@ -8,6 +8,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\CategorieDeServices;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -46,13 +47,29 @@ class Prestataires extends Controller
             $data = $repository->findOneBy(
                 array('id'=> $id)
             );
-
-
         }else {
             $data = $repository->findAll();
         }
         return $data;
     }
+
+    public function getCategoriesDeServices($id)
+    {
+        $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
+
+        if($id != 0){
+            $data = $repository->findOneBy(
+                array('id'=> $id)
+            );
+        }else {
+            $data = $repository->findAll();
+        }
+        return $data;
+    }
+
+//TODO : entities : add image, slug
+//TODO : get : categories des prestataires, notes moyennes, promotions, stages
+//TODO : tranformation notes->étoiles
 
     /**
      * @Route("/test/{id}", name="test1")
@@ -60,9 +77,13 @@ class Prestataires extends Controller
     public function test($id)
     {
         $prestataires = $this->getPrestataires($id);
-        dump($prestataires);
+        $categories = $this->getCategoriesDeServices(0);
+        $stats['nbreDElement'] = count($prestataires);
         return $this->render('prestataires.html.twig',array(
-            'page_title' => 'Titre de la page test',
+            'pageTitle' => 'Titre de la page test',
+            'breadcrumb' => ['bread', 'crumb'],
+            'categories'=> $categories,
+            'stats'=> $stats,
             'prestataires' => $prestataires
         ));
     }

@@ -64,6 +64,22 @@ class Prestataire extends Utilisateur
     }
 
     /**
+     * @return mixed
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInternautesFavoris()
+    {
+        return $this->internautesFavoris;
+    }
+
+    /**
      * @ORM\OneToMany(targetEntity="Stage",mappedBy="prestataire")
      */
 
