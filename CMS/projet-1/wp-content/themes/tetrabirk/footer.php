@@ -1,11 +1,12 @@
 
 <!-- Footer -->
+
 <footer id="footer" class="footer bg-black-222">
     <div class="container pb-50">
         <div class="row border-bottom-black">
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
-                    <img class="mt-10 mb-20" alt="" src="images/logo-wide-white.png">
+                    <img class="mt-10 mb-20" alt="" src="<?php echo get_stylesheet_directory_uri() ?>/images/logo-wide-white.png">
                     <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
@@ -136,10 +137,11 @@
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- end wrapper -->
+<?php wp_footer()?>
 
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
-<script src="js/custom.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/js/custom.js"></script>
 
 </body>
 </html>
