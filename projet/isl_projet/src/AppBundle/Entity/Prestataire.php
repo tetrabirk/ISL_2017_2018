@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Prestataire
@@ -21,6 +22,13 @@ class Prestataire extends Utilisateur
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
+
+    /**
+     * @var string
+     * @Gedmo\Slug(fields={"nom"})
+     * @ORM\Column(name="slug", type="string", length=255, unique=true)
+     */
+    private $slug;
 
     /**
      * @var string
@@ -57,6 +65,47 @@ class Prestataire extends Utilisateur
      */
     private $categories;
 
+    //TODO inverseJoinColumns doit être unique
+
+    /**
+     * @var photos;
+     * bcp de prestataires ont bcp de photos
+     * @ORM\ManyToMany(targetEntity="Image",cascade={"persist"})
+     * @ORM\JoinTable(name="photos_Prestataires",
+     *     joinColumns={@ORM\JoinColumn(name="prestataire_id", referencedColumnName= "id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="image_id",referencedColumnName="id")}
+     *)
+     */
+    private $photos;
+
+    //TODO ontoone doit être unique
+
+    /**
+     * @var logo;
+     * un prestataire à un logo
+     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     */
+    private $logo;
+
+    /**
+     * @return mixed
+     */
+    public function getLogo()
+    {
+        return $this->logo;
+    }
+
+    /**
+     * @param mixed $logo
+     */
+    public function setLogo($logo)
+    {
+        $this->logo = $logo;
+    }
+
+    /**
+     * @param CategorieDeServices $categ
+     */
     public function addCategorie(CategorieDeServices $categ)
     {
         $categ->addPrestataires($this);
@@ -232,6 +281,7 @@ class Prestataire extends Utilisateur
         $this->stages = new ArrayCollection();
         $this->categories = new ArrayCollection();
         $this->internautesFavoris = new ArrayCollection();
+        $this->photos = new ArrayCollection();
     }
 
     /**
@@ -267,4 +317,47 @@ class Prestataire extends Utilisateur
     {
         return $this->stages;
     }
+
+    /**
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+    /**
+     * Add photos
+     *
+     * @param \AppBundle\Entity\Image $image
+     *
+     * @return Prestataire
+     */
+    public function addPhoto(\AppBundle\Entity\Image $image)
+    {
+        $this->photos[] = $image;
+
+        return $this;
+    }
+
+    /**
+     * Remove photo
+     *
+     * @param \AppBundle\Entity\Image $image
+     */
+    public function removePhoto(\AppBundle\Entity\Image $image)
+    {
+        $this->photos->removeElement($image);
+    }
+
+
+
+    /**
+     * @return photos
+     */
+    public function getPhotos()
+    {
+        return $this->photos;
+    }
+
+
 }

@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Abus
+ * Image
  *
- * @ORM\Table(name="abus")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\AbusRepository")
+ * @ORM\Table(name="image")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ImageRepository")
  */
-class Abus
+class Image
 {
     /**
      * @var int
@@ -22,45 +22,12 @@ class Abus
     private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="description", type="text", nullable=true)
+     * $var string
+     * @ORM\Column(name="nom", type="string", length=255)
      */
-    private $description;
+    private $nom;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="encodage", type="datetime")
-     */
-    private $encodage;
-
-    /**
-     * bcp d'abus concerne un commentaire
-     * @ORM\ManyToOne(targetEntity="Commentaire")
-     * @ORM\JoinColumn(name="commentaire", referencedColumnName="id")
-     */
-    private $commentaire;
-
-    /**
-     * @return mixed
-     */
-    public function getCommentaire()
-    {
-        return $this->commentaire;
-    }
-
-    /**
-     * @param mixed $commentaire
-     */
-    public function setCommentaire($commentaire)
-    {
-        $this->commentaire = $commentaire;
-    }
-
-    /**
-     * Get id
-     *
      * @return int
      */
     public function getId()
@@ -69,50 +36,29 @@ class Abus
     }
 
     /**
-     * Set description
-     *
-     * @param string $description
-     *
-     * @return Abus
+     * @param int $id
      */
-    public function setDescription($description)
+    public function setId($id)
     {
-        $this->description = $description;
-
-        return $this;
+        $this->id = $id;
     }
 
     /**
-     * Get description
-     *
-     * @return string
+     * @return mixed
      */
-    public function getDescription()
+    public function getNom()
     {
-        return $this->description;
+        return $this->nom;
     }
 
     /**
-     * Set encodage
-     *
-     * @param \DateTime $encodage
-     *
-     * @return Abus
+     * @param mixed $nom
      */
-    public function setEncodage($encodage)
+    public function setNom($nom)
     {
-        $this->encodage = $encodage;
-
-        return $this;
+        $this->nom = $nom;
     }
 
-    /**
-     * Get encodage
-     *
-     * @return \DateTime
-     */
-    public function getEncodage()
-    {
-        return $this->encodage;
-    }
+
+
 }

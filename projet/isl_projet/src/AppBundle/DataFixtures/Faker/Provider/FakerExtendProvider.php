@@ -31,6 +31,10 @@ class FakerExtendProvider
 //                je génère le chiffre en 2 fois car il le traite comme un integer et le nombre devient trop grand
                 $str = 'TVA BE 0'.$faker->randomNumber(5,true).$faker->randomNumber(5,true);
                 break;
+            case 'nom_image':
+                $unix = substr((str_replace(' ','',microtime())),2);
+                $str = $unix.'.jpg';
+                break;
 
         }
 
