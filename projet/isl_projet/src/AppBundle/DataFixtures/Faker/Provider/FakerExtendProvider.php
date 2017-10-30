@@ -1,6 +1,8 @@
 <?php
 
 namespace AppBundle\DataFixtures\Faker\Provider;
+use AppBundle\AppBundle;
+use AppBundle\Entity\Image;
 use Faker;
 
 
@@ -11,7 +13,7 @@ class FakerExtendProvider
         return $array[$rand_key];
     }
 
-    public static function fakerExt($attribut)
+    public static function fakerExt($attribut,$data = null)
     {
         $faker= Faker\Factory::create();
         $str ='';
@@ -35,10 +37,20 @@ class FakerExtendProvider
                 $unix = substr((str_replace(' ','',microtime())),2);
                 $str = $unix.'.jpg';
                 break;
+            case 'test':
+//                $str = print_r($data,true);
+                $str = new Image();
+                $str['nom'] = 'gagagou.jpg';
+                break;
 
         }
 
         return $str;
     }
 }
+
+
+
+
+
 
