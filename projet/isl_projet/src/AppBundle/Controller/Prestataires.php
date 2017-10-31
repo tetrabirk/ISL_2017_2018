@@ -67,6 +67,23 @@ class Prestataires extends Controller
         return $data;
     }
 
+    public function getMenu()
+    {
+        $menu = [
+            ['nom'=> 'Prestataire','href'=>'#','submenu'=>
+                [
+                    ['nom'=> 'test','href'=>'#'],
+                    ['nom'=> 'tesities','href'=>'#']
+                ]
+            ],
+            ['nom'=> 'Services','href'=>'#'],
+            ['nom'=> 'News','href'=>'#'],
+            ['nom'=> 'Contact','href'=>'#'],
+            ['nom'=> 'A propos de nous','href'=>'#']
+        ];
+        return $menu;
+    }
+
 //TODO : entities : add image, slug
 //TODO : get : categories des prestataires, notes moyennes, promotions, stages
 //TODO : tranformation notes->étoiles
@@ -78,13 +95,15 @@ class Prestataires extends Controller
     {
         $prestataires = $this->getPrestataires($id);
         $categories = $this->getCategoriesDeServices(0);
+        $menu = $this->getMenu();
         $stats['nbreDElement'] = count($prestataires);
         return $this->render('prestataires.html.twig',array(
             'pageTitle' => 'Titre de la page test',
             'breadcrumb' => ['bread', 'crumb'],
             'categories'=> $categories,
             'stats'=> $stats,
-            'prestataires' => $prestataires
+            'prestataires' => $prestataires,
+            'menu' => $menu
         ));
     }
 
