@@ -1654,21 +1654,21 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68"
+                "reference": "387b6a3b723ba35588b33d5f8d14e28ed608bd30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
-                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/387b6a3b723ba35588b33d5f8d14e28ed608bd30",
+                "reference": "387b6a3b723ba35588b33d5f8d14e28ed608bd30",
                 "shasum": ""
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
-                "symfony/console": "~2.7|~3.0"
+                "symfony/console": "~2.7|~3.0|~4.0"
             },
             "bin": [
                 "security-checker"
@@ -1695,7 +1695,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2017-08-22T22:18:16+00:00"
+            "time": "2017-10-29T18:48:08+00:00"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -2553,16 +2553,16 @@
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "7bb198c044b798b54e6be37c7929339aa645c3bf"
+                "reference": "74b8cc70a4a25b774628ee59f4cdf3623a146273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/7bb198c044b798b54e6be37c7929339aa645c3bf",
-                "reference": "7bb198c044b798b54e6be37c7929339aa645c3bf",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/74b8cc70a4a25b774628ee59f4cdf3623a146273",
+                "reference": "74b8cc70a4a25b774628ee59f4cdf3623a146273",
                 "shasum": ""
             },
             "require": {
@@ -2606,7 +2606,7 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2017-09-10T23:22:01+00:00"
+            "time": "2017-10-30T19:26:42+00:00"
         },
         {
             "name": "hautelook/alice-bundle",
@@ -2726,16 +2726,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "11025bcbfe79594225f5d2332c52cbe90c29872f"
+                "reference": "bd42498862813b1d0b4de8c43877a0a33611f2b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/11025bcbfe79594225f5d2332c52cbe90c29872f",
-                "reference": "11025bcbfe79594225f5d2332c52cbe90c29872f",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/bd42498862813b1d0b4de8c43877a0a33611f2b4",
+                "reference": "bd42498862813b1d0b4de8c43877a0a33611f2b4",
                 "shasum": ""
             },
             "require": {
@@ -2795,7 +2795,7 @@
                 "faker",
                 "test"
             ],
-            "time": "2017-10-22T15:46:01+00:00"
+            "time": "2017-10-31T11:42:23+00:00"
         },
         {
             "name": "sensio/generator-bundle",
@@ -2915,24 +2915,24 @@
         },
         {
             "name": "theofidry/alice-data-fixtures",
-            "version": "v1.0.0-beta.5",
+            "version": "v1.0.0-rc.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theofidry/AliceDataFixtures.git",
-                "reference": "788b8364e5e7fdd527376c06863c4dce2550b456"
+                "reference": "7dfbb3a6c1919a11f4b33529b564cbbf0087ad77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/788b8364e5e7fdd527376c06863c4dce2550b456",
-                "reference": "788b8364e5e7fdd527376c06863c4dce2550b456",
+                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/7dfbb3a6c1919a11f4b33529b564cbbf0087ad77",
+                "reference": "7dfbb3a6c1919a11f4b33529b564cbbf0087ad77",
                 "shasum": ""
             },
             "require": {
-                "nelmio/alice": "^3.0-rc1@rc",
-                "php": "^7.0.0"
+                "nelmio/alice": "^3.1",
+                "php": "^7.1"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.0",
+                "bamarni/composer-bin-plugin": "^1.1",
                 "phpspec/prophecy": "^1.7",
                 "phpunit/phpunit": "^6.0",
                 "symfony/phpunit-bridge": "^3.3.2"
@@ -2983,7 +2983,7 @@
                 "orm",
                 "tests"
             ],
-            "time": "2017-06-29T19:46:38+00:00"
+            "time": "2017-10-29T18:01:29+00:00"
         }
     ],
     "aliases": [],
