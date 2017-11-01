@@ -68,7 +68,6 @@ class Prestataire extends Utilisateur
     //TODO inverseJoinColumns doit être unique
 
     /**
-     * @var photos;
      * bcp de prestataires ont bcp de photos
      * @ORM\ManyToMany(targetEntity="Image",cascade={"persist"})
      * @ORM\JoinTable(name="photos_Prestataires",
@@ -81,11 +80,20 @@ class Prestataire extends Utilisateur
     //TODO ontoone doit être unique
 
     /**
-     * @var logo;
      * un prestataire à un logo
      * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
      */
     private $logo;
+
+    //TODO supprimer la variable note
+
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="note", type="float")
+     */
+    private $note;
 
     /**
      * @return mixed
@@ -348,11 +356,29 @@ class Prestataire extends Utilisateur
     {
         $this->photos->removeElement($image);
     }
+//TODO supprimer la variable note
+
+    /**
+     * @return mixed
+     */
+    public function getNote()
+    {
+        return $this->note;
+    }
+
+    /**
+     * @param mixed $note
+     */
+    public function setNote($note)
+    {
+        $this->note = $note;
+    }
 
 
 
     /**
-     * @return photos
+     * Get photos
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getPhotos()
     {

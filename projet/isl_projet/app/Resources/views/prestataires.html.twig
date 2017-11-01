@@ -9,11 +9,6 @@
                     <div class="document-title">
                         <h1>{{ pageTitle }}</h1>
 
-                        <ul class="breadcrumb">
-                            {% for crumb in breadcrumb %}
-                                <li><a href="#">{{ crumb }}</a></li>
-                            {% endfor %}
-                        </ul>
                     </div><!-- /.document-title -->
 
 
@@ -36,7 +31,7 @@
                                 <div class="form-group">
                                     <select class="form-control" title="Categorie">
                                         {% for categorie in categories %}
-{#TODO#}                                            <option value="{# {{ categorie.slug }} #}">{{ categorie.nom }}</option>
+                                           <option value=" {{ categorie.slug }} ">{{ categorie.nom }}</option>
                                         {% endfor %}
                                     </select>
                                 </div><!-- /.form-group -->
@@ -89,25 +84,16 @@
                                 </div><!-- /.card-row-image -->
 
                                 <div class="card-row-body">
-                                    <h2 class="card-row-title"><a href="listing-detail.html">{{ prestataire.nom|capitalize }}</a></h2>
+                                    <h2 class="card-row-title"><a href="{{ path('prestataire',{'id': prestataire.id}) }}">{{ prestataire.nom|capitalize }}</a></h2>
                                     <div class="card-row-content">
                                         <p>
-                                            {#
-TODO
+
                                             {% for categorie in prestataire.categories %}
-                                                {{ categorie }} ,
+                                                <a href="{{ path('categorie',{'slug': categorie.slug}) }}">{{ categorie.nom|capitalize }}</a> ,
                                             {% endfor %}
-                                            #}
-                                            categories, categories
                                         </p>
                                         <div class="card-row-rating">
-                                            {#
-TODO
-                                            {% for star in prestataire.note %}
-                                                <i class="fa fa-star">
-                                            {% endfor %}
-                                            #}
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                            {% include 'stars.html.twig' %}
                                         </div><!-- /.card-row-rating -->
                                     </div><!-- /.card-row-content -->
                                 </div><!-- /.card-row-body -->

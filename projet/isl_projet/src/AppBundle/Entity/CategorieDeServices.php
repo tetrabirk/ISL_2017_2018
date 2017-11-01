@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Gedmo\Mapping\Annotation as Gedmo;
+
 
 /**
  * CategorieDeServices
@@ -25,9 +27,17 @@ class CategorieDeServices
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=255, unique=true)
      */
     private $nom;
+
+    /**
+     * @var string
+     * @Gedmo\Slug(fields={"nom"})
+     * @ORM\Column(name="slug", type="string", length=255, unique=true)
+     */
+    private $slug;
+
 
     /**
      * @var string
@@ -167,6 +177,22 @@ class CategorieDeServices
     public function getValide()
     {
         return $this->valide;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param string $slug
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
     }
 
 

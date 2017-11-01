@@ -42,7 +42,8 @@ class FakerExtendProvider
                 $str = new Image();
                 $str['nom'] = 'gagagou.jpg';
                 break;
-
+            case 'float':
+                $str = $faker->randomFloat(3,0,1);
         }
 
         return $str;

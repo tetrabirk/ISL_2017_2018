@@ -20,12 +20,26 @@ class DefaultController extends Controller
         ]);
     }
 
-    public function twigVariableAssembler(array $data){
-        //fonction qui rassemble les différentes données qui doivent être passée à twig
-//        $twig =[];
-//        foreach($array in $data){
-//            $twig[$array]=
-//        }
-//        $twig['title']= $data['title']
+    static function getMenu()
+    {
+        $menu = [
+            ['nom'=> 'Prestataires','href'=>'prestataire','submenu'=>
+                [
+                    ['nom'=> 'test','href'=>'homepage'],
+                    ['nom'=> 'tesities','href'=>'homepage']
+                ]
+            ],
+            ['nom'=> 'Services','href'=>'homepage'],
+            ['nom'=> 'News','href'=>'homepage'],
+            ['nom'=> 'Contact','href'=>'homepage'],
+            ['nom'=> 'A propos de nous','href'=>'homepage']
+        ];
+        return $menu;
+    }
+    static function getSiteInfos(){
+        $infos= [
+            'nomSite'=> 'Bien-Être',
+        ];
+        return $infos;
     }
 }

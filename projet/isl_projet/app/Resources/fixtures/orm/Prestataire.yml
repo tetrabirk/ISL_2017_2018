@@ -22,3 +22,6 @@ AppBundle\Entity\Prestataire:
         logo : '@image_1'
         photos : ['@image_*']
 
+
+        note : <fakerExt('float')>
+

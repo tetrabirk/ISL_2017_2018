@@ -10,8 +10,5 @@ namespace AppBundle\Repository;
  */
 class PrestataireRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function findAllPrestataires()
-        {
-        }
 
 }

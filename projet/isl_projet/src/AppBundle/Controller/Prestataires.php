@@ -12,33 +12,13 @@ use AppBundle\Entity\CategorieDeServices;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use AppBundle\Controller\DefaultController as DC;
 
 use AppBundle\Entity\Prestataire;
 
 
 class Prestataires extends Controller
 {
-//
-//    public function transform($dataIn){
-//        $dataOut = array();
-//        foreach ($dataIn as $prest){
-//
-//            $dataOut['arrayPrestataires'][$prest->getId()]['name'] = ($prest->getNom());
-//            $dataOut['arrayPrestataires'][$prest->getId()]['description'] = '';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['image'] = 'product-1.jpg';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['href'] = '#';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['categorie'] = ['href'=>'#','name'=>'categ bidon'];
-//            $dataOut['arrayPrestataires'][$prest->getId()]['promotionEnAvant'] = '';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['categoriesDeServices'] = ['categ','bidon'];
-//            $dataOut['arrayPrestataires'][$prest->getId()]['commune'] = 'comun';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['localite'] = 'local';
-//            $dataOut['arrayPrestataires'][$prest->getId()]['avis'] = ['star'=>1];
-//        }
-//        return $dataOut;
-//
-//
-//    }
     public function getPrestataires($id)
     {
         $repository = $this->getDoctrine()->getRepository(Prestataire::class);
@@ -67,44 +47,47 @@ class Prestataires extends Controller
         return $data;
     }
 
-    public function getMenu()
-    {
-        $menu = [
-            ['nom'=> 'Prestataire','href'=>'#','submenu'=>
-                [
-                    ['nom'=> 'test','href'=>'#'],
-                    ['nom'=> 'tesities','href'=>'#']
-                ]
-            ],
-            ['nom'=> 'Services','href'=>'#'],
-            ['nom'=> 'News','href'=>'#'],
-            ['nom'=> 'Contact','href'=>'#'],
-            ['nom'=> 'A propos de nous','href'=>'#']
-        ];
-        return $menu;
-    }
+
 
 //TODO : entities : add image, slug
 //TODO : get : categories des prestataires, notes moyennes, promotions, stages
 //TODO : tranformation notes->étoiles
 
     /**
-     * @Route("/test/{id}", name="test1")
+     * @Route("/prestataire/{id}", defaults ={"id"=0}, name="prestataire")
      */
-    public function test($id)
+    public function renderPrestataires($id)
     {
         $prestataires = $this->getPrestataires($id);
         $categories = $this->getCategoriesDeServices(0);
-        $menu = $this->getMenu();
+        $menu = DC::getMenu();
+        $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
-        return $this->render('prestataires.html.twig',array(
-            'pageTitle' => 'Titre de la page test',
-            'breadcrumb' => ['bread', 'crumb'],
-            'categories'=> $categories,
-            'stats'=> $stats,
-            'prestataires' => $prestataires,
-            'menu' => $menu
-        ));
+
+
+        if($id !=0){
+            return $this->render('prestataire.html.twig',array(
+
+                'categories'=> $categories,
+                'stats'=> $stats,
+                'prestataire' => $prestataires,
+                'pageTitle' => $prestataires->getNom(),
+                'menu' => $menu,
+                'siteInfos' => $siteInfos
+            ));
+        }else{
+            return $this->render('prestataires.html.twig',array(
+                'prestataires' => $prestataires,
+                'pageTitle' => 'Nos Prestataires',
+                'categories'=> $categories,
+                'stats'=> $stats,
+                'menu' => $menu,
+                'siteInfos' => $siteInfos
+            ));
+
+        }
+
+
     }
 
 }
