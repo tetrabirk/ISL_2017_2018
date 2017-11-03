@@ -12,7 +12,6 @@
                     </div><!-- /.document-title -->
 
 
-
                     <form class="filter" method="post" action="?">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -89,7 +88,7 @@
                                         <p>
 
                                             {% for categorie in prestataire.categories %}
-                                                <a href="{{ path('categorie',{'slug': categorie.slug}) }}">{{ categorie.nom|capitalize }}</a> ,
+                                                <a href="{{ path('categories',{'slug': categorie.slug}) }}">{{ categorie.nom|capitalize }}</a> ,
                                             {% endfor %}
                                         </p>
                                         <div class="card-row-rating">

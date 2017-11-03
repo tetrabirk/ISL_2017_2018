@@ -33,13 +33,13 @@ class Prestataires extends Controller
         return $data;
     }
 
-    public function getCategoriesDeServices($id)
+    public function getCategoriesDeServices($slug)
     {
         $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
 
-        if($id != 0){
+        if($slug != 0){
             $data = $repository->findOneBy(
-                array('id'=> $id)
+                array('slug'=> $slug)
             );
         }else {
             $data = $repository->findAll();
