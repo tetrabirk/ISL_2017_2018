@@ -2,4 +2,4 @@ AppBundle\Entity\Newsletter:
     newsletter_{1..10}:
         titre: <sentence()>
         publication: <dateTimeThisDecade()>
-        document_pdf: <url()>
+        document_pdf: <fakerExt('pdf')>

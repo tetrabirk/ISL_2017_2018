@@ -22,13 +22,13 @@ class Categories extends Controller
 
     //TODO creer un fichier où je mettrais tt les fonction "getqqlchose" pour éviter les répétitions
 
-    public function getCategoriesDeServices($id)
+    public function getCategoriesDeServices($slug)
     {
         $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
 
-        if($id != 0){
+        if($slug != null){
             $data = $repository->findOneBy(
-                array('id'=> $id)
+                array('slug'=> $slug)
             );
         }else {
             $data = $repository->findAll();
@@ -37,11 +37,11 @@ class Categories extends Controller
     }
 
     /**
-     * @Route("/services/{slug}", defaults ={"slug"=0}, name="categories")
+     * @Route("/services/{slug}", defaults ={"slug"=null}, name="categories")
      */
     public function renderCategories($slug)
     {
-        $categories = $this->getCategoriesDeServices(0);
+        $categories = $this->getCategoriesDeServices(null);
         $siteInfos = DC::getSiteInfos();
         $menu = DC::getMenu();
 

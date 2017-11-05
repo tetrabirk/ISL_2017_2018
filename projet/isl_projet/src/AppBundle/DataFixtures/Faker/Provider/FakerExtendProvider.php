@@ -44,6 +44,9 @@ class FakerExtendProvider
                 break;
             case 'float':
                 $str = $faker->randomFloat(3,0,1);
+                break;
+            case 'pdf':
+                $str = $faker->slug.'.pdf';
         }
 
         return $str;

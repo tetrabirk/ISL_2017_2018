@@ -9,6 +9,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\CategorieDeServices;
+use AppBundle\Entity\Utilisateur;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -21,67 +22,126 @@ class Profil extends Controller
 {
 
 
+
     /**
-     * @Route("/profil/{id}", defaults ={"id"=null}, name="profil")
+     * @Route("/profil/{route1}/{route2}", defaults ={"route1"=null,"route2"=null }, name="profil")
      */
-    public function renderProfil($id)
+    public function renderProfil($route1,$route2)
     {
+//        TODO récuperer les infos de la session (pour savoir qui est actuellement connecter)
+
+//INTERNAUTE
+//        $user = $this->getUtilisateur(426);
+
+////PRESTATAIRE
+        $user = $this->getUtilisateur(479);
+        $userClassFull = explode('\\',get_class($user));
+        $userClass = end($userClassFull);
+
 //        TODO creer une fonction getprofil
-//        $profil= getProfil($id);
+
         $siteInfos = DC::getSiteInfos();
         $menu = DC::getMenu();
+        switch ($route1){
+            case 'suppression':
+                return $this->render('profilSuppression.html.twig',array(
+                    'pageTitle' => "profil - Suppression",
+                    'siteInfos' => $siteInfos,
+                    'menu' => $menu,
+                ));
+            case 'stages':
+                switch ($route2){
+                    case 'new':
+                        return $this->render('profilStageNouveau.html.twig',array(
+                            'pageTitle' => "profil - Stages - Nouveau",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    case 'update':
+                        return $this->render('profilStageMiseAJour.html.twig',array(
+                            'pageTitle' => "profil - Stages - Mise à jour",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    case 'delete':
+                        return $this->render('profilStageSuppression.html.twig',array(
+                            'pageTitle' => "profil - Stages - Suppression",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    default:
+                        return $this->render('profilStages.html.twig',array(
+                            'pageTitle' => "profil - Stages",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                }
 
+            case 'promo':
+                switch ($route2){
+                    case 'new':
+                        return $this->render('profilPromoNouveau.html.twig',array(
+                            'pageTitle' => "profil - Promos - Nouveau",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    case 'update':
+                        return $this->render('profilPromoMiseAJour.html.twig',array(
+                            'pageTitle' => "profil - Promos - Mise à jour",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    case 'delete':
+                        return $this->render('profilPromoSuppression.html.twig',array(
+                            'pageTitle' => "profil - Promos - Suppression",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                    default:
+                        return $this->render('profilPromos.html.twig',array(
+                            'pageTitle' => "profil - Promos",
+                            'siteInfos' => $siteInfos,
+                            'menu' => $menu,
+                        ));
+                        break;
+                }
+            default :
+                if($userClass == 'Internaute'){
+                    return $this->render('profilInternaute.html.twig',array(
+                        'utilisateur' => $user,
+                        'pageTitle' => "nom de l'utilisateur",
+                        'siteInfos' => $siteInfos,
+                        'menu' => $menu,
+                    ));
+                }else{
+                    return $this->render('profilPrestataire.html.twig',array(
+                        'utilisateur' => $user,
+                        'pageTitle' => "nom de l'utilisateur",
+                        'siteInfos' => $siteInfos,
+                        'menu' => $menu,
+                    ));
+                }
 
-        return $this->render('profil.html.twig',array(
-            'pageTitle' => "nom de l'utilisateur",
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
-        ));
+        }
     }
-    /**
-     * @Route("/profil/miseajour")
-     */
-    public function renderProfilMiseAJour()
+    public function getUtilisateur($id)
     {
-        $siteInfos = DC::getSiteInfos();
-        $menu = DC::getMenu();
+        $repository = $this->getDoctrine()->getRepository(Utilisateur::class);
 
-
-        return $this->render('profilMiseAJour.html.twig',array(
-            'pageTitle' => "profil - mise à jour",
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
-        ));
+        if($id != 0){
+            $data = $repository->findOneBy(
+                array('id'=> $id)
+            );
+        }else {
+            $data = $repository->findAll();
+        }
+        return $data;
     }
-    /**
-     * @Route("/profil/suppression")
-     */
-    public function renderProfilSuppression()
-    {
-        $siteInfos = DC::getSiteInfos();
-        $menu = DC::getMenu();
-
-
-        return $this->render('profilSuppression.html.twig',array(
-            'pageTitle' => "profil - Suppression",
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
-        ));
-    }
-    /**
-     * @Route("/profil/stages/")
-     */
-    public function renderProfilStages()
-    {
-        $siteInfos = DC::getSiteInfos();
-        $menu = DC::getMenu();
-
-
-        return $this->render('profilStages.html.twig',array(
-            'pageTitle' => "profil - Stages",
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
-        ));
-    }
-
 }

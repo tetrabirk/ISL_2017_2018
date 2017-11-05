@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Newsletter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,10 +16,15 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        $siteInfos = self::getSiteInfos();
+        $menu = self::getMenu();
+
+
+        return $this->render('default/index.html.twig',array(
+            'pageTitle' => 'Bien être',
+            'siteInfos' => $siteInfos,
+            'menu' => $menu,
+        ));
     }
 
     /**
@@ -58,12 +64,14 @@ class DefaultController extends Controller
     {
         $siteInfos = self::getSiteInfos();
         $menu = self::getMenu();
+        $newsletters = self::getNewsletter();
 
 
         return $this->render('newsletter.html.twig',array(
             'pageTitle' => 'Newsletter',
             'siteInfos' => $siteInfos,
             'menu' => $menu,
+            'newsletters' => $newsletters,
         ));
     }
     /**
@@ -95,6 +103,18 @@ class DefaultController extends Controller
             'siteInfos' => $siteInfos,
             'menu' => $menu,
         ));
+    }
+
+
+
+
+
+    public function getNewsletter()
+    {
+        $repository = $this->getDoctrine()->getRepository(Newsletter::class);
+
+        $data = $repository->findAll();
+        return $data;
     }
 
 

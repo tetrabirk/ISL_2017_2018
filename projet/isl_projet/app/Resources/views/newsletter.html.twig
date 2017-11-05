@@ -15,198 +15,29 @@
                         <div class="content">
 
                             <div class="posts posts-condensed">
+                                {% for newsletter in newsletters %}
 
                                 <div class="post">
-                                    <div class="post-date">08/24/2015</div><!-- /.post-date -->
 
                                     <div class="post-image">
                                         <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-11.jpg" alt="A Clockwork Origin">
+                                            <img src="{{asset('img/tmp') }}/product-11.jpg" alt="A Clockwork Origin">
                                         </a>
                                     </div><!-- /.post-image -->
 
                                     <div class="post-content">
-                                        <h2><a href="blog-detail.html">A Clockwork Origin</a></h2>
-                                        <p>And from now on you're all named Bender Jr. The...</p>
+                                        <h2>{{ newsletter.titre }}</h2>
+                                        <p>{{ newsletter.publication|date('d-m-Y') }}</p>
                                     </div><!-- /.post-content -->
 
                                     <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
+                                        <a href="{{asset('pdf') }}/{{ newsletter.documentPDF }}">Ouvrir le PDF</a>
                                     </div><!-- /.post-date -->
                                 </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">08/18/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-2.jpg" alt="Where No Fan Has Gone Before">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Where No Fan Has Gone Before</a></h2>
-                                        <p><p class='drop-cap'>Just once I'd like to eat d...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">08/12/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-3.jpg" alt="Love and Rocket">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Love and Rocket</a></h2>
-                                        <p>And when we woke up, we had these bodies. Why n...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">08/10/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-4.jpg" alt="Less Than Hero">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Less Than Hero</a></h2>
-                                        <p>And then the battle's not so bad? Daylight and ...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">07/20/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-5.jpg" alt="Love's Labors Lost in Space">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Love's Labors Lost in Space</a></h2>
-                                        <p>Bender, quit destroying the universe! We're res...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">07/12/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-6.jpg" alt="The Deep South">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">The Deep South</a></h2>
-                                        <p>Oh, all right, I am. But if anything happens to...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">07/01/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-7.jpg" alt="A Big Piece of Garbage">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">A Big Piece of Garbage</a></h2>
-                                        <p>Large bet on myself in round one. It's okay, Be...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">06/18/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-8.jpg" alt="Raging Bender">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Raging Bender</a></h2>
-                                        <p>For one beautiful night I knew what it was like...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">06/10/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-9.jpg" alt="Raging Bender">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">Raging Bender</a></h2>
-                                        <p>For one beautiful night I knew what it was like...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
-
-                                <div class="post">
-                                    <div class="post-date">05/26/2015</div><!-- /.post-date -->
-
-                                    <div class="post-image">
-                                        <a href="blog-detail.html">
-                                            <img src="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-10.jpg" alt="The Prisoner of Benda">
-                                        </a>
-                                    </div><!-- /.post-image -->
-
-                                    <div class="post-content">
-                                        <h2><a href="blog-detail.html">The Prisoner of Benda</a></h2>
-                                        <p>Check it out, y'all. Everyone who was invited i...</p>
-                                    </div><!-- /.post-content -->
-
-                                    <div class="post-more">
-                                        <a href="blog-detail.html">Read More</a>
-                                    </div><!-- /.post-date -->
-                                </div><!-- /.post -->
+                                {% endfor %}
 
                             </div><!-- /.posts -->
+
 
 
                             <div class="pager">
@@ -229,16 +60,10 @@
                                 {#TODO faire de joli boutton s'abonner/ se désabonner#}
 
                                 <div class="cards-small">
-                                    <div class="card-small">
-                                        <a href="#">S'abonner</a>
-                                    </div><!-- /.card-small -->
+                                        <a class ="btn btn-primary" href="#">S'abonner</a>
+                                        <a class ="btn btn-primary" href="#">Se désabonner</a>
                                 </div><!-- /.cards-small -->
 
-                                <div class="cards-small">
-                                    <div class="card-small">
-                                        <a href="#">Se désabonner</a>
-                                    </div><!-- /.card-small -->
-                                </div><!-- /.cards-small -->
 
 
 

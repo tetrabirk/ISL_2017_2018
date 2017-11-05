@@ -19,13 +19,13 @@ use AppBundle\Entity\Prestataire;
 
 class Prestataires extends Controller
 {
-    public function getPrestataires($id)
+    public function getPrestataires($slug)
     {
         $repository = $this->getDoctrine()->getRepository(Prestataire::class);
 
-        if($id != 0){
+        if($slug != null){
             $data = $repository->findOneBy(
-                array('id'=> $id)
+                array('slug'=> $slug)
             );
         }else {
             $data = $repository->findAll();
@@ -37,7 +37,7 @@ class Prestataires extends Controller
     {
         $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
 
-        if($slug != 0){
+        if($slug != null){
             $data = $repository->findOneBy(
                 array('slug'=> $slug)
             );
@@ -54,18 +54,18 @@ class Prestataires extends Controller
 //TODO : tranformation notes->étoiles
 
     /**
-     * @Route("/prestataire/{id}", defaults ={"id"=0}, name="prestataire")
+     * @Route("/prestataire/{slug}", defaults ={"slug"=null}, name="prestataire")
      */
-    public function renderPrestataires($id)
+    public function renderPrestataires($slug)
     {
-        $prestataires = $this->getPrestataires($id);
-        $categories = $this->getCategoriesDeServices(0);
+        $prestataires = $this->getPrestataires($slug);
+        $categories = $this->getCategoriesDeServices(null);
         $menu = DC::getMenu();
         $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
 
 
-        if($id !=0){
+        if($slug !=null){
             return $this->render('prestataire.html.twig',array(
 
                 'categories'=> $categories,
