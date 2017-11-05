@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed4d92c-b065-400a-9ffb-2672f2f75581" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml" afterPath="$PROJECT_DIR$/app/Resources/fixtures/orm/Newsletter.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminBase.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminBase.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminCommentaires.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminCommentaires.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminFooter.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminFooter.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminHeader.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminHeader.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminInternautes.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminInternautes.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminNavBar.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminNavBar.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminPrestataires.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminPrestataires.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminServices.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminServices.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminSidebar.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminSidebar.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/adminSlider.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/adminSlider.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/newsletter.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/newsletter.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/prestataires.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/prestataires.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilBase.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilBase.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilHeader.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilHeader.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilInternaute.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilInternaute.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilPrestataire.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilPrestataire.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilPromoNouveau.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilPromoNouveau.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilPromoSuppression.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilPromoSuppression.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilPromos.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilPromos.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilStageMiseAJour.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilStageMiseAJour.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilStageNouveau.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilStageNouveau.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilStageSuppression.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilStageSuppression.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilStages.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilStages.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/profilSuppression.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/profilSuppression.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/stars.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/stars.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Admin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Categories.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Categories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Prestataires.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Prestataires.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Profil.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Profil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/Faker/Provider/FakerExtendProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,14 +36,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57069737">
+    <splitter split-orientation="horizontal" split-proportion="0.7101728">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="profilPrestataire.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Resources/views/profilPrestataire.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="42" column="81" lean-forward="false" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+                <state relative-caret-position="714">
+                  <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
                   <folding />
                 </state>
               </provider>
@@ -173,7 +139,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Profil.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Profil.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Profil.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="493">
@@ -183,11 +149,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="profilInternaute.html.twig" pinned="false" current-in-tab="false">
+          <file leaf-file-name="profilInternaute.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Resources/views/profilInternaute.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="641">
-                  <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="40" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="15" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -498,12 +464,12 @@
       <workItem from="1509642322422" duration="6204000" />
       <workItem from="1509725834984" duration="2252000" />
       <workItem from="1509784485666" duration="15714000" />
-      <workItem from="1509902493568" duration="1422000" />
+      <workItem from="1509902493568" duration="2164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64949000" />
+    <option name="totallyTimeSpent" value="65691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -790,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/profilInternaute.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/stars.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -895,14 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/profilStages.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -911,10 +861,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/profilPrestataire.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/profilInternaute.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="42" column="81" lean-forward="false" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
+          <caret line="15" column="40" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/profilPrestataire.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
           <folding />
         </state>
       </provider>
