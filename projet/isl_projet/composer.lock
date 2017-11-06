@@ -1814,16 +1814,16 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bundle.git",
-                "reference": "80c82d7d41c4eed0bf27e215f27531c05b217c17"
+                "reference": "2b41b8b6d2c6edb1a5494f02f8e4129be2a44784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/80c82d7d41c4eed0bf27e215f27531c05b217c17",
-                "reference": "80c82d7d41c4eed0bf27e215f27531c05b217c17",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/2b41b8b6d2c6edb1a5494f02f8e4129be2a44784",
+                "reference": "2b41b8b6d2c6edb1a5494f02f8e4129be2a44784",
                 "shasum": ""
             },
             "require": {
@@ -1835,8 +1835,8 @@
                 "symfony/monolog-bridge": "~2.7|~3.0|~4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8",
                 "symfony/console": "~2.3|~3.0|~4.0",
+                "symfony/phpunit-bridge": "^3.3|^4.0",
                 "symfony/yaml": "~2.3|~3.0|~4.0"
             },
             "type": "symfony-bundle",
@@ -1848,7 +1848,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Bundle\\MonologBundle\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1870,7 +1873,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2017-09-26T03:17:02+00:00"
+            "time": "2017-11-06T16:02:17+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -2610,23 +2613,24 @@
         },
         {
             "name": "hautelook/alice-bundle",
-            "version": "v2.0.0-beta.4",
+            "version": "v2.0.0-beta.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hautelook/AliceBundle.git",
-                "reference": "7498289a307b6439e923b6b3eecea2a19fd1cf7b"
+                "reference": "1eb46c88c90b898190e6bcf1462f36407cfa08b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hautelook/AliceBundle/zipball/7498289a307b6439e923b6b3eecea2a19fd1cf7b",
-                "reference": "7498289a307b6439e923b6b3eecea2a19fd1cf7b",
+                "url": "https://api.github.com/repos/hautelook/AliceBundle/zipball/1eb46c88c90b898190e6bcf1462f36407cfa08b4",
+                "reference": "1eb46c88c90b898190e6bcf1462f36407cfa08b4",
                 "shasum": ""
             },
             "require": {
-                "nelmio/alice": "^3.0-beta3@beta",
-                "php": "^7.0",
-                "symfony/finder": "^2.7||^3.3",
-                "theofidry/alice-data-fixtures": "^1.0-beta5@beta"
+                "nelmio/alice": "^3.1",
+                "php": "^7.1",
+                "psr/log": "^1.0",
+                "symfony/finder": "^3.3 || ^4.0",
+                "theofidry/alice-data-fixtures": "^1.0-rc1@rc"
             },
             "require-dev": {
                 "doctrine/common": "^2.7.2",
@@ -2636,7 +2640,7 @@
                 "phpspec/prophecy": "^1.7",
                 "phpunit/phpunit": "^5.6",
                 "symfony/phpunit-bridge": "^3.1",
-                "symfony/symfony": "^3.3"
+                "symfony/symfony": "^3.3.10 || ^4.0"
             },
             "suggest": {
                 "theofidry/alice-bundle-extension": "Behat extension for HautelookAliceBundle"
@@ -2677,7 +2681,7 @@
                 "orm",
                 "symfony"
             ],
-            "time": "2017-07-09T12:53:29+00:00"
+            "time": "2017-11-04T19:48:18+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2915,16 +2919,16 @@
         },
         {
             "name": "theofidry/alice-data-fixtures",
-            "version": "v1.0.0-rc.0",
+            "version": "v1.0.0-rc.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theofidry/AliceDataFixtures.git",
-                "reference": "7dfbb3a6c1919a11f4b33529b564cbbf0087ad77"
+                "reference": "01738c41d5e205641170baf7cf8294beb1ef9169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/7dfbb3a6c1919a11f4b33529b564cbbf0087ad77",
-                "reference": "7dfbb3a6c1919a11f4b33529b564cbbf0087ad77",
+                "url": "https://api.github.com/repos/theofidry/AliceDataFixtures/zipball/01738c41d5e205641170baf7cf8294beb1ef9169",
+                "reference": "01738c41d5e205641170baf7cf8294beb1ef9169",
                 "shasum": ""
             },
             "require": {
@@ -2983,7 +2987,7 @@
                 "orm",
                 "tests"
             ],
-            "time": "2017-10-29T18:01:29+00:00"
+            "time": "2017-11-03T08:15:45+00:00"
         }
     ],
     "aliases": [],

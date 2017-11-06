@@ -8,4 +8,4 @@ AppBundle\Entity\Stage:
         affichage_de: <dateTimeBetween('-2 weeks', 'now')>
         affichage_jusque: <dateTimeBetween('3 weeks', '4 weeks')>
 
-        prestataire: '@prestataire_*'
+#        prestataire: '@prestataire_*'
