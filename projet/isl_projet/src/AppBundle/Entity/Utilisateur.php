@@ -66,6 +66,29 @@ class Utilisateur
     private $localite;
 
     /**
+     * un internaute à un avatar
+     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     */
+    private $avatar;
+
+    /**
+     * @return mixed
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    /**
+     * @param mixed $avatar
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+    }
+
+
+    /**
      * @return mixed
      */
     public function getLocalite()

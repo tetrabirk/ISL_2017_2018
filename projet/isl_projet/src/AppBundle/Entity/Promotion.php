@@ -24,6 +24,14 @@ class Promotion
     /**
      * @var string
      *
+     * @ORM\Column(name="nom", type="string", length=255, nullable=false)
+     */
+    private $nom;
+
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
@@ -69,6 +77,29 @@ class Promotion
      * @ORM\JoinColumn(name="prestataire", referencedColumnName="id")
      */
     private $prestataire;
+
+    /**
+     * une promotion à une photo
+     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     */
+    private $photo;
+
+    /**
+     * @return mixed
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    /**
+     * @param mixed $photo
+     */
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+    }
+
 
     /**
      * @return mixed
@@ -239,4 +270,22 @@ class Promotion
     {
         return $this->affichageJusque;
     }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+
 }
