@@ -10,4 +10,13 @@ namespace AppBundle\Repository;
  */
 class CategorieDeServicesRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findCategoriesDeServices($slug=null)
+    {
+        if($slug != null){
+            $data = $this->findOneBy(array('slug'=> $slug));
+        }else {
+            $data = $this->findAll();
+        }
+        return $data;
+    }
 }

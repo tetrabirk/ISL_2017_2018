@@ -1,5 +1,0 @@
-AppBundle\Entity\Bloc:
-    bloc_{1..100}:
-        nom: <word()>
-        description: <sentences(2,true)>
-        ordre: <numberBetween(1,7)>

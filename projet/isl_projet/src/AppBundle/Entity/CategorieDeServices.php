@@ -67,6 +67,12 @@ class CategorieDeServices
     private $prestataires;
 
     /**
+     * une categorie à une image
+     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     */
+    private $image;
+
+    /**
      * Constructor
      */
 
@@ -195,5 +201,20 @@ class CategorieDeServices
         $this->slug = $slug;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
 
 }

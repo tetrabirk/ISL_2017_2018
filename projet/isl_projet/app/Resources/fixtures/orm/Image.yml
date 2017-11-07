@@ -1,3 +1,0 @@
-AppBundle\Entity\Image:
-    image_{1..10}:
-      nom (unique): <fakerExt('nom_image')>

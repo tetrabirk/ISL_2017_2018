@@ -356,5 +356,4 @@ class Prestataire extends Utilisateur
         return $this->photos;
     }
 
-
 }

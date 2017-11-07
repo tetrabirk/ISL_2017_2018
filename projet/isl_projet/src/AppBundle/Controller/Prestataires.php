@@ -9,43 +9,20 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\CategorieDeServices;
+use AppBundle\Entity\Commentaire;
+use AppBundle\Repository\CommentaireRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use AppBundle\Controller\DefaultController as DC;
+use Doctrine\ORM\EntityRepository;
 
 use AppBundle\Entity\Prestataire;
-
+use AppBundle\Repository\PrestataireRepository;
+use AppBundle\Repository\CategorieDeServicesRepository;
 
 class Prestataires extends Controller
 {
-    public function getPrestataires($slug)
-    {
-        $repository = $this->getDoctrine()->getRepository(Prestataire::class);
-
-        if($slug != null){
-            $data = $repository->findOneBy(
-                array('slug'=> $slug)
-            );
-        }else {
-            $data = $repository->findAll();
-        }
-        return $data;
-    }
-
-    public function getCategoriesDeServices($slug)
-    {
-        $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
-
-        if($slug != null){
-            $data = $repository->findOneBy(
-                array('slug'=> $slug)
-            );
-        }else {
-            $data = $repository->findAll();
-        }
-        return $data;
-    }
 
 
 
@@ -53,13 +30,20 @@ class Prestataires extends Controller
 //TODO : get : categories des prestataires, notes moyennes, promotions, stages
 //TODO : tranformation notes->étoiles
 
+
     /**
      * @Route("/prestataire/{slug}", defaults ={"slug"=null}, name="prestataire")
      */
     public function renderPrestataires($slug)
     {
-        $prestataires = $this->getPrestataires($slug);
-        $categories = $this->getCategoriesDeServices(null);
+        /** @var PrestataireRepository $pr */
+        $pr = $this->getDoctrine()->getRepository(Prestataire::class);
+
+        $prestataires=$pr->findPrestataires($slug);
+
+        /** @var CategorieDeServicesRepository $cr */
+        $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
+        $categories=$cr->findCategoriesDeServices();
         $menu = DC::getMenu();
         $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
@@ -67,7 +51,6 @@ class Prestataires extends Controller
 
         if($slug !=null){
             return $this->render('prestataire.html.twig',array(
-
                 'categories'=> $categories,
                 'stats'=> $stats,
                 'prestataire' => $prestataires,

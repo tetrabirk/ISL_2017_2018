@@ -1,6 +1,0 @@
-AppBundle\Entity\CategorieDeServices:
-    categorie_{1..8}:
-        nom (unique): <words(3,true)>
-        description: <sentences(3,true)>
-        en_avant: 0
-        valide: 1

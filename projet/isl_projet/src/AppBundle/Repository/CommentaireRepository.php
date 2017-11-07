@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Prestataire;
+
 /**
  * CommentaireRepository
  *
@@ -10,4 +12,13 @@ namespace AppBundle\Repository;
  */
 class CommentaireRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findCommentaires( Prestataire $prestataire=null)
+    {
+        if ($prestataire != null) {
+            $data = $this->findOneBy(array('cibleCommentaire' => $prestataire));
+        } else {
+            $data = $this->findAll();
+        }
+        return $data;
+    }
 }
