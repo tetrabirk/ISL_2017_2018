@@ -17,7 +17,7 @@ use AppBundle\Controller\DefaultController as DC;
 
 
 
-class Categories extends Controller
+class CategorieDeServicesController extends Controller
 {
 
     //TODO creer un fichier où je mettrais tt les fonction "getqqlchose" pour éviter les répétitions

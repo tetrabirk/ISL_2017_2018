@@ -21,14 +21,13 @@ use AppBundle\Entity\Prestataire;
 use AppBundle\Repository\PrestataireRepository;
 use AppBundle\Repository\CategorieDeServicesRepository;
 
-class Prestataires extends Controller
+class PrestataireController extends Controller
 {
 
 
 
 //TODO : entities : add image, slug
 //TODO : get : categories des prestataires, notes moyennes, promotions, stages
-//TODO : tranformation notes->étoiles
 
 
     /**
@@ -61,7 +60,7 @@ class Prestataires extends Controller
         }else{
             return $this->render('prestataires.html.twig',array(
                 'prestataires' => $prestataires,
-                'pageTitle' => 'Nos Prestataires',
+                'pageTitle' => 'Nos PrestataireController',
                 'categories'=> $categories,
                 'stats'=> $stats,
                 'menu' => $menu,

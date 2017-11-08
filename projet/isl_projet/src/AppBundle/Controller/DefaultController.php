@@ -121,7 +121,7 @@ class DefaultController extends Controller
     static function getMenu()
     {
         $menu = [
-            ['nom'=> 'Prestataires','href'=>'prestataire','submenu'=>
+            ['nom'=> 'PrestataireController','href'=>'prestataire','submenu'=>
                 [
                     ['nom'=> 'test','href'=>'homepage'],
                     ['nom'=> 'tesities','href'=>'homepage']

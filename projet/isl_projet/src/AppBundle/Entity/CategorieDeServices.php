@@ -61,7 +61,7 @@ class CategorieDeServices
     private $valide;
 
     /**
-     * Bcp de Categories ont bcp de Prestataires
+     * Bcp de CategorieDeServicesController ont bcp de PrestataireController
      * @ORM\ManyToMany(targetEntity="Prestataire", mappedBy="categories")
      */
     private $prestataires;

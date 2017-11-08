@@ -2,6 +2,7 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Prestataire;
 use Doctrine\ORM\EntityRepository;
 
 /**
@@ -16,18 +17,27 @@ class PrestataireRepository extends EntityRepository
     {
         if($slug != null){
             $data = $this->findOneBy(array('slug'=> $slug));
+            $gc = $this->getCote($data);
+            $cote = $gc[0]['cote'];
+            $data->cote = $cote;
         }else {
             $data = $this->findAll();
+            foreach ($data as $prest)
+            {
+                $gc = $this->getCote($prest);
+                $cote = $gc[0]['cote'];
+                $prest->cote = $cote;
+            }
         }
         return $data;
     }
 
-//    public function getCote(Prestataire $prestataire)
-//    {
-//        $data = $this->getEntityManager()->createQuery(
-//
-//        )
-//            ->getResult();
-//    }
+    public function getCote(Prestataire $prestataire)
+    {
+        $query = $this->getEntityManager()->createQuery("SELECT (AVG(c.cote)/5) cote FROM AppBundle:Commentaire c WHERE c.cibleCommentaire = ?1");
+        $query->setParameter(1,$prestataire);
+        $result = $query->getResult();
 
+        return $result;
+    }
 }

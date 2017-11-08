@@ -18,7 +18,7 @@ use AppBundle\Controller\DefaultController as DC;
 
 
 
-class Profil extends Controller
+class ProfilController extends Controller
 {
 
 

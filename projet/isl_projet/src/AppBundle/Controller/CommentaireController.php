@@ -18,7 +18,7 @@ use AppBundle\Controller\DefaultController as DC;
 use AppBundle\Entity\Prestataire;
 
 
-class Commentaires extends Controller
+class CommentaireController extends Controller
 {
     public function getCommentaires($idPrestataire = null)
     {

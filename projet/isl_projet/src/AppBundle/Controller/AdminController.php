@@ -17,7 +17,7 @@ use AppBundle\Controller\DefaultController as DC;
 
 
 
-class Admin extends Controller
+class AdminController extends Controller
 {
 
     /**
@@ -30,42 +30,42 @@ class Admin extends Controller
         switch ($route1){
             case 'prestataires':
                 return $this->render('adminPrestataires.html.twig',array(
-                    'pageTitle' => "Admin - Prestataires",
+                    'pageTitle' => "AdminController - PrestataireController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'internautes':
                 return $this->render('adminInternautes.html.twig',array(
-                    'pageTitle' => "Admin - Internautes",
+                    'pageTitle' => "AdminController - Internautes",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'slider':
                 return $this->render('adminSlider.html.twig',array(
-                    'pageTitle' => "Admin - Slider",
+                    'pageTitle' => "AdminController - Slider",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'commentaires':
                 return $this->render('adminCommentaires.html.twig',array(
-                    'pageTitle' => "Admin - Commentaires",
+                    'pageTitle' => "AdminController - CommentaireController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'services':
                 return $this->render('adminServices.html.twig',array(
-                    'pageTitle' => "Admin - Services",
+                    'pageTitle' => "AdminController - Services",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             default:
                 return $this->render('admin.html.twig',array(
-                    'pageTitle' => "Admin",
+                    'pageTitle' => "AdminController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
