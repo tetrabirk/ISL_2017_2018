@@ -63,8 +63,10 @@ class Fixtures extends Fixture
 //        generation des stages
 
         $randQuant = rand(0,self::$maxStagesParPrestataire);
-        for($i = 0; $i < self::$nbrePrestataire; $i++) {
-            for ($j = 0; $j < $randQuant; $j++) {
+        for($i = 0; $i < self::$nbrePrestataire; $i++)
+        {
+            for ($j = 0; $j < $randQuant; $j++)
+            {
                 $stage = $this->genStage($i,$j);
                 $manager->persist($stage);
             }
@@ -73,8 +75,10 @@ class Fixtures extends Fixture
 //        generation des promotions
 
         $randQuant = rand(0,self::$maxPromotionsParPrestataire);
-        for($i = 0; $i < self::$nbrePrestataire; $i++) {
-            for ($j = 0; $j < $randQuant; $j++) {
+        for($i = 0; $i < self::$nbrePrestataire; $i++)
+        {
+            for ($j = 0; $j < $randQuant; $j++)
+            {
                 $promotion = $this->genPromotion($i,$j);
                 $manager->persist($promotion);
             }
@@ -99,7 +103,7 @@ class Fixtures extends Fixture
 
 //        generation des commentaires
 
-        for ($i = 0; $i < self::$nbreCommentaire-1; $i++)
+        for ($i = 0; $i < self::$nbreCommentaire; $i++)
         {
             $commentaire = $this->genCommentaires($i);
             $manager->persist($commentaire);
@@ -207,6 +211,12 @@ class Fixtures extends Fixture
         $internaute->setPrenom($this->faker->firstName);
         $internaute->setNewsletter($this->faker->boolean);
 
+//        ajout d'un avatar
+
+        $avatar = $this->genImage('avatar',$i);
+        $internaute->setAvatar($this->getReference('avatar'.$i));
+
+
 //        ajout des favoris
 
         $randArray = $this->randomNumbersArray(rand(1,self::$maxFavorisParInternaute),0,self::$nbrePrestataire-1);
@@ -223,6 +233,7 @@ class Fixtures extends Fixture
         $img = new Image();
         $img->setNom($type.$i.".jpg");
         $this->addReference($type.$i,$img);
+
     }
 
     public function genCommentaires($i)
@@ -236,7 +247,6 @@ class Fixtures extends Fixture
         $commentaire->setTitre($this->faker->sentence());
         $commentaire->setContenu($this->faker->sentences(5,true));
         $commentaire->setEncodage($this->faker->dateTimeThisMonth);
-
         $this->addReference('commentaire'.$i,$commentaire);
         return $commentaire;
     }
@@ -284,11 +294,15 @@ class Fixtures extends Fixture
         $stage->setFin($this->faker->dateTimeBetween($datedebut,'4weeks'));
         $stage->setAffichageDe($this->faker->dateTimeBetween('-6weeks',$datedebut));
         $stage->setAffichageJusque($stage->getFin());
-        $stage->setPhoto($this->genImage('stage',$i.$j));
+
+//        ajout d'une photo
+
+        $photo = $this->genImage('photostage',$i.$j);
+        $stage->setPhoto($this->getReference('photostage'.$i.$j));
 
         $stage->setPrestataire($this->getReference('prestataire'.$i));
 
-
+        $this->addReference('stage'.$i.$j,$stage);
         return $stage;
     }
 
@@ -303,10 +317,15 @@ class Fixtures extends Fixture
         $promotion->setFin($this->faker->dateTimeBetween($datedebut,'4weeks'));
         $promotion->setAffichageDe($this->faker->dateTimeBetween('-6weeks',$datedebut));
         $promotion->setAffichageJusque($promotion->getFin());
-        $promotion->setPhoto($this->genImage('promotion',$i.$j));
+
+//        ajout d'une photo
+
+        $photo = $this->genImage('photopromotion',$i.$j);
+        $promotion->setPhoto($this->getReference('photopromotion'.$i.$j));
 
         $promotion->setPrestataire($this->getReference('prestataire'.$i));
 
+        $this->addReference('promotion'.$i.$j,$promotion);
         return $promotion;
     }
 

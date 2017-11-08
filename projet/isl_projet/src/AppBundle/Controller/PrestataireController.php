@@ -37,12 +37,12 @@ class PrestataireController extends Controller
     {
         /** @var PrestataireRepository $pr */
         $pr = $this->getDoctrine()->getRepository(Prestataire::class);
-
         $prestataires=$pr->findPrestataires($slug);
 
         /** @var CategorieDeServicesRepository $cr */
         $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
         $categories=$cr->findCategoriesDeServices();
+
         $menu = DC::getMenu();
         $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
@@ -60,7 +60,7 @@ class PrestataireController extends Controller
         }else{
             return $this->render('prestataires.html.twig',array(
                 'prestataires' => $prestataires,
-                'pageTitle' => 'Nos PrestataireController',
+                'pageTitle' => 'Nos Prestataires',
                 'categories'=> $categories,
                 'stats'=> $stats,
                 'menu' => $menu,
