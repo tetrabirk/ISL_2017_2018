@@ -1,4 +1,4 @@
-{% extends "profilBase.html.twig" %}
+{% extends "base.html.twig" %}
 
 {% block content %}
 
@@ -12,7 +12,7 @@
                                 <div class="user-photo">
                                     <a href="#">
                                         <img src="{{asset('img/tmp')}}/agent-2.jpg" alt="User Photo">
-                                        <span class="user-photo-action">Modifier mon avatar</span>
+                                        <span class="user-photo-action" >Modifier mon logo</span>
                                     </a>
                                 </div><!-- /.user-photo -->
                             </div><!-- /.widget -->
@@ -23,23 +23,24 @@
                                 <div class="menu-advanced">
                                     <p>Membre depuis le {{ utilisateur.Inscription|date('d-m-Y') }}</p>
                                     {% if utilisateur.confInscription == false %}
-                                    <div><a class="btn-danger" href="#">Confirmer l'Adresse Email</a></div>
+                                        <div><a class="btn-danger" href="#">Confirmer l'Adresse Email</a></div>
                                     {% endif %}
-                                    <br/>
-                                    <p>Newsletter</p>
-                                    {% if utilisateur.newsletter == false %}
-                                    <div><a class="btn-primary" href="#">S'abonner</a></div>
-                                    {% else %}
-                                    <div><a class="btn-danger" href="#"> Se Désabonner</a></div>
-                                    {% endif %}
-
                                 </div>
                             </div><!-- /.widget -->
+                            <div class="widget">
 
+                                <div class="menu-advanced">
+                                   <div> galerie photo</div>
+                                </div>
+                            </div><!-- /.widget -->
                             <div class="widget">
 
                                 <ul class="menu-advanced">
-                                    <li class="active"><a href="#"><i class="fa fa-user"></i> Modifier Profil</a></li>
+                                    <li><a href="{{ path('profil',{'route1':'stages'}) }}"><i class="fa fa-pencil"></i> Stages</a></li>
+                                    <li><a href="{{ path('profil',{'route1':'promo'}) }}"><i class="fa fa-pencil"></i> Promotions</a></li>
+                          {#TODO#}
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Commentaires</a></li>
+                                    <li class="active"><a href="{{ path('profil') }}"><i class="fa fa-user"></i> Modifier Profil</a></li>
                                     <li><a href="#"><i class="fa fa-key"></i> Mot de Passe</a></li>
                                     <li><a href="#"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
                                 </ul>
@@ -51,7 +52,14 @@
                     <div class="col-sm-8 col-lg-9">
                         <div class="content">
                             <div class="page-title">
-                                <h1>Profil Internaute</h1>
+                                <h1>{{ utilisateur.nom|capitalize }}
+                                    <span>
+                                        {# TODO#}
+                                        *ici des étoiles*
+                                        {#{% include 'stars.html.twig' %}#}
+                                        {#{{ (utilisateur.cote*5)|round(1,'floor') }} / 5#}
+                                    </span><!-- /.card-row-rating -->
+                                </h1>
                             </div><!-- /.page-title -->
 
                             <div class="background-white p20 mb30">
@@ -62,10 +70,6 @@
                                 </h3>
 
                                 <div class="row">
-                                    <div class="form-group col-sm-12">
-                                        <label>E-mail</label>
-                                        <input type="text" class="form-control" value="{{ utilisateur.email }}">
-                                    </div><!-- /.form-group -->
 
                                     <div class="form-group col-sm-6">
                                         <label>Nom</label>
@@ -73,15 +77,12 @@
                                     </div><!-- /.form-group -->
 
                                     <div class="form-group col-sm-6">
-                                        <label>Prénom</label>
-                                        <input type="text" class="form-control" value="{{ utilisateur.prenom }}">
+                                        <label>E-mail</label>
+                                        <input type="text" class="form-control" value="{{ utilisateur.email }}">
                                     </div><!-- /.form-group -->
-
-
 
                                 </div><!-- /.row -->
                             </div>
-
 
                             <div class="background-white p20 mb30">
                                 <h3 class="page-title">
@@ -91,6 +92,22 @@
                                 </h3>
 
                                 <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <label>Site Internet</label>
+                                        <input type="text" class="form-control" value="{{ utilisateur.siteInternet}}">
+                                    </div><!-- /.form-group -->
+                                    <div class="form-group col-sm-6">
+                                        <label>Email de contact</label>
+                                        <input type="text" class="form-control" value="{{ utilisateur.emailContact}}">
+                                    </div><!-- /.form-group -->
+                                    <div class="form-group col-sm-6">
+                                        <label>Téléphone</label>
+                                        <input type="text" class="form-control" value="{{ utilisateur.telephone}}">
+                                    </div><!-- /.form-group -->
+                                    <div class="form-group col-sm-6">
+                                        <label>Numéro de TVA</label>
+                                        <input type="text" class="form-control" value="{{ utilisateur.numTVA}}">
+                                    </div><!-- /.form-group -->
 
                                     <div class="form-group col-sm-6">
                                         <label>Rue</label>

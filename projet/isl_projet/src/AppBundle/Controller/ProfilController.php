@@ -31,10 +31,10 @@ class ProfilController extends Controller
 //        TODO récuperer les infos de la session (pour savoir qui est actuellement connecter)
 
 //INTERNAUTE
-//        $user = $this->getUtilisateur(426);
+//        $user = $this->getUtilisateur(45);
 
 ////PRESTATAIRE
-        $user = $this->getUtilisateur(479);
+        $user = $this->getUtilisateur(53);
         $userClassFull = explode('\\',get_class($user));
         $userClass = end($userClassFull);
 
@@ -44,7 +44,7 @@ class ProfilController extends Controller
         $menu = DC::getMenu();
         switch ($route1){
             case 'suppression':
-                return $this->render('profilSuppression.html.twig',array(
+                return $this->render('profil/profilSuppression.html.twig',array(
                     'pageTitle' => "profil - Suppression",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
@@ -52,28 +52,28 @@ class ProfilController extends Controller
             case 'stages':
                 switch ($route2){
                     case 'new':
-                        return $this->render('profilStageNouveau.html.twig',array(
+                        return $this->render('profil/profilStageNouveau.html.twig',array(
                             'pageTitle' => "profil - Stages - Nouveau",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     case 'update':
-                        return $this->render('profilStageMiseAJour.html.twig',array(
+                        return $this->render('profil/profilStageMiseAJour.html.twig',array(
                             'pageTitle' => "profil - Stages - Mise à jour",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     case 'delete':
-                        return $this->render('profilStageSuppression.html.twig',array(
+                        return $this->render('profil/profilStageSuppression.html.twig',array(
                             'pageTitle' => "profil - Stages - Suppression",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     default:
-                        return $this->render('profilStages.html.twig',array(
+                        return $this->render('profil/profilStages.html.twig',array(
                             'pageTitle' => "profil - Stages",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
@@ -84,28 +84,28 @@ class ProfilController extends Controller
             case 'promo':
                 switch ($route2){
                     case 'new':
-                        return $this->render('profilPromoNouveau.html.twig',array(
+                        return $this->render('profil/profilPromoNouveau.html.twig',array(
                             'pageTitle' => "profil - Promos - Nouveau",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     case 'update':
-                        return $this->render('profilPromoMiseAJour.html.twig',array(
+                        return $this->render('profil/profilPromoMiseAJour.html.twig',array(
                             'pageTitle' => "profil - Promos - Mise à jour",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     case 'delete':
-                        return $this->render('profilPromoSuppression.html.twig',array(
+                        return $this->render('profil/profilPromoSuppression.html.twig',array(
                             'pageTitle' => "profil - Promos - Suppression",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
                         ));
                         break;
                     default:
-                        return $this->render('profilPromos.html.twig',array(
+                        return $this->render('profil/profilPromos.html.twig',array(
                             'pageTitle' => "profil - Promos",
                             'siteInfos' => $siteInfos,
                             'menu' => $menu,
@@ -114,14 +114,14 @@ class ProfilController extends Controller
                 }
             default :
                 if($userClass == 'Internaute'){
-                    return $this->render('profilInternaute.html.twig',array(
+                    return $this->render('profil/profilInternaute.html.twig',array(
                         'utilisateur' => $user,
                         'pageTitle' => "nom de l'utilisateur",
                         'siteInfos' => $siteInfos,
                         'menu' => $menu,
                     ));
                 }else{
-                    return $this->render('profilPrestataire.html.twig',array(
+                    return $this->render('profil/profilPrestataire.html.twig',array(
                         'utilisateur' => $user,
                         'pageTitle' => "nom de l'utilisateur",
                         'siteInfos' => $siteInfos,
@@ -134,7 +134,6 @@ class ProfilController extends Controller
     public function getUtilisateur($id)
     {
         $repository = $this->getDoctrine()->getRepository(Utilisateur::class);
-
         if($id != 0){
             $data = $repository->findOneBy(
                 array('id'=> $id)

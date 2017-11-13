@@ -195,7 +195,7 @@ class Fixtures extends Fixture
     public function genInternaute($i)
     {
         $internaute = new Internaute();
-        $internaute->setEmail($this->uniqueEmail($i,'p'));
+        $internaute->setEmail($this->uniqueEmail($i,'i'));
         $internaute->setMotDePasse('password');
         $internaute->setAdresseNum($this->faker->buildingNumber);
         $internaute->setAdresseRue($this->faker->streetName);

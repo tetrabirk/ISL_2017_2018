@@ -29,42 +29,42 @@ class AdminController extends Controller
         $menu = DC::getMenu();
         switch ($route1){
             case 'prestataires':
-                return $this->render('adminPrestataires.html.twig',array(
+                return $this->render('admin/adminPrestataires.html.twig',array(
                     'pageTitle' => "AdminController - PrestataireController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'internautes':
-                return $this->render('adminInternautes.html.twig',array(
+                return $this->render('admin/adminInternautes.html.twig',array(
                     'pageTitle' => "AdminController - Internautes",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'slider':
-                return $this->render('adminSlider.html.twig',array(
+                return $this->render('admin/adminSlider.html.twig',array(
                     'pageTitle' => "AdminController - Slider",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'commentaires':
-                return $this->render('adminCommentaires.html.twig',array(
+                return $this->render('admin/adminCommentaires.html.twig',array(
                     'pageTitle' => "AdminController - CommentaireController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             case 'services':
-                return $this->render('adminServices.html.twig',array(
+                return $this->render('admin/adminServices.html.twig',array(
                     'pageTitle' => "AdminController - Services",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
                 ));
                 break;
             default:
-                return $this->render('admin.html.twig',array(
+                return $this->render('admin/admin.html.twig',array(
                     'pageTitle' => "AdminController",
                     'siteInfos' => $siteInfos,
                     'menu' => $menu,
