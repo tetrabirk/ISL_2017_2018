@@ -381,4 +381,9 @@ class Utilisateur
     {
         return $this->confInscription;
     }
+
+    public function getType(){
+        $userClassFull = explode('\\',get_class($this));
+        return end($userClassFull);
+    }
 }
