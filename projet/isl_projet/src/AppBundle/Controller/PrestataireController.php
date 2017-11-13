@@ -47,7 +47,6 @@ class PrestataireController extends Controller
         $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
 
-
         if($slug !=null){
             return $this->render('prestataire.html.twig',array(
                 'categories'=> $categories,

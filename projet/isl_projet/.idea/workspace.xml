@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <list default="true" id="abc2b3ba-f18b-4769-a3a4-c8452b19d108" name="Default" comment="" />
+=======
+    <list default="true" id="6383b99e-2b87-4e53-bf56-dde45e5f4270" name="Default" comment="" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,26 +15,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
               <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+=======
+      <file leaf-file-name="PrestataireRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PrestataireRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+              <folding>
+                <marker date="1510246775817" expanded="true" signature="947:1033" ph="SELECT (AVG(... AppBundle" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrestataireController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PrestataireController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="60" />
+              <folding>
+                <element signature="e#119#160#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UtilisateurRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ProfilController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ProfilController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <file leaf-file-name="adminHeader.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminHeader.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+=======
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="120" column="20" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <file leaf-file-name="adminNavBar.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminNavBar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,6 +96,34 @@
                 <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
                 <element signature="n#button#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="Fixtures.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/Fixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="179" column="26" lean-forward="false" selection-start-line="179" selection-start-column="26" selection-end-line="179" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilisateur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Utilisateur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="386" column="35" lean-forward="false" selection-start-line="386" selection-start-column="35" selection-end-line="386" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prestataire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Prestataire.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
+              <folding />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
             </state>
           </provider>
         </entry>
@@ -49,13 +132,25 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <find>star</find>
       <find>assets/</find>
     </findStrings>
+=======
+      <find>userclass</find>
+      <find>stage</find>
+      <find>Stage</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>promo</replace>
+      <replace>Promo</replace>
+    </replaceStrings>
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/Fixtures.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/profil/profilPromos.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/profil/profilPromoNouveau.html.twig" />
@@ -79,6 +174,16 @@
         <option value="$PROJECT_DIR$/app/Resources/views/admin/adminPrestataires.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/adminServices.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/adminSlider.html.twig" />
+=======
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/InternauteRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/UtilisateurRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Utilisateur.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Prestataire.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PrestataireController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Utils/TempDev.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/PrestataireRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ProfilController.php" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
       </list>
     </option>
   </component>
@@ -93,8 +198,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="29" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -132,6 +236,29 @@
               <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
+=======
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
             </path>
             <path>
               <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
@@ -178,6 +305,7 @@
               <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
               <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -185,21 +313,32 @@
               <item name="isl_projet" type="b2602c69:ProjectViewProjectNode" />
               <item name="isl_projet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="Utils" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\DATA\GitHub\ISL_2017_2018\projet\isl_projet\app\Resources\views\admin" />
       <recent name="E:\DATA\GitHub\ISL_2017_2018\projet\isl_projet\app\Resources\views\profil" />
     </key>
+=======
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -221,16 +360,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <changelist id="abc2b3ba-f18b-4769-a3a4-c8452b19d108" name="Default" comment="" />
       <created>1510483426118</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510483426118</updated>
       <workItem from="1510483430817" duration="2036000" />
+=======
+      <changelist id="6383b99e-2b87-4e53-bf56-dde45e5f4270" name="Default" comment="" />
+      <created>1510594142958</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510594142958</updated>
+      <workItem from="1510594145073" duration="7641000" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <option name="totallyTimeSpent" value="2036000" />
   </component>
   <component name="ToolWindowManager">
@@ -241,11 +390,28 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="7641000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+=======
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -266,6 +432,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/profil/profilBase.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -374,10 +541,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/InternauteRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/profil/profilPrestataire.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -398,10 +572,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="239" column="110" lean-forward="false" selection-start-line="239" selection-start-column="110" selection-end-line="239" selection-end-column="110" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/TempDev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminCommentaires.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4012">
@@ -417,10 +598,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/Fixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="179" column="26" lean-forward="false" selection-start-line="179" selection-start-column="26" selection-end-line="179" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="386" column="35" lean-forward="false" selection-start-line="386" selection-start-column="35" selection-end-line="386" selection-end-column="35" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminInternautes.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4012">
@@ -428,12 +624,21 @@
           <folding>
             <element signature="e#15791#15796#0#HTML" expanded="true" />
             <marker date="1510485233621" expanded="false" signature="18188:18194" ph="©" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PrestataireRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <marker date="1510246775817" expanded="true" signature="947:1033" ph="SELECT (AVG(... AppBundle" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminPrestataires.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
         <state relative-caret-position="4012">
           <caret line="239" column="117" lean-forward="false" selection-start-line="239" selection-start-column="117" selection-end-line="239" selection-end-column="117" />
           <folding>
@@ -458,10 +663,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+=======
+        <state relative-caret-position="422">
+          <caret line="357" column="0" lean-forward="false" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="120" column="20" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminSlider.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4012">
@@ -469,34 +695,72 @@
           <folding>
             <element signature="e#15791#15796#0#HTML" expanded="true" />
             <marker date="1510485233716" expanded="false" signature="18188:18194" ph="©" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PrestataireController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="60" />
+          <folding>
+            <element signature="e#119#160#0#PHP" expanded="true" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminBase.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UtilisateurRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminHeader.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ProfilController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 99231ac36834b7a1dfb1659be973c3ccf189645e
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/adminNavBar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -509,5 +773,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> j ai deconner j ai oublier de faire un push ce weekend
   </component>
 </project>
