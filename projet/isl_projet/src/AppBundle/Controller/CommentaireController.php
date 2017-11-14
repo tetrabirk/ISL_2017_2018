@@ -13,7 +13,6 @@ use AppBundle\Entity\Commentaire;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use AppBundle\Controller\DefaultController as DC;
 
 use AppBundle\Entity\Prestataire;
 

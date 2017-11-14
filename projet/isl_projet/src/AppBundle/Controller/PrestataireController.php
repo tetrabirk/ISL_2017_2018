@@ -14,7 +14,6 @@ use AppBundle\Repository\CommentaireRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use AppBundle\Controller\DefaultController as DC;
 use Doctrine\ORM\EntityRepository;
 
 use AppBundle\Entity\Prestataire;
@@ -43,8 +42,6 @@ class PrestataireController extends Controller
         $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
         $categories=$cr->findCategoriesDeServices();
 
-        $menu = DC::getMenu();
-        $siteInfos = DC::getSiteInfos();
         $stats['nbreDElement'] = count($prestataires);
 
         if($slug !=null){
@@ -53,8 +50,6 @@ class PrestataireController extends Controller
                 'stats'=> $stats,
                 'prestataire' => $prestataires,
                 'pageTitle' => $prestataires->getNom(),
-                'menu' => $menu,
-                'siteInfos' => $siteInfos
             ));
         }else{
             return $this->render('prestataires.html.twig',array(
@@ -62,8 +57,6 @@ class PrestataireController extends Controller
                 'pageTitle' => 'Nos Prestataires',
                 'categories'=> $categories,
                 'stats'=> $stats,
-                'menu' => $menu,
-                'siteInfos' => $siteInfos
             ));
 
         }

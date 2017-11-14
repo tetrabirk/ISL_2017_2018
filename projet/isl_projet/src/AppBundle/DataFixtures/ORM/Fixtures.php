@@ -19,7 +19,7 @@ use Faker;
 class Fixtures extends Fixture
 {
     static $nbreCategorie = 8;
-    static $nbrePrestataire = 10;
+    static $nbrePrestataire = 20;
     static $nbreInternaute = 10;
     static $nbreCommentaire = 50;
     static $nbreNewsletter = 50;
@@ -30,6 +30,7 @@ class Fixtures extends Fixture
     static $maxPhotosParPrestataire = 5;
     static $maxStagesParPrestataire = 5;
     static $maxPromotionsParPrestataire = 5;
+    static $maxCategoriesParPromotion = 2;
 
     var $faker;
 
@@ -231,7 +232,7 @@ class Fixtures extends Fixture
     public function genImage($type,$i)
     {
         $img = new Image();
-        $img->setNom($type.$i.".jpg");
+        $img->setNom($type."_".$i.".jpg");
         $this->addReference($type.$i,$img);
 
     }
@@ -295,11 +296,6 @@ class Fixtures extends Fixture
         $stage->setAffichageDe($this->faker->dateTimeBetween('-6weeks',$datedebut));
         $stage->setAffichageJusque($stage->getFin());
 
-//        ajout d'une photo
-
-        $photo = $this->genImage('photostage',$i.$j);
-        $stage->setPhoto($this->getReference('photostage'.$i.$j));
-
         $stage->setPrestataire($this->getReference('prestataire'.$i));
 
         $this->addReference('stage'.$i.$j,$stage);
@@ -318,12 +314,14 @@ class Fixtures extends Fixture
         $promotion->setAffichageDe($this->faker->dateTimeBetween('-6weeks',$datedebut));
         $promotion->setAffichageJusque($promotion->getFin());
 
-//        ajout d'une photo
-
-        $photo = $this->genImage('photopromotion',$i.$j);
-        $promotion->setPhoto($this->getReference('photopromotion'.$i.$j));
-
         $promotion->setPrestataire($this->getReference('prestataire'.$i));
+
+        //        ajout de categories
+
+        $randArray = $this->randomNumbersArray(rand(1,self::$maxCategoriesParPromotion),0,self::$nbreCategorie-1);
+        foreach ($randArray as $id){
+            $promotion->addCategorie($this->getReference('categorie'.$id));
+        }
 
         $this->addReference('promotion'.$i.$j,$promotion);
         return $promotion;

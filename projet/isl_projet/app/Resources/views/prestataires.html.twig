@@ -78,7 +78,7 @@
                         {% for prestataire in prestataires %}
                         <div class="card-row">
                             <div class="card-row-inner">
-{#TODO#}                                <div class="card-row-image" data-background-image="{{asset('img/tmp') }}{#{{ prestataire.image }}#}/product-1.jpg">
+{#TODO#}                                <div class="card-row-image" data-background-image="{{asset('img/') }}{{ prestataire.logo.nom|tempDevImage }}">
 
                                 </div><!-- /.card-row-image -->
 

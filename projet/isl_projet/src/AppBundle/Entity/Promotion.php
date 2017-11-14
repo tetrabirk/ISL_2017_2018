@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * Promotion
@@ -79,27 +81,25 @@ class Promotion
     private $prestataire;
 
     /**
-     * une promotion à une photo
-     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     * bcp de promotions concerne bcp de categories
+     * @ORM\ManyToMany(targetEntity="CategorieDeServices", inversedBy="Promotion")
+     * @ORM\JoinTable(name="categories_des_promotions")
      */
-    private $photo;
+    private $categories;
+
+    public function addCategorie(CategorieDeServices $categ)
+    {
+        $categ->addPromotions($this);
+        $this->categories[]= $categ;
+    }
 
     /**
      * @return mixed
      */
-    public function getPhoto()
+    public function getCategories()
     {
-        return $this->photo;
+        return $this->categories;
     }
-
-    /**
-     * @param mixed $photo
-     */
-    public function setPhoto($photo)
-    {
-        $this->photo = $photo;
-    }
-
 
     /**
      * @return mixed
@@ -287,5 +287,9 @@ class Promotion
         $this->nom = $nom;
     }
 
+    public function __construct()
+    {
+        $this->categories = new ArrayCollection();
+    }
 
 }

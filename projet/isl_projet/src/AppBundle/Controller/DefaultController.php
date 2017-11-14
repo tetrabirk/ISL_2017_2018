@@ -16,14 +16,8 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
-
-
         return $this->render('default/index.html.twig',array(
             'pageTitle' => 'Bien être',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
         ));
     }
 
@@ -32,14 +26,8 @@ class DefaultController extends Controller
      */
     public function renderContact()
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
-
-
         return $this->render('contact.html.twig',array(
             'pageTitle' => 'Contact',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
         ));
     }
     /**
@@ -47,14 +35,8 @@ class DefaultController extends Controller
      */
     public function renderAbout()
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
-
-
         return $this->render('about.html.twig',array(
             'pageTitle' => 'À Propos De Nous',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
         ));
     }
     /**
@@ -62,15 +44,10 @@ class DefaultController extends Controller
      */
     public function renderNews()
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
         $newsletters = self::getNewsletter();
-
 
         return $this->render('newsletter.html.twig',array(
             'pageTitle' => 'Newsletter',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
             'newsletters' => $newsletters,
         ));
     }
@@ -79,14 +56,8 @@ class DefaultController extends Controller
      */
     public function renderConnexion()
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
-
-
         return $this->render('connexion.html.twig',array(
             'pageTitle' => 'Connexion',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
         ));
     }
     /**
@@ -94,14 +65,8 @@ class DefaultController extends Controller
      */
     public function renderInscription()
     {
-        $siteInfos = self::getSiteInfos();
-        $menu = self::getMenu();
-
-
         return $this->render('inscription.html.twig',array(
             'pageTitle' => 'Inscription',
-            'siteInfos' => $siteInfos,
-            'menu' => $menu,
         ));
     }
 
@@ -117,27 +82,4 @@ class DefaultController extends Controller
         return $data;
     }
 
-
-    static function getMenu()
-    {
-        $menu = [
-            ['nom'=> 'Prestataires','href'=>'prestataire','submenu'=>
-                [
-                    ['nom'=> 'test','href'=>'homepage'],
-                    ['nom'=> 'tesities','href'=>'homepage']
-                ]
-            ],
-            ['nom'=> 'Services','href'=>'categories'],
-            ['nom'=> 'News','href'=>'news'],
-            ['nom'=> 'Contact','href'=>'contact'],
-            ['nom'=> 'A propos de nous','href'=>'about']
-        ];
-        return $menu;
-    }
-    static function getSiteInfos(){
-        $infos= [
-            'nomSite'=> 'Bien-Être',
-        ];
-        return $infos;
-    }
 }

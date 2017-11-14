@@ -85,29 +85,6 @@ class Stage
     private $prestataire;
 
     /**
-     * un stage à une photo
-     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
-     */
-    private $photo;
-
-    /**
-     * @return mixed
-     */
-    public function getPhoto()
-    {
-        return $this->photo;
-    }
-
-    /**
-     * @param mixed $photo
-     */
-    public function setPhoto($photo)
-    {
-        $this->photo = $photo;
-    }
-
-
-    /**
      * Get id
      *
      * @return int

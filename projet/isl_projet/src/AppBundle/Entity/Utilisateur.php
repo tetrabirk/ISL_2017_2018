@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UtilisateurRepository")
  * @ORM\InheritanceType("SINGLE_TABLE")
  * @ORM\DiscriminatorColumn(name="type_utilisateur", type="string")
- * @ORM\DiscriminatorMap({"utilisateur" = "utilisateur", "internaute" = "internaute", "prestataire" = "prestataire"})
+ * @ORM\DiscriminatorMap({"utilisateur" = "Utilisateur", "internaute" = "Internaute", "prestataire" = "Prestataire"})
  */
 class Utilisateur
 {
@@ -64,29 +64,6 @@ class Utilisateur
      * @ORM\JoinColumn(name="localite_id", referencedColumnName="id")
      */
     private $localite;
-
-    /**
-     * un internaute à un avatar
-     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
-     */
-    private $avatar;
-
-    /**
-     * @return mixed
-     */
-    public function getAvatar()
-    {
-        return $this->avatar;
-    }
-
-    /**
-     * @param mixed $avatar
-     */
-    public function setAvatar($avatar)
-    {
-        $this->avatar = $avatar;
-    }
-
 
     /**
      * @return mixed

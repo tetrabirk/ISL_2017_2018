@@ -35,6 +35,31 @@ class Internaute extends Utilisateur
      */
     private $newsletter;
 
+
+    /**
+     * un internaute à un avatar
+     * @ORM\OneToOne(targetEntity="Image",cascade={"persist"})
+     */
+    private $avatar;
+
+    /**
+     * @return mixed
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    /**
+     * @param mixed $avatar
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+    }
+
+
+
     /**
      * bcp internaute ont bcp de favoris
      * @ORM\ManyToMany(targetEntity="Prestataire", inversedBy="internautesFavoris")

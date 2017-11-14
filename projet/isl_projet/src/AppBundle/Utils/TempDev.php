@@ -11,7 +11,7 @@ namespace AppBundle\Utils;
 
 class TempDev
 {
-    public function reductionLienImage($string)
+    static function reductionLienImage($string)
     {
         $moinsjpg = substr($string,0,-4);
         $exploded = explode('_',$moinsjpg);

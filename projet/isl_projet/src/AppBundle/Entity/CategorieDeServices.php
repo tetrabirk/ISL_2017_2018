@@ -61,10 +61,17 @@ class CategorieDeServices
     private $valide;
 
     /**
-     * Bcp de CategorieDeServicesController ont bcp de PrestataireController
+     * Bcp de CategorieDeServices ont bcp de Prestataire
      * @ORM\ManyToMany(targetEntity="Prestataire", mappedBy="categories")
      */
     private $prestataires;
+
+    /**
+     * Bcp de CategorieDeServices ont bcp de Promotions
+     * @ORM\ManyToMany(targetEntity="Promotion", mappedBy="categories")
+     */
+    private $promotions;
+
 
     /**
      * une categorie à une image
@@ -79,11 +86,17 @@ class CategorieDeServices
     public function __construct()
     {
         $this->prestataires = new ArrayCollection();
+        $this->promotions = new ArrayCollection();
     }
 
     public function addPrestataires(Prestataire $prestataire)
     {
         $this->prestataires[] = $prestataire;
+    }
+
+    public function addPromotions(Promotion $promotion)
+    {
+        $this->promotions[] = $promotion;
     }
 
 

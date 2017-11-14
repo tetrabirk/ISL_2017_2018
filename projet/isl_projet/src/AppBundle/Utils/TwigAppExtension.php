@@ -8,6 +8,7 @@ class TwigAppExtension extends \Twig_Extension
     {
         return array(
             new \Twig_SimpleFilter('stars',array($this,'noteToString')),
+            new \Twig_SimpleFilter('tempDevImage',array($this,'imageNameConverter')),
         );
     }
 
@@ -38,5 +39,16 @@ class TwigAppExtension extends \Twig_Extension
         }
 
         return $str;
+    }
+
+
+    public function imageNameConverter($string){
+        $moinsjpg = substr($string,0,-4);
+        $exploded = explode('_',$moinsjpg);
+        while ($exploded[1] >= 10)
+        {
+            $exploded[1] += -10;
+        }
+        return $exploded[0].'_'.$exploded[1].'.jpg';
     }
 }
