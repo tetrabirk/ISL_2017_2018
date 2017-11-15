@@ -32,7 +32,7 @@ class PrestataireController extends Controller
     /**
      * @Route("/prestataire/{slug}", defaults ={"slug"=null}, name="prestataire")
      */
-    public function renderPrestataires($slug)
+    public function PrestatairesAction($slug)
     {
         /** @var PrestataireRepository $pr */
         $pr = $this->getDoctrine()->getRepository(Prestataire::class);
@@ -45,14 +45,14 @@ class PrestataireController extends Controller
         $stats['nbreDElement'] = count($prestataires);
 
         if($slug !=null){
-            return $this->render('prestataire.html.twig',array(
+            return $this->render('public/prestataires/prestataire_single.html.twig',array(
                 'categories'=> $categories,
                 'stats'=> $stats,
                 'prestataire' => $prestataires,
                 'pageTitle' => $prestataires->getNom(),
             ));
         }else{
-            return $this->render('prestataires.html.twig',array(
+            return $this->render('public/prestataires/prestataires_all.html.twig',array(
                 'prestataires' => $prestataires,
                 'pageTitle' => 'Nos Prestataires',
                 'categories'=> $categories,

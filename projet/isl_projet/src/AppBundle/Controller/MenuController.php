@@ -47,7 +47,7 @@ class MenuController extends Controller
     public function renderMenuAction($type=null)
     {
         $menu = $this->getMenu();
-        return $this->render('menu.html.twig',array(
+        return $this->render('lib/menu.html.twig',array(
             'menu' => $menu,
         ));
     }

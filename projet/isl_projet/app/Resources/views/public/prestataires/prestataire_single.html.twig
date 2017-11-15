@@ -1,4 +1,7 @@
-{% extends "base.html.twig" %}
+{% extends "index.html.twig" %}
+
+{% block title %}{{ prestataire.nom|capitalize }}{% endblock %}
+
 
 {% block content %}
 
@@ -18,7 +21,7 @@
                             </div><!-- /.detail-banner-address -->
 
                             <div class="detail-banner-rating">
-                                {% include 'stars.html.twig' %}
+                                {% include 'lib/stars.html.twig' %}
                             </div><!-- /.detail-banner-rating -->
 
                             <div class="detail-banner-btn bookmark">

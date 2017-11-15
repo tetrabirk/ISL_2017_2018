@@ -82,7 +82,7 @@ class Promotion
 
     /**
      * bcp de promotions concerne bcp de categories
-     * @ORM\ManyToMany(targetEntity="CategorieDeServices", inversedBy="Promotion")
+     * @ORM\ManyToMany(targetEntity="CategorieDeServices", inversedBy="promotions")
      * @ORM\JoinTable(name="categories_des_promotions")
      */
     private $categories;

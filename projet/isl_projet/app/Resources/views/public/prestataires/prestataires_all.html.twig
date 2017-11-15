@@ -1,0 +1,69 @@
+{% extends "index.html.twig" %}
+{% block title %}Prestataires{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="content">
+                    <div class="document-title">
+                        <h1>{{ pageTitle }}</h1>
+
+                    </div><!-- /.document-title -->
+
+                    {% include 'lib/search/filter/prestataires.html.twig' %}
+
+                    {% include 'lib/search/result_sort.html.twig' %}
+
+                    <div class="cards-row">
+                        {% for prestataire in prestataires %}
+                            <div class="card-row">
+                                <div class="card-row-inner">
+                                    {#TODO#}
+                                    <div class="card-row-image"
+                                         data-background-image="{{ asset('img/') }}{{ prestataire.logo.nom|tempDevImage }}">
+
+                                    </div><!-- /.card-row-image -->
+
+                                    <div class="card-row-body">
+                                        <h2 class="card-row-title"><a
+                                                    href="{{ path('prestataire',{'slug': prestataire.slug}) }}">{{ prestataire.nom|capitalize }}</a>
+                                        </h2>
+                                        <div class="card-row-content">
+                                            <p>
+
+                                                {% for categorie in prestataire.categories %}
+                                                    <a href="{{ path('categories',{'slug': categorie.slug}) }}">{{ categorie.nom|capitalize }}</a> ,
+                                                {% endfor %}
+                                            </p>
+                                            <div class="card-row-rating">
+                                                {% include 'lib/stars.html.twig' %}
+                                            </div><!-- /.card-row-rating -->
+                                        </div><!-- /.card-row-content -->
+                                    </div><!-- /.card-row-body -->
+
+                                    <div class="card-row-properties">
+                                        <dl>
+                                            {#TODO#}
+                                            <dd>Promotion(s) en cours</dd>
+                                            <dt>{# promotion en cours#}</dt>
+                                            {#TODO#}
+                                            <dd>Stage(s) proposé(s)</dd>
+                                            <dt>{# stages#}</dt>
+                                        </dl>
+                                    </div><!-- /.card-row-properties -->
+                                </div><!-- /.card-row-inner -->
+                            </div><!-- /.card-row -->
+                        {% endfor %}
+                    </div><!-- /.cards-row -->
+
+                    {% include 'lib/search/pager.html.twig' %}
+
+
+                </div><!-- /.content -->
+            </div><!-- /.container -->
+        </div><!-- /.main-inner -->
+    </div><!-- /.main -->
+
+{% endblock %}
+
