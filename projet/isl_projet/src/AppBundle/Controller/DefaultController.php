@@ -14,10 +14,9 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        return $this->render('default/index.html.twig',array(
-            'pageTitle' => 'Bien être',
+        return $this->render('index.html.twig',array(
         ));
     }
 
@@ -26,8 +25,7 @@ class DefaultController extends Controller
      */
     public function renderContact()
     {
-        return $this->render('contact.html.twig',array(
-            'pageTitle' => 'Contact',
+        return $this->render('public/contact.html.twig',array(
         ));
     }
     /**
@@ -35,8 +33,7 @@ class DefaultController extends Controller
      */
     public function renderAbout()
     {
-        return $this->render('about.html.twig',array(
-            'pageTitle' => 'À Propos De Nous',
+        return $this->render('public/about.html.twig',array(
         ));
     }
     /**
@@ -46,8 +43,7 @@ class DefaultController extends Controller
     {
         $newsletters = self::getNewsletter();
 
-        return $this->render('newsletter.html.twig',array(
-            'pageTitle' => 'Newsletter',
+        return $this->render('public/newsletter.html.twig',array(
             'newsletters' => $newsletters,
         ));
     }
@@ -56,8 +52,7 @@ class DefaultController extends Controller
      */
     public function renderConnexion()
     {
-        return $this->render('connexion.html.twig',array(
-            'pageTitle' => 'Connexion',
+        return $this->render('security/connexion.html.twig',array(
         ));
     }
     /**
@@ -65,8 +60,7 @@ class DefaultController extends Controller
      */
     public function renderInscription()
     {
-        return $this->render('inscription.html.twig',array(
-            'pageTitle' => 'Inscription',
+        return $this->render('security/inscription.html.twig',array(
         ));
     }
 

@@ -42,21 +42,16 @@ class PrestataireController extends Controller
         $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
         $categories=$cr->findCategoriesDeServices();
 
-        $stats['nbreDElement'] = count($prestataires);
 
         if($slug !=null){
             return $this->render('public/prestataires/prestataire_single.html.twig',array(
                 'categories'=> $categories,
-                'stats'=> $stats,
                 'prestataire' => $prestataires,
-                'pageTitle' => $prestataires->getNom(),
             ));
         }else{
             return $this->render('public/prestataires/prestataires_all.html.twig',array(
                 'prestataires' => $prestataires,
-                'pageTitle' => 'Nos Prestataires',
                 'categories'=> $categories,
-                'stats'=> $stats,
             ));
 
         }

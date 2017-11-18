@@ -21,7 +21,7 @@ use AppBundle\Controller\DefaultController as DC;
 class ProfilController extends Controller
 {
 
-    //////        INTERNAUTE: 22       PRESTATAIRE: 32
+    //////        INTERNAUTE: 62       PRESTATAIRE: 32
     public function getUtilisateur($id)
     {
         $repository = $this->getDoctrine()->getRepository(Utilisateur::class);
@@ -33,10 +33,11 @@ class ProfilController extends Controller
     /**
      * @Route("/profil/{id}", defaults ={"id"=null}, name="profil")
      */
-    public function renderProfil()
+    public function ProfilAction()
     {
-        return $this->render('profilBase.html.twig',array(
-            'pageTitle' => "profil Utilisateur",
+        $user = $this->getUtilisateur(82);
+        return $this->render('profil/prestataire.html.twig',array(
+            'utilisateur' => $user,
         ));
     }
 

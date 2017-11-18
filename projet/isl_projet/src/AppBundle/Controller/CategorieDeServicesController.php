@@ -38,12 +38,12 @@ class CategorieDeServicesController extends Controller
     /**
      * @Route("/services/{slug}", defaults ={"slug"=null}, name="categories")
      */
-    public function renderCategories($slug)
+    public function categoriesDeServicesAction($slug)
     {
         $categories = $this->getCategoriesDeServices(null);
 
 
-        return $this->render('services.html.twig',array(
+        return $this->render('public/services/services_all.html.twig',array(
             'categories' => $categories,
             'pageTitle' => 'Catégories De Services',
         ));

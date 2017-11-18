@@ -1,4 +1,4 @@
-{% extends "base.html.twig" %}
+{% extends "index.html.twig" %}
 
 {% block content %}
 
@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="document-title">
-                        <h1>{{ pageTitle }}</h1>
+                        <h1>Newsletter</h1>
 
                     </div><!-- /.document-title -->
 
@@ -38,17 +38,7 @@
 
                             </div><!-- /.posts -->
 
-
-
-                            <div class="pager">
-                                <ul>
-                                    <li><a href="#">Prev</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li class="active"><a>6</a></li>
-                                    <li><a href="#">7</a></li>
-                                    <li><a href="#">Next</a></li>
-                                </ul>
-                            </div><!-- /.pagination -->
+                            {% include 'lib/search/pager.html.twig' %}
 
 
                         </div><!-- /.content -->
@@ -57,28 +47,18 @@
                     <div class="col-sm-4 col-lg-3">
                         <div class="sidebar">
                             <div class="widget">
-                                {#TODO faire de joli boutton s'abonner/ se désabonner#}
 
                                 <div class="cards-small">
                                         <a class ="btn btn-primary" href="#">S'abonner</a>
                                         <a class ="btn btn-primary" href="#">Se désabonner</a>
                                 </div><!-- /.cards-small -->
 
-
-
-
-
                             </div><!-- /.widget -->
 
-                            <div class="widget">
-                                <h2 class="widgettitle">Archives</h2>
 
-                                <ul class="menu">
-                                    <li><a href="#">August <strong class="pull-right">12</strong></a></li>
-                                    <li><a href="#">July <strong class="pull-right">23</strong></a></li>
-                                    <li><a href="#">June <strong class="pull-right">53</strong></a></li>
-                                </ul><!-- /.menu -->
-                            </div><!-- /.wifget -->
+
+                            {% include 'lib/widget/archives.html.twig' %}
+
 
                         </div><!-- /.sidebar -->
                     </div><!-- /.col-* -->
