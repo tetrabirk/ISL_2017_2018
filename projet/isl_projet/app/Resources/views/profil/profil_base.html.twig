@@ -13,7 +13,7 @@
                             <div class="widget">
                                 <div class="user-photo">
                                     <a href="#">
-                                        <img src="{{asset('img/tmp')}}/{% block imgProfil %}{% endblock %}" alt="User Photo">
+                                        <img src="{{asset('img/')}}{% block imgProfil %}{% endblock %}" alt="User Photo">
                                         <span class="user-photo-action" >{% block txtModifImg %}{% endblock %}</span>
                                     </a>
                                 </div><!-- /.user-photo -->
@@ -23,7 +23,7 @@
                             <div class="widget">
 
                                 <div class="menu-advanced">
-                                    <p>Membre depuis le {{ utilisateur.Inscription|date('d-m-Y') }}</p>
+                                    <div>Membre depuis le {{ utilisateur.Inscription|date('d-m-Y') }}</div>
                                     {% if utilisateur.confInscription == false %}
                                         <div><a class="btn-danger" href="#">Confirmer l'Adresse Email</a></div>
                                     {% endif %}
@@ -38,8 +38,9 @@
 
                                     {% endblock %}
                                     <li class="active"><a href="{{ path('profil') }}"><i class="fa fa-user"></i> Modifier Profil</a></li>
-                                    <li><a href="#"><i class="fa fa-key"></i> Mot de Passe</a></li>
-                                    <li><a href="#"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
+                                    <li><a href="{{ path('mot_de_passe') }}"><i class="fa fa-key"></i> Mot de passe</a></li>
+                                    <li><a href="{{ path('deconnexion') }}"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
+                                    <li><a href="{{ path('profil_suppression') }}"><i class="fa fa-trash-o"></i> Supprimer le profil</a></li>
                                 </ul>
                             </div><!-- /.widget -->
 
@@ -49,12 +50,12 @@
                     <div class="col-sm-8 col-lg-9">
                         <div class="content">
                             <div class="page-title">
-                                <h1>{{ utilisateur.nom|capitalize }}
-                                    {% block stars %}
-                                    {% endblock %}
-                                </h1>
+                                {% block nomProfil %}
+                                {% endblock %}
+                                {% block subTitle %}
+                                {% endblock %}
                             </div><!-- /.page-title -->
-
+                            {% block content_profil %}
                             <div class="background-white p20 mb30">
                                 <h3 class="page-title">
                                     Infos Globales
@@ -112,6 +113,7 @@
 
                                 </div><!-- /.row -->
                             </div>
+                            {% endblock %}
 
                         </div><!-- /.content -->
                     </div><!-- /.col-* -->

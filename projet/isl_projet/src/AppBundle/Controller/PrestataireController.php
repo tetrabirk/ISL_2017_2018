@@ -32,7 +32,7 @@ class PrestataireController extends Controller
     /**
      * @Route("/prestataire/{slug}", defaults ={"slug"=null}, name="prestataire")
      */
-    public function PrestatairesAction($slug)
+    public function prestatairesAction($slug)
     {
         /** @var PrestataireRepository $pr */
         $pr = $this->getDoctrine()->getRepository(Prestataire::class);

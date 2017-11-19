@@ -1,6 +1,6 @@
 {% extends "profil/profil_base.html.twig" %}
 
-{% block imgProfil %}{{ utilisateur.logo.nom }}{% endblock %}
+{% block imgProfil %}{{ utilisateur.logo.nom|tempDevImage }}{% endblock %}
 {% block txtModifImg %}Modifier mon logo{% endblock %}
 
 {% block widgets %}
@@ -13,19 +13,23 @@
 {% endblock %}
 
 {% block menuOptions %}
-    <li><a href="{{ path('profil',{'route1':'stages'}) }}"><i class="fa fa-pencil"></i> Stages</a></li>
-    <li><a href="{{ path('profil',{'route1':'promo'}) }}"><i class="fa fa-pencil"></i> Promotions</a></li>
+    <li><a href="{{ path('stages') }}"><i class="fa fa-pencil"></i> Stages</a></li>
+    <li><a href="{{ path('promos') }}"><i class="fa fa-pencil"></i> Promotions</a></li>
     {#TODO#}
     <li><a href="#"><i class="fa fa-pencil"></i> Commentaires</a></li>
 {% endblock %}
 
-{% block stars %}
-    <span>
+{% block nomProfil %}
+    <h1>{{ utilisateur.nom|capitalize }}
+        <span>
                                         {# TODO#}
-        *ici des étoiles*
-        {#{% include 'lib/stars.html.twig' %}#}
-        {#{{ (utilisateur.cote*5)|round(1,'floor') }} / 5#}
-    </span><!-- /.card-row-rating -->
+            *ici des étoiles*
+            {#{% include 'lib/stars.html.twig' %}#}
+            {#{{ (utilisateur.cote*5)|round(1,'floor') }} / 5#}
+        </span><!-- /.card-row-rating -->
+
+    </h1>
+
 {% endblock %}
 
 {% block champsInfosGlobale %}

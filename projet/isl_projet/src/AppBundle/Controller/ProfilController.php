@@ -31,70 +31,30 @@ class ProfilController extends Controller
     }
 
     /**
-     * @Route("/profil/{id}", defaults ={"id"=null}, name="profil")
+     * @Route("/profil/{id}", defaults ={"id"=null}, name="profil", requirements={"id": "\d+"})
      */
-    public function ProfilAction()
+    public function profilAction()
     {
         $user = $this->getUtilisateur(82);
-        return $this->render('profil/prestataire.html.twig',array(
-            'utilisateur' => $user,
-        ));
+        $userType= $user->getType();
+        if ($userType =="Prestataire"){
+            return $this->render('profil/prestataire.html.twig',array(
+                'utilisateur' => $user,
+            ));
+        }else{
+            return $this->render('profil/internaute.html.twig',array(
+                'utilisateur' => $user,
+            ));
+        }
+
     }
 
     /**
      * @Route("/profil/suppression", name="profil_suppression")
      */
-    public function renderProfilSuppression()
+    public function profilSuppressionAction()
     {
-        return $this->render('profilSuppression.html.twig',array(
-            'pageTitle' => "profil - Suppression",
-        ));
-    }
-
-
-
-
-
-
-
-
-    /**
-     * @Route("/profil/stages", name="profil_stages")
-     */
-    public function renderProfilStage()
-    {
-        return $this->render('profilStages.html.twig',array(
-            'pageTitle' => "profil - Stages",
-        ));
-    }
-
-    /**
-     * @Route("/profil/stage/nouveau", name="profil_stage_nouveau")
-     */
-    public function renderProfilStageNouveau()
-    {
-        return $this->render('profilStageNouveau.html.twig',array(
-            'pageTitle' => "profil - Stage - Nouveau",
-        ));
-    }
-
-    /**
-     * @Route("/profil/stage/MiseAJour", name="profil_stage_miseAJour")
-     */
-    public function renderProfilStageMiseAJour()
-    {
-        return $this->render('profilStageMiseAJour',array(
-            'pageTitle' => "profil - Stage - Mise à jour",
-        ));
-    }
-
-    /**
-     * @Route("/profil/stage/Suppression", name="profil_stage_suppression")
-     */
-    public function renderProfilStageSuppression()
-    {
-        return $this->render('profilStageMiseAJour',array(
-            'pageTitle' => "profil - Stage - Suppression",
+        return $this->render('profil/profil_suppression.html.twig',array(
         ));
     }
 
@@ -104,44 +64,87 @@ class ProfilController extends Controller
 
 
     /**
-     * @Route("/profil/promos", name="profil_promos")
+     * @Route("/profil/stages", name="stages")
      */
-    public function renderProfilPromo()
+    public function stagesAction()
     {
-        return $this->render('profilPromos.html.twig',array(
-            'pageTitle' => "profil - Promos",
+        $user = $this->getUtilisateur(82);
+
+        return $this->render('profil/stages/stages.html.twig',array(
+            'utilisateur' => $user,
         ));
     }
 
     /**
-     * @Route("/profil/promo/nouveau", name="profil_promo_nouveau")
+     * @Route("/stages/nouveau", name="stage_nouveau")
      */
-    public function renderProfilPromoNouveau()
+    public function stageNouveauAction()
     {
-        return $this->render('profilPromoNouveau.html.twig',array(
-            'pageTitle' => "profil - Promo - Nouveau",
+        return $this->render('profil/stages/stage_nouveau.html.twig',array(
         ));
     }
 
     /**
-     * @Route("/profil/promo/MiseAJour", name="profil_promo_miseAJour")
+     * @Route("/stages/mise_a_jour", name="stage_mise_a_jour")
      */
-    public function renderProfilPromoMiseAJour()
+    public function stageMiseAJourAction()
     {
-        return $this->render('profilPromoMiseAJour',array(
-            'pageTitle' => "profil - Promo - Mise à jour",
+        return $this->render('profil/stages/stage_mise_a_jour',array(
         ));
     }
 
     /**
-     * @Route("/profil/promo/Suppression", name="profil_promo_suppression")
+     * @Route("/stages/suppression", name="stage_suppression")
      */
-    public function renderProfilPromoSuppression()
+    public function stageSuppressionAction()
     {
-        return $this->render('profilPromoMiseAJour',array(
-            'pageTitle' => "profil - Promo - Suppression",
+        return $this->render('profil/stages/stages',array(
         ));
     }
+
+
+
+
+
+
+    /**
+     * @Route("/profil/promos", name="promos")
+     */
+    public function promosAction()
+    {
+        return $this->render('profil/promos/promos.html.twig',array(
+        ));
+    }
+
+    /**
+     * @Route("/promos/nouveau", name="promo_nouveau")
+     */
+    public function promoNouveauAction()
+    {
+        return $this->render('profil/promos/promo_nouveau.html.twig',array(
+        ));
+    }
+
+    /**
+     * @Route("/promos/mise_a_jour", name="promo_mise_a_jour")
+     */
+    public function promoMiseAJourAction()
+    {
+        return $this->render('profil/promos/promo_mise_a_jour',array(
+        ));
+    }
+
+    /**
+     * @Route("/promos/suppression", name="promo_suppression")
+     */
+    public function promoSuppressionAction()
+    {
+        return $this->render('profil/promos/promos',array(
+        ));
+    }
+
+
+
 
 
 }
