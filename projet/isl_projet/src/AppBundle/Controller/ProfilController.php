@@ -35,7 +35,7 @@ class ProfilController extends Controller
      */
     public function profilAction()
     {
-        $user = $this->getUtilisateur(82);
+        $user = $this->getUtilisateur(229);
         $userType= $user->getType();
         if ($userType =="Prestataire"){
             return $this->render('profil/prestataire.html.twig',array(
@@ -68,7 +68,7 @@ class ProfilController extends Controller
      */
     public function stagesAction()
     {
-        $user = $this->getUtilisateur(82);
+        $user = $this->getUtilisateur(229);
 
         return $this->render('profil/stages/stages.html.twig',array(
             'utilisateur' => $user,
@@ -112,7 +112,11 @@ class ProfilController extends Controller
      */
     public function promosAction()
     {
-        return $this->render('profil/promos/promos.html.twig',array(
+        $user = $this->getUtilisateur(229);
+
+        return $this->render('profil/promotions/promos.html.twig',array(
+            'utilisateur' => $user,
+
         ));
     }
 
@@ -121,7 +125,7 @@ class ProfilController extends Controller
      */
     public function promoNouveauAction()
     {
-        return $this->render('profil/promos/promo_nouveau.html.twig',array(
+        return $this->render('profil/promotions/promo_nouveau.html.twig',array(
         ));
     }
 
@@ -130,7 +134,7 @@ class ProfilController extends Controller
      */
     public function promoMiseAJourAction()
     {
-        return $this->render('profil/promos/promo_mise_a_jour',array(
+        return $this->render('profil/promotions/promo_mise_a_jour',array(
         ));
     }
 

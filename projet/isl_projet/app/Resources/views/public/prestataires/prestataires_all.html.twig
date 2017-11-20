@@ -25,7 +25,7 @@
 
                                     </div><!-- /.card-row-image -->
 
-                                    <div class="card-row-body">
+                                    <div class="card-row-body col-sm-6">
                                         <h2 class="card-row-title"><a
                                                     href="{{ path('prestataire',{'slug': prestataire.slug}) }}">{{ prestataire.nom|capitalize }}</a>
                                         </h2>
@@ -42,14 +42,29 @@
                                         </div><!-- /.card-row-content -->
                                     </div><!-- /.card-row-body -->
 
-                                    <div class="card-row-properties">
+                                    <div class="col-sm-6">
                                         <dl>
-                                            {#TODO#}
-                                            <dd>Promotion(s) en cours</dd>
-                                            <dt>{# promotion en cours#}</dt>
-                                            {#TODO#}
-                                            <dd>Stage(s) proposé(s)</dd>
-                                            <dt>{# stages#}</dt>
+                                            <h6>Promotion(s) en cours</h6>
+                                            <ul>
+                                                {% for promo in prestataire.promotions %}
+
+                                                    {% if promo.debut < date() and promo.fin > date() %}
+                                                        <li>{{ promo.nom }}</li>
+                                                    {% endif %}
+
+                                                {% endfor %}
+                                            </ul>
+
+                                            <h6>Stage(s) proposé(s)</h6>
+                                            <ul>
+                                                {% for stage in prestataire.stages %}
+
+                                                    {% if stage.debut < date() and stage.fin > date() %}
+                                                        <li>{{ stage.nom }}</li>
+                                                    {% endif %}
+
+                                                {% endfor %}
+                                            </ul>
                                         </dl>
                                     </div><!-- /.card-row-properties -->
                                 </div><!-- /.card-row-inner -->

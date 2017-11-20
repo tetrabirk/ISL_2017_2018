@@ -75,7 +75,7 @@ class Promotion
 
     /**
      * Bcp de Promotion concerne un prestataire
-     * @ORM\ManyToOne(targetEntity="Prestataire")
+     * @ORM\ManyToOne(targetEntity="Prestataire", inversedBy="promotions")
      * @ORM\JoinColumn(name="prestataire", referencedColumnName="id")
      */
     private $prestataire;

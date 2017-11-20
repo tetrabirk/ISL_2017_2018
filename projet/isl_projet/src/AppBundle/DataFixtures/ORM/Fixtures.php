@@ -139,6 +139,11 @@ class Fixtures extends Fixture
         $categorie->setEnAvant(false);
         $categorie->setValide(true);
 
+//        ajout d'une image
+
+        $image = $this->genImage('image',$i);
+        $categorie->setImage($this->getReference('image'.$i));
+
         $this->addReference('categorie'.$i,$categorie);
 
         return $categorie;
@@ -315,7 +320,6 @@ class Fixtures extends Fixture
         $promotion->setAffichageJusque($promotion->getFin());
 
         $promotion->setPrestataire($this->getReference('prestataire'.$i));
-
         //        ajout de categories
 
         $randArray = $this->randomNumbersArray(rand(1,self::$maxCategoriesParPromotion),0,self::$nbreCategorie-1);

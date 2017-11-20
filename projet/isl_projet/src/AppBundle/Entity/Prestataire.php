@@ -132,6 +132,12 @@ class Prestataire extends Utilisateur
     private $stages;
 
     /**
+     * @ORM\OneToMany(targetEntity="Promotion",mappedBy="prestataire")
+     */
+
+    private $promotions;
+
+    /**
      * Bcp de Prestataire ont bcp d'utilisateur qui les ont ajouté dans leurs favoris
      * @ORM\ManyToMAny(targetEntity="Internaute", mappedBy="favoris")
      */
@@ -269,6 +275,7 @@ class Prestataire extends Utilisateur
     public function __construct()
     {
         $this->stages = new ArrayCollection();
+        $this->promotions = new ArrayCollection();
         $this->categories = new ArrayCollection();
         $this->internautesFavoris = new ArrayCollection();
         $this->photos = new ArrayCollection();
@@ -306,6 +313,40 @@ class Prestataire extends Utilisateur
     public function getStages()
     {
         return $this->stages;
+    }
+
+    /**
+     * Add promotion
+     *
+     * @param \AppBundle\Entity\Promotion $promotion
+     *
+     * @return Prestataire
+     */
+    public function addPromotion(\AppBundle\Entity\Promotion $promotion)
+    {
+        $this->promotions[] = $promotion;
+
+        return $this;
+    }
+
+    /**
+     * Remove promotion
+     *
+     * @param \AppBundle\Entity\Promotion $promotion
+     */
+    public function removePromotion(\AppBundle\Entity\Promotion $promotion)
+    {
+        $this->promotions->removeElement($promotion);
+    }
+
+    /**
+     * Get promotions
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPromotions()
+    {
+        return $this->promotions;
     }
 
     /**
