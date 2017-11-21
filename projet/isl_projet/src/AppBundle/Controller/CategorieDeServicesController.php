@@ -12,6 +12,8 @@ use AppBundle\Entity\CategorieDeServices;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use AppBundle\Repository\CategorieDeServicesRepository;
+
 
 
 
@@ -21,31 +23,32 @@ class CategorieDeServicesController extends Controller
 
     //TODO creer un fichier où je mettrais tt les fonction "getqqlchose" pour éviter les répétitions
 
-    public function getCategoriesDeServices($slug)
+    public function getRepo()
     {
-        $repository = $this->getDoctrine()->getRepository(CategorieDeServices::class);
-
-        if($slug != null){
-            $data = $repository->findOneBy(
-                array('slug'=> $slug)
-            );
-        }else {
-            $data = $repository->findAll();
-        }
-        return $data;
+        /** @var CategorieDeServicesRepository $cr */
+        $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
+        return $cr;
     }
 
     /**
-     * @Route("/services/{slug}", defaults ={"slug"=null}, name="categories")
+     * @Route("/services/{slug}", defaults ={"slug"=null}, name="services")
      */
     public function categoriesDeServicesAction($slug)
     {
-        $categories = $this->getCategoriesDeServices(null);
+
+        $categories = $this->getRepo()->findCategoriesDeServices($slug);
+
+        if ($slug != null){
+            return $this->render('public/services/service_single.html.twig',array(
+                'service' => $categories,
+            ));
+        }else{
+            return $this->render('public/services/services_all.html.twig',array(
+                'services' => $categories,
+            ));
+        }
 
 
-        return $this->render('public/services/services_all.html.twig',array(
-            'categories' => $categories,
-            'pageTitle' => 'Catégories De Services',
-        ));
     }
+
 }

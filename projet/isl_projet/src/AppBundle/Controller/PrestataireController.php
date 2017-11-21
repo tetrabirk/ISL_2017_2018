@@ -34,14 +34,10 @@ class PrestataireController extends Controller
      */
     public function prestatairesAction($slug)
     {
-        /** @var PrestataireRepository $pr */
-        $pr = $this->getDoctrine()->getRepository(Prestataire::class);
-        $prestataires=$pr->findPrestataires($slug);
-
         /** @var CategorieDeServicesRepository $cr */
         $cr = $this->getDoctrine()->getRepository(CategorieDeServices::class);
         $categories=$cr->findCategoriesDeServices();
-
+        $prestataires = $this->getPrestaires($slug);
 
         if($slug !=null){
             return $this->render('public/prestataires/prestataire_single.html.twig',array(
@@ -58,5 +54,15 @@ class PrestataireController extends Controller
 
 
     }
+
+    public function getPrestaires($slug){
+        /** @var PrestataireRepository $pr */
+        $pr = $this->getDoctrine()->getRepository(Prestataire::class);
+        $prestataires=$pr->findPrestataires($slug);
+
+        return $prestataires;
+
+    }
+
 
 }

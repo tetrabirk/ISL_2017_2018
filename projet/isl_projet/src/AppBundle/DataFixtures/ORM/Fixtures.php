@@ -135,7 +135,7 @@ class Fixtures extends Fixture
     {
         $categorie = new CategorieDeServices();
         $categorie->setNom($this->faker->words(2,true));
-        $categorie->setDescription($this->faker->sentences(3,true));
+        $categorie->setDescription($this->faker->sentences(20,true));
         $categorie->setEnAvant(false);
         $categorie->setValide(true);
 

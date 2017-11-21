@@ -33,7 +33,7 @@ class MenuController extends Controller
                         ['nom' => 'tesities', 'href' => 'homepage']
                     ]
                 ],
-                ['nom' => 'Services', 'href' => 'categories'],
+                ['nom' => 'Services', 'href' => 'services'],
                 ['nom' => 'News', 'href' => 'news'],
                 ['nom' => 'Contact', 'href' => 'contact'],
                 ['nom' => 'A propos de nous', 'href' => 'about']
