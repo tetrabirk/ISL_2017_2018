@@ -14,57 +14,50 @@
 
                             <div class="background-white p20">
                                 <div class="user-photo">
-                                    <img src="assets/img/tmp/agent-2.jpg" alt="User Photo">
+                                    <img src="{{ asset('img/') }}{{ prestataire.logo.nom|tempDevImage }}"
+                                         alt="User Photo">
                                 </div>
                                 <div class="page-title">
-                                    <h1>tishdgojsdo</h1>
-                                </div>
-
-
-                                <div class="detail-overview-hearts">
-                                    <i class="fa fa-heart"></i> <strong>213 </strong>people love it
+                                    <h1>{{ prestataire.nom }}</h1>
                                 </div>
 
                                 <div class="detail-overview-rating">
-                                    <i class="fa fa-star"></i> <strong>4.3 / 5 </strong>from <a href="#reviews">316
-                                        reviews</a>
+                                    <i class="fa fa-star"></i> <strong>{% include 'lib/stars.html.twig' %}</strong></a>
                                 </div>
 
-                            </div>
-                            <br>
-                            <div class="background-white p20">
-                                <div class="detail-vcard">
-                                    <div class="detail-logo">
-                                        <img src="assets/img/tmp/pragmaticmates-logo.png">
-                                    </div><!-- /.detail-logo -->
+                                <div class="detail-overview-hearts">
+                                    <i class="fa fa-heart"></i> <strong>??? </strong>personnes l'ont ajouté comme
+                                    favoris
+                                </div>
 
+
+                            </div>
+                            <div class="background-white p20 mt30">
+                                <div class="detail-vcard">
                                     <div class="detail-contact">
                                         <div class="detail-contact-email">
-                                            <i class="fa fa-envelope-o"></i> <a href="mailto:#">company@example.com</a>
+                                            <i class="fa fa-envelope-o"></i> <a
+                                                    href="mailto:#">{{ prestataire.emailContact }}</a>
                                         </div>
                                         <div class="detail-contact-phone">
-                                            <i class="fa fa-mobile-phone"></i> <a href="tel:#">+01-23-456-789</a>
+                                            <i class="fa fa-mobile-phone"></i> <a
+                                                    href="tel:#">{{ prestataire.telephone }}</a>
                                         </div>
                                         <div class="detail-contact-website">
-                                            <i class="fa fa-globe"></i> <a href="#">www.superlist.com</a>
+                                            <i class="fa fa-globe"></i> <a href="#">{{ prestataire.siteInternet }}</a>
                                         </div>
                                         <div class="detail-contact-address">
                                             <i class="fa fa-map-o"></i>
-                                            347/26 22nd Avenue<br>
-                                            NYC AZ 85705, USA
+                                            {{ prestataire.adresseRue~', '~prestataire.adresseNum }}<br>
+                                            {{ prestataire.codePostal~' '~prestataire.commune~' '~prestataire.localite }}
                                         </div>
                                     </div><!-- /.detail-contact -->
                                 </div><!-- /.detail-vcard -->
 
                                 <div class="detail-description">
-                                    <p>Vestibulum a lectus ullamcorper, dapibus ante id, sagittis libero. In tincidunt
-                                        nisi venenatis, ornare eros at, hendrerit sem. Nunc metus purus, porta a
-                                        dignissim vel, vulputate sed odio. Aenean est nisi, pulvinar eget velit quis,
-                                        placerat hendrerit arcu. Vestibulum non dictum nibh.</p>
-                                    <p>In congue mattis felis, non hendrerit orci dictum id. Etiam consequat nulla vitae
-                                        tempus interdum.Nam gravida convallis lacus, at dignissim urna pulvinar sed.</p>
-                                    <p>Cras ac mi odio. Aliquam erat volutpat. Cras euismod facilisis ligula in
-                                        tristique. Proin et eleifend lacus, vitae dictum orci</p>
+                                    {% for categorie in prestataire.categories %}
+                                        <a href="{{ path('services',{'slug': categorie.slug}) }}">{{ categorie.nom|capitalize }}</a> ,
+                                    {% endfor %}
                                 </div>
 
                             </div>
@@ -74,59 +67,13 @@
 
 
                         <div class="col-sm-7">
-                            <div class="detail-gallery">
-                                <div class="detail-gallery-preview">
-                                    <a href="assets/img/tmp/gallery-1.jpg">
-                                        <img src="assets/img/tmp/gallery-1.jpg">
-                                    </a>
-                                </div>
 
-                                <ul class="detail-gallery-index">
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-1.jpg">
-                                            <img src="assets/img/tmp/gallery-1.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-2.jpg">
-                                            <img src="assets/img/tmp/gallery-2.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-3.jpg">
-                                            <img src="assets/img/tmp/gallery-3.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-4.jpg">
-                                            <img src="assets/img/tmp/gallery-4.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-5.jpg">
-                                            <img src="assets/img/tmp/gallery-5.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-6.jpg">
-                                            <img src="assets/img/tmp/gallery-6.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-7.jpg">
-                                            <img src="assets/img/tmp/gallery-7.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                    <li class="detail-gallery-list-item active">
-                                        <a data-target="assets/img/tmp/gallery-8.jpg">
-                                            <img src="assets/img/tmp/gallery-8.jpg" alt="...">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div><!-- /.detail-gallery -->
-                            <br>
-                            <div class="background-white p20">
+                            {% include 'lib/gallery.html.twig' %}
 
+
+                            {#TODO: faire pointé google map sur l'adresse#}
+
+                            <div class="background-white p20  mt30">
                                 <!-- Nav tabs -->
                                 <ul id="listing-detail-location" class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active">
@@ -178,12 +125,43 @@
 
                     <div class="row detail-content mt30">
                         <div class="col-sm-6">
-                            <div class="background-white p20">
-                            </div>
+                            <h2>Stages</h2>
+                                {% for stage in prestataire.stages %}
+                                    {% if stage.affichageDe < date() and stage.affichageJusque > date() %}
+                                        <div >
+                                            <div class="background-white p20 mb30">
+                                                <h4>{{ stage.nom }} <strong>{{ stage.tarif~" €" }}</strong></h4>
+                                                <h5> du {{ stage.debut|date('d/m/Y')}} au {{ stage.fin|date('d/m/Y')}}</h5>
+                                                <p>{{ stage.description }}</p>
+                                                <br>
+                                                {% if stage.infoComplementaire is defined %}
+                                                <h6> Informations Complémentaires</h6>
+                                                <p>{{ stage.infoComplementaire }}</p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+
+                                {% endfor %}
+
                         </div>
                         <div class="col-sm-6">
-                            <div class="background-white p20">
-                            </div>
+                            <h2>Promotions</h2>
+                            {% for promo in prestataire.promotions %}
+                                {% if promo.affichageDe < date() and promo.affichageJusque > date() %}
+                                    <div >
+                                        <div class="background-white p20 mb30">
+                                            <h4>{{ promo.nom }}</h4>
+                                            <h5> du {{ promo.debut|date('d/m/Y')}} au {{ promo.fin|date('d/m/Y')}}</h5>
+                                            <p>{{ promo.description }}</p>
+                                            <br>
+                                            <a href="{{ asset('pdf/') }}{{ promo.documentPDF }}">Télécharger le PDF</a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+
+                            {% endfor %}
+
                         </div>
                     </div>
 
@@ -204,9 +182,9 @@
                                             <h2>Nancy Collins</h2>
 
                                             <span class="report">
-                    <span class="separator">&#8226;</span><i class="fa fa-flag" title="Report" data-toggle="tooltip"
-                                                             data-placement="top"></i>
-                </span>
+                                                <span class="separator">&#8226;</span>
+                                                <i class="fa fa-flag" title="Report" data-toggle="tooltip"data-placement="top"></i>
+                                             </span>
 
                                             <div class="review-overall-rating">
                                                 <span class="overall-rating-title">Total Score:</span>

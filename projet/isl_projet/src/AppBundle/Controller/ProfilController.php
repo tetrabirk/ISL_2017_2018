@@ -35,7 +35,7 @@ class ProfilController extends Controller
      */
     public function profilAction()
     {
-        $user = $this->getUtilisateur(229);
+        $user = $this->getUtilisateur(98);
         $userType= $user->getType();
         if ($userType =="Prestataire"){
             return $this->render('profil/prestataire.html.twig',array(
@@ -68,7 +68,7 @@ class ProfilController extends Controller
      */
     public function stagesAction()
     {
-        $user = $this->getUtilisateur(229);
+        $user = $this->getUtilisateur(98);
 
         return $this->render('profil/stages/stages.html.twig',array(
             'utilisateur' => $user,
@@ -112,7 +112,7 @@ class ProfilController extends Controller
      */
     public function promosAction()
     {
-        $user = $this->getUtilisateur(229);
+        $user = $this->getUtilisateur(98);
 
         return $this->render('profil/promotions/promos.html.twig',array(
             'utilisateur' => $user,
