@@ -1,4 +1,4 @@
-introduction:
+#introduction:
 
 creation d'un thème wp avec la découpe html fournie par mr bloom
 
@@ -9,34 +9,34 @@ screenshot: une photo de vous
 
 
 
-Règles de bases liées à l'HTML:
+#Règles de bases liées à l'HTML:
 
 Le non respect des règles citées ci-dessous entraînera un échec pour l'examen.
 
--Aucune erreur dans la console n'est permise
--Aucune erreur 404(css,js,image,etc), n'est permise
--Si un texte n'est pas modifiable dans le back-office, il doit devenir une clé de traduction
--Tous les liens doivent être fonctionnels
--Le respect de la découpe est primordiale
--Aucune erreur liée au responsive n'est permise
--Visuellement le thème créer doit être identique à la découpe fournie
+*Aucune erreur dans la console n'est permise
+*Aucune erreur 404(css,js,image,etc), n'est permise
+*Si un texte n'est pas modifiable dans le back-office, il doit devenir une clé de traduction
+*Tous les liens doivent être fonctionnels
+*Le respect de la découpe est primordiale
+*Aucune erreur liée au responsive n'est permise
+*Visuellement le thème créer doit être identique à la découpe fournie
 
 
 
-Pages demandées:
+#Pages demandées:
 
--Accueuil
+*Accueuil
 Les fichiers home.php et index.php ne peuvent pas être utilisés pour cette page.
 
--A propos
+*A propos
 Vous devez respectez la hiérarchie des template pour cette page.
 Donc si je crée un nouvelle page, elle doit avoir les mêmes champs et le même visuel que la page à propos.
 
--Actualité
-	-Finance
-	-Bilan
-	-Conseils
-	-Juridique
+*Actualité
+	*Finance
+	*Bilan
+	*Conseils
+	*Juridique
 
 Pour actualité et ses enfants, vous ne devez pas utiliser archive.php et index.php
 
