@@ -58,7 +58,8 @@ class PrestataireController extends Controller
     public function getPrestaires($slug){
         /** @var PrestataireRepository $pr */
         $pr = $this->getDoctrine()->getRepository(Prestataire::class);
-        $prestataires=$pr->findPrestataires($slug);
+        $prestataires=$pr->findAllWithEverithing();
+        dump($prestataires);
 
         return $prestataires;
 

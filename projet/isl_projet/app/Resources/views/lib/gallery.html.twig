@@ -1,21 +1,23 @@
 <div class="detail-gallery">
 
-    {% set first = prestataire.photos|first %}
+    {% if prestataire.photos is not empty %}
 
-    <div class="detail-gallery-preview">
-        <a href="{{ asset('img/') }}{{ first.nom|tempDevImage }}">
-            <img src="{{ asset('img/') }}{{ first.nom|tempDevImage }}">
-        </a>
-    </div>
-
-
-    <ul class="detail-gallery-index">
-        {% for photo in prestataire.photos %}
-        <li class="detail-gallery-list-item active">
-            <a data-target="{{ asset('img/') }}{{ photo.nom|tempDevImage }}">
-                <img src="{{ asset('img/') }}{{ photo.nom|tempDevImage }}" alt="...">
+        {% set first = prestataire.photos|first %}
+        <div class="detail-gallery-preview">
+            <a href="{{ asset('img/') }}{{ first.nom|tempDevImage }}">
+                <img src="{{ asset('img/') }}{{ first.nom|tempDevImage }}">
             </a>
-        </li>
-        {% endfor %}
-    </ul>
+        </div>
+
+
+        <ul class="detail-gallery-index">
+            {% for photo in prestataire.photos %}
+            <li class="detail-gallery-list-item active mb30">
+                <a data-target="{{ asset('img/') }}{{ photo.nom|tempDevImage }}">
+                    <img src="{{ asset('img/') }}{{ photo.nom|tempDevImage }}" alt="...">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 </div><!-- /.detail-gallery -->

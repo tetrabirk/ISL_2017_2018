@@ -40,4 +40,69 @@ class PrestataireRepository extends EntityRepository
 
         return $result;
     }
+
+    //test
+
+    public function findAllWithEverithing()
+    {
+        $qb = $this->createQueryBuilder('p');
+        $qb->leftJoin('p.stages','stages')->addSelect('stages');
+        $qb->leftJoin('p.promotions','promotions')->addSelect('promotions');
+        $qb->leftJoin('p.photos','photos')->addSelect('photos');
+        $qb->leftJoin('p.logo','logo')->addSelect('logo');
+        $qb->leftJoin('p.categories','categories')->addSelect('categories');
+        $qb->set('cote',4);
+
+
+        $query= $qb->getQuery();
+
+        $result=$query->getResult();
+        return $result;
+    }
+
+    //exemple en class
+
+    public function findAllWithStages()
+    {
+        $qb = $this->createQueryBuilder('p');
+        $qb->join('p.stages','stages');
+        $query= $qb->getQuery();
+        $result=$query->getResults();
+        return $result;
+    }
+
+    protected function addJoins($qb)
+    {
+        $qb->join('p.promos','promos');
+        $qb->join('p.stages','stages');
+        $qb->join('p.categories','cat');
+    }
+
+    public function finAllWithJoins()
+    {
+        $qb = $this->createQueryBuilder('p');
+        $this->addJoins($qb);
+        $query=$qb->getQuery();
+        $results=$query->getResult();
+        return $results;
+    }
+
+    public function findOneWithJoins($id,$date)
+    {
+        $qb = $this->createQueryBuilder('p');
+        $this->addJoins($qb);
+        $qb->where('p.id =:id');
+        $qb->setParameter('id',$id);
+
+        $qb->andWhere('p.date>:date');
+
+        $qb->innerJoin('p.stages','stages','WITH','stages.date >:date');
+        $qb->setParameter('date',$date);
+
+        $query=$qb->getQuery();
+        $results=$query->getResult();
+        return $results;
+    }
+
+
 }
