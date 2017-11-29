@@ -163,7 +163,7 @@ get_header();
                         <h3 class="text-uppercase mt-20 text-theme-colored"><?php the_field('about_big_title'); ?></span></h3>
                         <p><?php the_field('about_content'); ?></p>
 
-                        <a href="<?php the_field('about_bouton'); ?>" class="btn btn-theme-colored btn-flat btn-sm mt-20">En savoir plus</a>
+                        <a href="<?php the_field('about_bouton'); ?>" class="btn btn-theme-colored btn-flat btn-sm mt-20"><?php _e('En savoir plus','tetranslate') ?></a>
                     </div>
                 </div>
             </div>
@@ -212,57 +212,32 @@ get_header();
                 <div class="section-title text-center">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h2 class="title text-uppercase">Health Zone <span class="text-black font-weight-300">Departments</span></h2>
-                            <p class="text-uppercase letter-space-4">Join our Health Zone and be healthy.</p>
+                            <h2 class="title text-uppercase"><?php the_field('departements_title'); ?></h2>
+                            <p class="text-uppercase letter-space-4"><?php the_field('departements_subtitle'); ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="row mtli-row-clearfix">
                     <div class="col-md-12">
                         <div class="training-classes-carousel" data-dots="true">
-                            <div class="item">
-                                <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                    <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
+                            <?php
+                                // loop through the rows of data
+                                while ( have_rows('departements_liste') ) : the_row();
+                            ?>
+                                    <div class="item">
+                                        <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
+                                            <div class="thumb mb-20"> <img alt="featured project" src="<?php the_sub_field('departements_liste_image'); ?>" class="img-responsive img-fullwidth">
+                                            </div>
+                                            <div class="content text-left flip p-25 pt-0">
+                                                <h4 class="text-uppercase font-weight-800 line-bottom"><?php the_sub_field('departements_liste_title'); ?></h4>
+                                                <p><?php the_sub_field('departements_liste_description'); ?></p>
+                                                <a href="#" class="btn-read-more btn-sm"><?php _e('En savoir plus','tetranslate') ?></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="text-uppercase font-weight-800 line-bottom">Surgery Department</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                        <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                    <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="text-uppercase font-weight-800 line-bottom">Dental Department</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                        <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                    <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth">
-                                    </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="text-uppercase font-weight-800 line-bottom">Medicine Department</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                        <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="class-item box-hover-effect effect1 mb-md-30 bg-lighter">
-                                    <div class="thumb mb-20"> <img alt="featured project" src="http://placehold.it/328x283" class="img-responsive img-fullwidth"> </div>
-                                    <div class="content text-left flip p-25 pt-0">
-                                        <h4 class="text-uppercase font-weight-800 line-bottom">Nursing Department</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam ipsum quis ipsum facilisis, sit amet scelerisque augue vulputate.</p>
-                                        <a href="#" class="btn-read-more btn-sm">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                                endwhile;
+                            ?>
                         </div>
                     </div>
                 </div>

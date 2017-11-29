@@ -7,7 +7,7 @@
             <div class="col-sm-6 col-md-3">
                 <div class="widget dark">
                     <img class="mt-10 mb-20" alt="" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-wide-white.png">
-                    <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                    <?php dynamic_sidebar( 'bloc_footer_1' ); ?>
                     <ul class="list-inline mt-5">
                         <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
                         <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>

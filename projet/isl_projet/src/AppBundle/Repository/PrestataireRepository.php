@@ -13,52 +13,130 @@ use Doctrine\ORM\EntityRepository;
  */
 class PrestataireRepository extends EntityRepository
 {
-    public function findPrestataires($slug)
+
+    public function findAllWithEverithing()
     {
-        if($slug != null){
-            $data = $this->findOneBy(array('slug'=> $slug));
-            $gc = $this->getCote($data);
-            $cote = $gc[0]['cote'];
-            $data->cote = $cote;
-        }else {
-            $data = $this->findAll();
-            foreach ($data as $prest)
-            {
-                $gc = $this->getCote($prest);
-                $cote = $gc[0]['cote'];
-                $prest->cote = $cote;
-            }
-        }
-        return $data;
+        $qb = $this->createWithJoin();
+
+        return $this->returnResult($qb);
     }
 
-    public function getCote(Prestataire $prestataire)
+    public function findOneWithEverithingBySlug($slug)
     {
-        $query = $this->getEntityManager()->createQuery("SELECT (AVG(c.cote)/5) cote FROM AppBundle:Commentaire c WHERE c.cibleCommentaire = ?1");
-        $query->setParameter(1,$prestataire);
-        $result = $query->getResult();
+        $qb = $this->createWithJoin();
+
+        $qb->where('p.slug =:slug');
+        $qb->setParameter('slug',$slug);
+
+        return $this->returnSingleResult($qb);
+    }
+
+    public function findAllWithEverithingByCateg($categ){
+        $qb = $this->createWithJoin();
+
+        $qb->add('where',$qb->expr()->in('p.categorie', ':categ'));
+        $qb->setParameter('categ',$categ);
+    }
+
+
+
+    protected function createWithJoin()
+    {
+        $qb = $this->createQueryBuilder('p');
+        $this->addJoins($qb);
+        return $qb;
+    }
+
+    protected function returnResult($qb)
+    {
+        $query= $qb->getQuery();
+        $result=$query->getResult();
+        return $result;
+    }
+
+    protected function returnSingleResult($qb)
+    {
+        $query= $qb->getQuery();
+        $result=$query->getSingleResult();
+        return $result;
+    }
+
+
+
+
+
+
+    public function findWithEverithing($type,$key)
+    {
+        //creation du QB
+        $qb = $this->createQueryBuilder('p');
+
+        //ajout de jointures
+        $this->addJoins($qb);
+
+        if (isset($key)){
+            $this->addWhere($qb,$type,$key);
+        }
+
+        $query= $qb->getQuery();
+
+        if ($type == 'slug')// if true -> j'essaye d'afficher un seul prestataire
+        {
+            $result=$query->getSingleResult();
+        }else{
+            $result=$query->getResult();
+        }
 
         return $result;
     }
 
-    //test
 
-    public function findAllWithEverithing()
+
+    protected function addWhere($qb,$type,$key)
     {
-        $qb = $this->createQueryBuilder('p');
+        switch ($type)
+        {
+            case 'slug':
+                $qb->where('p.slug =:key');
+                $qb->setParameter('key',$key);
+                break;
+        }
+    }
+
+    protected function addJoins($qb)
+    {
         $qb->leftJoin('p.stages','stages')->addSelect('stages');
         $qb->leftJoin('p.promotions','promotions')->addSelect('promotions');
         $qb->leftJoin('p.photos','photos')->addSelect('photos');
         $qb->leftJoin('p.logo','logo')->addSelect('logo');
         $qb->leftJoin('p.categories','categories')->addSelect('categories');
-        $qb->set('cote',4);
-
-
-        $query= $qb->getQuery();
-
-        $result=$query->getResult();
-        return $result;
+        $qb->leftJoin('p.internautesFavoris','fav')->addSelect('fav');
     }
+
+
+
+
+
+
+
+//
+//    public function getCote(Prestataire $prestataire)
+//    {
+//        $query = $this->getEntityManager()->createQuery("SELECT (AVG(c.cote)/5) cote FROM AppBundle:Commentaire c WHERE c.cibleCommentaire = ?1");
+//        $query->setParameter(1,$prestataire);
+//        $result = $query->getResult();
+//
+//        return $result;
+//    }
+
+    //test
+
+
+
+
+
+
+
 
     //exemple en class
 
@@ -70,13 +148,13 @@ class PrestataireRepository extends EntityRepository
         $result=$query->getResults();
         return $result;
     }
-
-    protected function addJoins($qb)
-    {
-        $qb->join('p.promos','promos');
-        $qb->join('p.stages','stages');
-        $qb->join('p.categories','cat');
-    }
+//
+//    protected function addJoins($qb)
+//    {
+//        $qb->join('p.promos','promos');
+//        $qb->join('p.stages','stages');
+//        $qb->join('p.categories','cat');
+//    }
 
     public function finAllWithJoins()
     {
