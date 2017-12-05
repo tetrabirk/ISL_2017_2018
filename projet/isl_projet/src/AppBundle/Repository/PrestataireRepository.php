@@ -36,6 +36,9 @@ class PrestataireRepository extends EntityRepository
 
         $qb->add('where',$qb->expr()->in('p.categorie', ':categ'));
         $qb->setParameter('categ',$categ);
+
+        return $this->returnResult($qb);
+
     }
 
 

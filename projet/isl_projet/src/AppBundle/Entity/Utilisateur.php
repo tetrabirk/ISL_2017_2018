@@ -65,7 +65,7 @@ class Utilisateur
      */
     private $localite;
 
-    /**
+     /**
      * @return mixed
      */
     public function getLocalite()
@@ -363,4 +363,5 @@ class Utilisateur
         $userClassFull = explode('\\',get_class($this));
         return end($userClassFull);
     }
+
 }

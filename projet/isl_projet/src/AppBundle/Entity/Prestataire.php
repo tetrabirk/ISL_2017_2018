@@ -279,6 +279,10 @@ class Prestataire extends Utilisateur
         $this->categories = new ArrayCollection();
         $this->internautesFavoris = new ArrayCollection();
         $this->photos = new ArrayCollection();
+        $this->setNbEssaisInfructueux(0);
+        $this->setBanni(false);
+        $this->setConfInscription(false);
+
     }
 
     /**
