@@ -1,0 +1,166 @@
+type de veille
+
+veille technologique
+veille concuretielle
+veille commercialle (client, fournisseur, employés, etc)
+veille markekting
+veille juridique
+veille sectoriellle
+veille de votre image (e reputation)
+etc
+
+===================
+type de veille
+"
+l'activié mise en oeuvre par l'entreprise pour suivre les éolutions techno suceptilde d'influer sur le devir de son métier"
+
+
+ojetcifs
+
+anticiper etre en amont des projet innovant
+
+identier les meilleur pratique (+de qualité)
+faire des économie (ne pas réinventer la roue)
+prendre des décisier avec plus de sécurité
+elargir l'ensemble des activité d'une entreprise
+choisir de futurs produits ou techno
+recherhce de partenariat presta etc
+...
+
+=> gagner du temps!
+
+
+se tenir informé pour
+détecter les évolutions du secteur
+etre tj à la pointe de la techno
+s'auto former
+comparer ses connaissances
+analyser la concurrence
+s'évaluer par rapport à la concurrence
+
+------------------
+problematiue de al veille
+
+nous somme submergé d'info
+
+-----
+4. étapes de la veille
+
+définir lesobjectif
+les dcritère le périmètre de recherche
+les méthode et outilsaàutiliser
+les sources d'info
+récoler les info
+recouper les info
+interprert les info
+vérifier via des tests
+
+
+-------------------------------------
+pour une approche stratégique
+
+ciblage
+récolte d'info
+analyse des données
+la diffusion des résultats
+
+le livrable de la veille
+
+contextualisation du rapport
+clarté et concision
+neutralité et distanciation
+données chiffrées, noms des acteurs clés et affiliations, date et périodes etc
+citer ses sources
+
+-------------------
+
+niveau de veillie
+-perso
+-perso ett partage vers l'ext
+-veille collective
+
+--------------
+
+définir le périmètre de la veille
+
+définir les thématique
+définir les sujets par thématique
+définir les mot clés par sujets
+définir une liste de source
+
+------------------
+
+source pour la veille
+
+forums
+blogs
+microblogs (twitter) 
+plateformes de partage de contenus (scoup it, paper li)
+plateforme de partae de présentation
+sites de médias et d'institutions
+sites de concurrents
+sites de tutoriels
+plateformes de partage de favoris
+groupe de discutions sur les réseaux sociaux
+etc...
+
+
+-----------------
+les utils de la veille
+
+2 méthode
+
+méthode pull : l'usager va chercher l'info (revherch précise mais qui prend du temps)
+méthodepush : info vient a l'usager (gain detemps mais risque de surabondance d'info)
+
+--------------
+
+les outils
+
+moteur de recherche
+agents d'alerte
+agrégateurs de flus rss
+réseaux sociaux
+newsletter
+social bookmarking
+monitorer page web
+...
+
+
+------------
+
+amérlioer ses requete google
+
+les booléens : and or -
+
+aroud(n) ou n= proximité des mots
+
+*entre 2 mots: rechercher 'lexpression avec 2 mots séparer par autres thermes 
+"xxx" ecpression ectate
+...
+
+----------------------
+
+site: sur les paes d'un site ou d'un domaine
+filetype
+.....
+----------------
+
+offline:
+
+forums
+séminaires
+conférences
+formations
+etc
+-----------------
+
+
+ciblage:
+
+définir une liste d'expert
+une liste de source:
+
+definir les thématiques
+définir les sujets par thématique
+définir les mots clés par sujets

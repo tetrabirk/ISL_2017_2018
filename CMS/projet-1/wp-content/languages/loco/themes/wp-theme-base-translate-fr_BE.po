@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: revision\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-06 18:33+0000\n"
+"PO-Revision-Date: 2017-12-06 18:33+0000\n"
+"Last-Translator: ludovicLEYENS <ludovic.leyens@gmail.com>\n"
+"Language-Team: French (Belgium)\n"
+"Language: fr-BE\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: header.php:14
+msgid "Revisions WP"
+msgstr ""
+
+#: header.php:15
+msgid "Parce que réviser c' est bien"
+msgstr ""
+
+#: footer.php:4
+msgid "Copyright &copy; 2012 - All Rights Reserved"
+msgstr ""
+
+#: footer.php:5
+msgid "Template by"
+msgstr ""
+
+#. Name of the template
+msgid "HomePage"
+msgstr "HomePage"
+
+#. Name of the template
+msgid "Contact"
+msgstr "Contact"
+
+#. Name of the template
+msgid "PageDefault"
+msgstr "PageDefault"
+
+#. Name of the template
+msgid "Actualites"
+msgstr "Actualites"
+
+#: category.php:44
+msgid "Categories"
+msgstr "Categories"
+
+#. Name of the theme
+msgid "revision"
+msgstr "revision"
+
+#. Description of the theme
+msgid "Theme de revision réaliser dans le cadre du cours de CMS 2017"
+msgstr "Theme de revision réaliser dans le cadre du cours de CMS 2017"
+
+#. URI of the theme
+msgid "http://www.tetrabirk.be"
+msgstr "http://www.tetrabirk.be"
+
+#. Author of the theme
+msgid "LeyensLudovic"
+msgstr "LeyensLudovic"

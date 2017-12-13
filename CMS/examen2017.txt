@@ -25,7 +25,7 @@ Le non respect des règles citées ci-dessous entraînera un échec pour l'examen.
 
 Pages demandées:
 
--Accueuil
+-Accueil
 Les fichiers home.php et index.php ne peuvent pas être utilisés pour cette page.
 
 -A propos
@@ -74,7 +74,7 @@ Composition champs & ACF
 
 slider est un ACF galerie
 
-La première section est un ACF image,texte,WYSYWYG
+La première section est un ACF image,texte,WYSiWYG
 
 La deuxième section est la boucle while avec les derniers articles.
 Laisser les réglages de base dans le back-office !

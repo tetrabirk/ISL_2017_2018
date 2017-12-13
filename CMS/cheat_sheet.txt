@@ -1,0 +1,244 @@
+Tolérance zero :
+
+-Aucune erreur dans la console n'est permise
+-Aucune erreur 404(css,js,image,etc), n'est permise
+-Si un texte n'est pas modifiable dans le back-office, il doit devenir une clé de traduction
+-Tous les liens doivent être fonctionnels
+-Le respect de la découpe est primordiale
+-Aucune erreur liée au responsive n'est permise
+-Visuellement le thème créer doit être identique à la découpe fournie
+
+-tout le contenu d'une page doit être modifiable dans le back office
+-Tous champs supplémentaires doivent être créés avec ACF.
+-Dans les catégories, le titre des articles doit être cliquable et redirigé vers l'article en question.
+
+Dans l'ordre:
+
+
+
+-creation du template
+
+nom du thème: Leyens Ludovic - Thème
+nom du dossier: leyens-ludovic-theme
+screenshot: une photo de vous
+
+ajouter les dossiers des assets
+creer : 
+	-category.php
+	-footer.php
+	-front-page.php
+	-functions.php
+	-header.php
+	-index.php (laisser vide)
+	-page.php
+	-page-'iddelapagecontact'.php
+	-single.php
+
+	-style.css
+	-screenshot.png
+
+
+
+style.css-----------------------------------------------------------------------------
+
+/*
+Theme Name:     Leyens Ludovic - Thème
+Theme URI:      http://www.tetrabirk.be
+Description:    Theme réaliser dans le cadre de l'examen du cours de CMS - 7/12/2017
+Author:         LeyensLudovic
+Template:       Leyens Ludovic - Thème
+Version:        1.0.0
+*/
+
+function.php---------------------------------------------------------------------------
+
+<?php
+
+//instanciation des menus
+
+register_nav_menus(array(
+    'menu_haut' => __('Menu primaire', 'menu-primaire'),
+    'menu_bas' => __('Menu footer', 'menu-footer'),
+    'menu_cote' => __('Menu categories', 'menu-categorie')
+));
+
+
+//Ajout du champs "Image à la Une" dans les articles
+
+
+function wp_base_theme_theme_setup(){
+    
+    add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'wp_base_theme_theme_setup' );
+
+
+//Ajout des widget
+
+function wp_base_theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'bloc_footer_1', 'wp-theme-base-translate' ),
+        'id'            => 'bloc_footer_1',
+        'description'   => __( 'bloc footer avec contact', 'wp-theme-base-translate' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+
+
+//Ajout des 'options custom field'
+
+add_action( 'widgets_init', 'wp_base_theme_widgets_init' );
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+    acf_add_options_sub_page('Header');
+    acf_add_options_sub_page('Footer');
+}
+
+
+//Instanciation des traductions
+
+add_action( 'after_setup_theme', 'pdw_theme_setup' );
+
+function pdw_theme_setup(){
+    load_theme_textdomain( 'wp-theme-base-translate', get_template_directory() . '/languages' );
+}
+
+
+
+
+	
+Dans le BackOffice (dBO)----------------------------------------------------------------
+
+activate template
+
+Settings-Reading:
+	blog pages show at most X posts
+	Syndication feeds show the most recent : X posts
+	For each article in a feed, show : (sans doute Summary)
+
+
+
+Apparence : Menus
+
+	verifications des menus
+
+Loco Translate:
+	
+options:
+
+apparence : widgets
+
+
+
+
+header.php------------------------------------------------------------------------------
+<doctype>
+<head>
+
+ajouter <?php echo get_stylesheet_directory_uri() ?> devant les liens style etc
+
+
+ <?php wp_head(); ?>
+
+</head>
+<body>
+<header>
+
+le menu 
+
+		<?php
+                $args = array(
+                    'menu' => 'menu_haut',
+                    'container' => 'ul'
+		);
+                wp_nav_menu($args);
+                ?>
+
+plus d info https://developer.wordpress.org/reference/functions/wp_nav_menu/
+
+
+</header>
+
+footer.php-------------------------------------------------------------------------------
+
+		<?php
+                $args = array(
+                    'menu' => 'menu_bat',
+                    'container' => 'ul'
+		);
+                wp_nav_menu($args);
+                ?>
+
+<script>
+
+ajouter <?php echo get_stylesheet_directory_uri() ?> devant les liens script etc
+
+<script>
+
+<?php wp_footer() ?>
+</body>
+</html>
+
+front-page.php---------------------------------------------------------------------------
+
+<?php
+/**
+ * Template Name: HomePage
+ *
+ */
+get_header();
+?>
+
+<content>
+
+
+</content>
+
+
+<?php
+get_footer();
+?>
+
+
+dans le BO-------------------------------------------------------------------------------
+Custom field
+
+remettre les "rules" pour chaque CF
+acceuil	page is equal to Accueil	
+page	page template is equal to Default template
+contact	page is equal to contact
+article post type si equal to post
+
+et activer template homepage et contact dans le bo respectif pour éviter que about ne les surcharge
+
+
+BUGGZZZ
+-----------------------------------------------------------------------------------------
+déployement minimir disparut dans phpStorm:
+
+Tools-Deployement-'+'
+
+name: minimir
+type: sftp
+
+host : minimir.isl.be
+port: 22
+root path: /home/ISL/leyensl
+username: ISL\leyensl
+password: 1RpAg52k
+
+Mappings
+
+Deployement path: /cms/projet-1
+----------------------------------------------------------------------------------------
+
+si un probleme avec repeater p-e rajouter 
+
+                            <?php wp_reset_postdata() ?>
+après le while précédent
+----------------------------------------------------------------------------------------
+

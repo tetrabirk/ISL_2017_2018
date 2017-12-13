@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="8a7455aa-dc8f-47b2-9dba-6bcf46ff97d2" name="minimir" url="http://minimir.isl.be">
-        <fileTransfer host="minimir.isl.be" port="22" rootFolder="/home/ISL/leyensl/cms/projet-1" accessType="SFTP">
+      <webServer id="76e491fb-84c8-4d6e-aedf-8a60dc11944a" name="minimir" url="http://minimir.isl.be">
+        <fileTransfer host="minimir.isl.be" port="22" rootFolder="/home/ISL/leyensl/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

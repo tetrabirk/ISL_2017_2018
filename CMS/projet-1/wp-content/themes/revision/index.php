@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Vi
- * Date: 29/11/2017
- * Time: 19:15
- */
+get_header();
+?>
+<h1>comment es tu arrivé ici ??</h1>
+?>
+<?php
+get_footer();
+?>

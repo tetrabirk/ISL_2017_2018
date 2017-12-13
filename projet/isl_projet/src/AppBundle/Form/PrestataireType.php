@@ -13,7 +13,17 @@ class PrestataireType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')->add('slug')->add('siteInternet')->add('emailContact')->add('telephone')->add('numTVA')->add('categories')->add('photos')->add('logo')->add('internautesFavoris');
+        $builder
+            ->add('nom')
+            ->add('slug')
+            ->add('siteInternet')
+            ->add('emailContact')
+            ->add('telephone')
+            ->add('numTVA')
+            ->add('categories')
+            ->add('photos')
+            ->add('logo')
+            ->add('internautesFavoris');
     }
     
     /**
